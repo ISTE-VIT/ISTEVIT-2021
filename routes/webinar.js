@@ -4,7 +4,7 @@ const axios = require('axios')
 
 webinarRouter.get('/', async(req, res) => {
     try {
-        const webinarAPI = await axios.get(`https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fplaylist_id%3DPLtArheW_rmIbXtsm7Ff4eYKWut-CgC5Gr`)
+        const webinarAPI = await axios.get(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=PLtArheW_rmIbXtsm7Ff4eYKWut-CgC5Gr&key=AIzaSyDcf3mGnmgxqUN795MFMnc1to--M3ztn48`)
         console.log(webinarAPI.data.items[0].link);
         res.render('webinars', { webinars : webinarAPI.data.items })
     } catch (err) {
