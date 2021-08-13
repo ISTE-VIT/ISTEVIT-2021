@@ -156,6 +156,9 @@ a:focus-visible {
 	position: relative;
 	font-weight: 500;
 	will-change: transform;
+	background-image: url('/public/imgs/about_bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 .js .frame {
@@ -355,7 +358,7 @@ a:focus-visible {
 
 
 
-.about {
+/* .about {
     background-image: url('/public/imgs/about_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -365,4 +368,4 @@ a:focus-visible {
     background-color: #797676 !important;
 
     
-}
+} */
