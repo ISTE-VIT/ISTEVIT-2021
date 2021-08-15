@@ -380,6 +380,7 @@ a:focus-visible {
 	background-image: url('/public/imgs/about_bg.png');
 	background-repeat: no-repeat;
     background-size: cover;
+	height: 91.5vh;
 	
 }
 .logo {
@@ -398,24 +399,25 @@ a:focus-visible {
 .card{
 	background-color: #989866 !important;
 	padding: 70px;
-	width: 75% !important;
-	margin-left: 13%;
+	width: 65% !important;
+	margin-left: 18%;
 	border-radius: 0% !important	;
 }
 .about_us_heading{
 	font-family: Euclid Circular B Medium;
 	color: #fff;
-	font-size:50px;
-	margin-left: 75px;
+	font-size:4vw;
+	margin-left: 4%;
 	/* text-align: center; */
 }
 .design{
     margin-right: 30px;
+	height: 4vw;
 }
 .about_content{
 	font-family: Euclid Cicular B Medium !important;
 	text-align: left;
-	font-size: 30px;
+	font-size: 1.5vw;
 	color: #fff;
 	margin-left: 40px;
 	margin-right: 40px;
@@ -427,3 +429,73 @@ a:focus-visible {
 .container{
 	padding: 3rem 5vw;
 }
+
+
+@media(max-width:750px) {
+	.about_content {
+    font-size: 4vw;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	}
+
+	.about_us_heading{
+		font-family: Euclid Circular B Medium;
+		color: #fff;
+		font-size:8vw;
+		
+	}
+
+	.design{
+		height: 8vw;
+	}
+
+	.card{
+		padding: 40px;
+	}
+}
+
+
+.arrow a {
+	color: white;
+	text-decoration: none;
+  }
+  .arrow {
+	text-align: center;
+	margin: 3% 0;
+  }
+  .bounce {
+	-webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+  }
+  @-webkit-keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+	  transform: translateY(0);
+	}
+	40% {
+	  transform: translateY(-30px);
+	}
+	60% {
+	  transform: translateY(-15px);
+	}
+  }
+  @keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+	  transform: translateY(0);
+	}
+	40% {
+	  transform: translateY(-30px);
+	}
+	60% {
+	  transform: translateY(-15px);
+	}
+  }
+  
