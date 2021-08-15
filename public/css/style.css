@@ -1,3 +1,6 @@
+@import url(//db.onlinewebfonts.com/c/a575313c6dc4fd00c1a9506e1c3ea4fc?family=Euclid+Circular+A);
+@import url(//db.onlinewebfonts.com/c/721c73bcd2e49f3a621991089838b503?family=Euclid+Circular+B+Medium);
+
 *,
 *::after,
 *::before {
@@ -157,8 +160,8 @@ a:focus-visible {
 	font-weight: 500;
 	will-change: transform;
 	background-image: url('/public/imgs/about_bg.png');
-        background-repeat: no-repeat;
-        background-size: cover;
+	background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .js .frame {
@@ -173,11 +176,12 @@ a:focus-visible {
 
 .frame__links {
 	display: inline;
+	background-color: #000000;
 }
 
 .frame__links a:not(:last-child),
 .frame__demos a:not(:last-child) {
-	margin: 0 1rem 0 0;
+	margin: 0 4rem 0 0;
 }
 
 .frame__demos {
@@ -260,7 +264,7 @@ a:focus-visible {
 	position: fixed;
 	 --dim: 186vmin;
 	width: var(--dim);
-	height: var(--dim);
+	height: var(--dim); 
 	top: calc(50% - var(--dim) / 2 );
 	left: calc(50% - var(--dim) / 2 );
   
@@ -355,17 +359,71 @@ a:focus-visible {
 		text-align: left;
 	}
 }
-
-
-
-/* .about {
+ /* .about {
     background-image: url('/public/imgs/about_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
+} */
+
+/* .circles {
+    background-color: #797676 !important;
+	
+}  */
+
+/*landing page code above here*/
+
+.about_us {
+	/* padding: 2.8rem 5vw; */
+	text-align: center;
+	position: relative;
+	font-weight: 500;
+	background-image: url('/public/imgs/about_bg.png');
+	background-repeat: no-repeat;
+    background-size: cover;
+	
+}
+.logo {
+	height:35px;
 }
 
-.circles {
-    background-color: #797676 !important;
+.navbar-nav{
+	margin-right: 30px;
+}
 
-    
-} */
+.nav-item{
+	font-family: Euclid Circular A;
+	padding-right: 20px;
+}
+
+.card{
+	background-color: #989866 !important;
+	padding: 70px;
+	width: 75% !important;
+	margin-left: 13%;
+	border-radius: 0% !important	;
+}
+.about_us_heading{
+	font-family: Euclid Circular B Medium;
+	color: #fff;
+	font-size:50px;
+	margin-left: 75px;
+	/* text-align: center; */
+}
+.design{
+    margin-right: 30px;
+}
+.about_content{
+	font-family: Euclid Cicular B Medium !important;
+	text-align: left;
+	font-size: 30px;
+	color: #fff;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 40px;
+}
+.row {
+	text-align: center;
+}
+.container{
+	padding: 3rem 5vw;
+}
