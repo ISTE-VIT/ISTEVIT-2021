@@ -370,7 +370,7 @@ a:focus-visible {
 	
 }  */
 
-/*landing page code above here*/
+
 
 .about_us {
 	/* padding: 2.8rem 5vw; */
@@ -378,9 +378,11 @@ a:focus-visible {
 	position: relative;
 	font-weight: 500;
 	background-image: url('/public/imgs/about_bg.png');
+	background-attachment: fixed;
+	background-position: center;
 	background-repeat: no-repeat;
     background-size: cover;
-	height: 91.5vh;
+	
 	
 }
 .logo {
@@ -412,7 +414,7 @@ a:focus-visible {
 }
 .design{
     margin-right: 30px;
-	height: 4vw;
+
 }
 .about_content{
 	font-family: Euclid Cicular B Medium !important;
@@ -431,7 +433,7 @@ a:focus-visible {
 }
 
 
-@media(max-width:750px) {
+@media(max-width:410px) {
 	.about_content {
     font-size: 4vw;
 	margin-left: 20px;
@@ -455,10 +457,29 @@ a:focus-visible {
 	}
 }
 
+@media(min-width:411px) and (max-width:750px) {
+	.about_content {
+    font-size: 3vw;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	}
+
+	.about_us_heading{
+		font-family: Euclid Circular B Medium;
+		color: #fff;
+		font-size:6vw;
+		
+	}
+
+	
+}
+
 
 .arrow a {
 	color: white;
 	text-decoration: none;
+	font-size: 30px;
   }
   .arrow {
 	text-align: center;
@@ -498,4 +519,255 @@ a:focus-visible {
 	  transform: translateY(-15px);
 	}
   }
-  
+
+  .domain_heading{
+	  text-align: center;
+	  font-family: Euclid Circular B Medium;
+	  color: black;
+	  font-size:2vw;
+	  margin-top:0px;
+	  font-weight: bold;
+  }
+  .card_domains{
+	  margin-top: 0px;
+	  display: inline-block;
+	  width: 6rem;
+	  justify-content: space-evenly !important;
+	  text-align: center;
+	  font-weight: bold;
+	  font-family: Euclid Circular A;
+	  margin:4rem;
+
+  }
+  .domain_imgs {
+	  margin-left: 12rem;
+	  /* height: 250px; */
+  }
+
+  .projects_heading{
+	text-align: center;
+	  font-family: Euclid Circular B Medium;
+	  color: white;
+	  font-size:2vw;
+	  margin-top:0px;
+	  font-weight: bold;
+  }
+
+
+  @media(max-width:410px) {
+	.domain_heading{
+		font-size:6vw;
+	}
+
+	.projects_heading{
+		font-size:6vw;
+	}
+
+	.card_domains{
+		width: 5rem;
+		height: 10px;
+        font-size: smaller;
+	}
+
+	
+}
+ .projects{
+    background-image: linear-gradient(to  right, #D5147B , #FE6503);
+	overflow-x: hidden;
+	padding: 3rem 10vw;
+ } 
+
+
+  .projects_dash{
+	border-bottom: 4px solid white;
+
+  }
+  .project_titles{
+	 
+	  position: relative;
+	  display: flex;
+	  justify-content:space-between;
+	  /* margin-left: 40px; */
+	  
+  }
+  .project_titles .cardone{
+	  position: relative;
+	  border-radius:0px; 
+	  margin-left: 20px;
+  }
+
+  .project_titles .cardone .icon{
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  transition: 0.7s;
+	  z-index: 1;
+	}
+
+	/* .project_titles .cardone:nth-child(1) .icon{
+		background: #ff0000;
+	} */
+	/* .project_titles .cardone:nth-child(2) .icon{
+		background:#4267b2;
+	}
+	.project_titles .cardone:nth-child(3) .icon{
+		background:#00aced;
+	} */
+    
+	
+
+	.project_titles .cardone .face{
+		width:300px;
+		height:200px;
+        transition:0.5s;
+	}
+
+	.project_titles .cardone .face.face1{
+		position:relative;
+		/* background: #333; */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 1;
+		transform: translateY(122px);
+		width: 300px;
+		height:200px;
+		
+	}
+
+	.project_titles .cardone:hover .face.face1{
+		/* background: #ff0057; */
+		transform: translateY(0);
+	}
+	.project_titles .cardone:hover .face.face1 .contentone{
+		opacity: 1;
+		transition: 0.5s;
+
+	}
+	.project_titles .cardone:hover .face.face1 .contentone
+	i{
+		max-width:100px
+	}
+
+	.project_titles .cardone .face.face2{
+		position: relative;
+		background:#fff;
+		display:flex;
+		justify-content:center;
+		align-items: center;
+		padding:20px;
+		box-sizing: border-box;
+		box-shadow: 0 20px 30px rgba(0,0,0,0.8);
+		transform: translateY(-78px);
+		width: 300px;
+		height:200px;
+	}
+	.project_titles .cardone:hover .face.face2{
+		transform: translateY(0);
+	}
+
+	.project_titles .cardone .face.face2 .contentone
+	p{
+		margin: 0;
+		padding: 0;
+        text-align: center;
+		color: #06090a;
+	}
+
+	.project_titles .cardone .face.face2 .contentone
+	h3{
+		margin: 0 0 10px 0;
+		padding: 0;
+		color: #fff;
+		font-size:24px;
+		text-align: center;
+		color: #414141;
+	}
+
+	.project_titles a{
+		text-decoration: none;
+		columns: #414141;
+
+  	}
+
+
+	.card-img-top {
+		height: 102px;
+		width: 200px;
+	}
+   
+
+	.col-carousel {
+		margin: 70px 0;
+
+	}
+	
+	/* owl nav */
+	.owl-prev span, .owl-next span {
+		font-size:40px;
+		color: #FFF;
+	}
+	
+	.owl-prev span:hover, 
+	.owl-next span:hover {
+		color: #8199A3;
+	}
+	
+	.owl-prev, .owl-next {
+		position: absolute;
+		top: 0;
+		height: 100%;
+	}
+	
+	.owl-prev {
+		
+		left: -60px;
+	}
+	
+	.owl-next {
+		right: -60px;
+	}
+	
+	/* removing blue outline from buttons */
+	button:focus, button:active {
+	   outline: none;
+	}
+    
+	.webinars{
+		overflow-x: hidden;
+		padding: 3rem 2vw;
+	 } 
+
+	.webinars_heading{
+		text-align: center;
+		  font-family: Euclid Circular B Medium;
+		  color: black;
+		  font-size:2vw;
+		  margin-top:10px;
+		  font-weight: bold;
+	  }
+	
+
+	.webinars_dash{
+		border-bottom: 4px solid black;
+	
+	  }
+
+	  .ytframe{
+		  padding: 40px;
+	  }
+
+	  .yt-frame{
+		width:30vw;
+		
+	}
+
+
+	@media(max-width:778px){
+		.yt-frame{
+			width:80vw;
+			
+		}
+	}

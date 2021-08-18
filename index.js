@@ -10,11 +10,9 @@ app.use(express.json({ extended: false }));
 
 app.set('view engine', 'ejs');
 
-app.get("/", (req, res) => {
-    res.render("index");
-  });
 
-app.use('/w',webinarRouter)
+
+app.use('/',webinarRouter)
   
 const port = process.env.PORT || 3000;
 
