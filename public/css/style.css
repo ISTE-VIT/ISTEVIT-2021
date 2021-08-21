@@ -771,3 +771,83 @@ a:focus-visible {
 			
 		}
 	}
+
+	.events{
+		overflow-x: hidden;
+		padding: 3rem 2vw;
+        background-color: #000000;
+	 } 
+
+	.events_heading{
+		text-align: center;
+		  font-family: Euclid Circular B Medium;
+		  color: white;
+		  font-size:2vw;
+		  margin-top:10px;
+		  font-weight: bold;
+	  }
+	
+
+	.events_dash{
+		border-bottom: 4px solid white;
+	
+	  }
+
+	.slider .owl-stage{
+		padding:100px 0;
+	}
+    .slider .owl-stage .owl-item{
+		position:relative;
+		text-align:center;
+	} 
+    .slider .owl-stage .owl-item{
+		height:100px;
+		width:50px ;
+		transition :ease all 0.5s;
+	}
+    .slider .owl-stage .owl-item.active{
+		z-index:1;
+		position:relative ;
+	}
+    .slider .owl-stage .owl-item.prev,
+    .slider .owl-stage .owl-item.next{
+		transform:scale(1.5);
+		z-index:3;
+	}  
+    .slider .owl-stage .owl-item.active.center{
+		transform:scale(2);
+		z-index:4;
+	}
+
+	.horizon{
+		background-image:url('/public/imgs/horizon_bg.png');
+		height: 100vh;
+	}
+
+	.horizon_heading{
+		padding: 60px;
+		color:#fff;
+		text-align:center;
+		font-family: Euclid Circular B Medium;
+		font-size:2vw;
+		font-weight: bold;
+	}
+
+	.horizon_logo{
+		
+		display: block;
+        text-align: center;
+	}
+
+	.horizon_text{
+		color:#fff;
+		text-align: center;
+		font-size: 2vw;
+		font-family: Euclid Circular B Medium;
+		padding: 90px;
+	}
+
+	.horizon_dash{
+		border-bottom: 2px solid white;
+	
+	  }

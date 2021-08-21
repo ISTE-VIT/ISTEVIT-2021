@@ -17,7 +17,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/assets/owl.carousel.css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css'>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 	<script>document.documentElement.className = "js"
   
 
@@ -403,6 +407,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
                   <iframe class="yt-frame" height="300" src= "https://www.youtube.com/embed/<%- webinar.snippet.resourceId.videoId %> " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 
                 </div>
+                
        
                           
                 <% }) %>
@@ -411,6 +416,25 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
             <% } %>
         </div>
     </div> 
+    </section>
+    <section class="events">
+      <div class="events_heading"><span class="events_dash">E</span>vents & <span class="events_dash">W</span>orkshop</div>
+      <div class="containerthree">
+  <div class="slider owl-carousel owl-theme">  
+    <div class="item"><img class="events_imgs" src="imgs/webdev.png"/></div>
+    <div class="item"><img  class="events_imgs" src="imgs/automate.png"/></div>
+    <div class="item"><img  class="events_imgs" src="imgs/photonix.png"/></div>
+    <div class="item"><img  class="events_imgs" src="imgs/codeasymptote.png"/></div>
+  </div>
+</div>
+<div class="arrow bounce" >
+  <a href="#" style="color: white;"><i class="fas fa-angle-double-down"></i></a>
+</div>
+    </section>
+    <section class="horizon">
+      <div class="horizon_heading">Checkout Our Flagship Event</div>
+      <div class="horizon_logo"><img src="imgs/horizon_logo.png"></div>
+      <div class="horizon_text"><span class="horizon_dash">Explore</span></div>
     </section>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -440,6 +464,25 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
         dots: false,
         navText: ['<span class="far fa-arrow-alt-circle-left"></span>','<span class="far fa-arrow-alt-circle-right"></span>'],
       })
+    </script>
+    <script>
+      var owl = $('.slider'); 
+owl.on('changed.owl.carousel', function(event) { 
+  owl.find('.owl-item').removeClass('prev').removeClass('next'); 
+  var currentIndex      = event.item.index;  
+  owl.find('.owl-item').eq(currentIndex-1).addClass('prev');
+  owl.find('.owl-item').eq(currentIndex+1).addClass('next'); 
+}); 
+owl.owlCarousel({
+  center: true,
+  items:3,
+  nav:true, 
+  dots:false, 
+  loop:true,
+  margin:10,  
+  autoplay: true,
+  autoplaySpeed: 1500, 
+});
     </script>
     </body>
 
