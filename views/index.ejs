@@ -436,6 +436,103 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
       <div class="horizon_logo"><img src="imgs/horizon_logo.png"></div>
       <div class="horizon_text"><span class="horizon_dash">Explore</span></div>
     </section>
+   
+    <section class="sponsors">
+      <div class="partners_heading"><span class="partners_dash">P</span>artners</div>
+
+      <div class="logo-slider">
+        <div class="logo-slide-track">
+          <div class="slide">
+            <img src="/public/imgs/Adobe_Corporate_logo 1.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/public/imgs/balalogo.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/public/imgs/JetBrains_Logo_2016 1.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/public/imgs/pythonlogo.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/public/imgs/CNSI_logo 1.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/public/imgs/Adobe_Corporate_logo 1.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/public/imgs/balalogo.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/public/imgs/JetBrains_Logo_2016 1.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/public/imgs/pythonlogo.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/public/imgs/Adobe_Corporate_logo 1.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/public/imgs/balalogo.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/public/imgs/JetBrains_Logo_2016 1.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/public/imgs/pythonlogo.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/public/imgs/Adobe_Corporate_logo 1.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/public/imgs/balalogo.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/public/imgs/JetBrains_Logo_2016 1.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/public/imgs/pythonlogo.png" alt="" />
+          </div>
+      
+        </div>
+      </div>
+    </section>
+   <section class="contact">
+   <div class="contact-form-card">
+     <div class="card-head">CONNECT WITH US</div>
+     <div class="contact-form">
+       <form action="">
+        <div class="row" style="text-align: left;">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-12">
+                <input type="text" placeholder="Enter Email" class="contact-input"> 
+              </div>
+              <div class="col-lg-6">
+                <input type="text" placeholder="Enter Phone Number" class="contact-input"> 
+              </div>
+              
+              <div class="col-lg-12">
+                <input type="text" placeholder="Message" class="contact-input"> 
+              </div>
+            </div>
+          
+          </div>
+           <div class="col-lg-6">
+            <div class="col-lg-6 submit"  style="text-align: center;">
+              Submit
+            </div>
+           </div>
+          
+        </div>
+       
+       
+        
+       </form>
+     </div>
+   </div>
+   </section>
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
@@ -462,7 +559,20 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
         margin: 60,
         nav: true,
         dots: false,
-        navText: ['<span class="far fa-arrow-alt-circle-left"></span>','<span class="far fa-arrow-alt-circle-right"></span>'],
+        responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false,
+            autoplay: true,
+        },
+        600:{
+            items:3,
+            nav:true
+        },
+       
+    },
+        navText: ['<span></span>','<span class="far fa-arrow-alt-circle-right"></span>'],
       })
     </script>
     <script>
@@ -476,7 +586,7 @@ owl.on('changed.owl.carousel', function(event) {
 owl.owlCarousel({
   center: true,
   items:3,
-  nav:true, 
+  nav:false, 
   dots:false, 
   loop:true,
   margin:10,  

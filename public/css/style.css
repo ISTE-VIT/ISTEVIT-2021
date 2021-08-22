@@ -553,6 +553,13 @@ a:focus-visible {
 	  font-weight: bold;
   }
 
+  .projects{
+	background-image: linear-gradient(to  right, #D5147B , #FE6503);
+	overflow-x: hidden;
+	padding: 3rem 10vw;
+
+ } 
+
 
   @media(max-width:410px) {
 	.domain_heading{
@@ -569,13 +576,18 @@ a:focus-visible {
         font-size: smaller;
 	}
 
+	.projects{
+		background-image: linear-gradient(to  right, #D5147B , #FE6503);
+		overflow-x: hidden;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		padding-right: 1vw;
+		padding-left: 0.5vw;
+	 } 
+
 	
 }
- .projects{
-    background-image: linear-gradient(to  right, #D5147B , #FE6503);
-	overflow-x: hidden;
-	padding: 3rem 10vw;
- } 
+
 
 
   .projects_dash{
@@ -794,7 +806,7 @@ a:focus-visible {
 	  }
 
 	.slider .owl-stage{
-		padding:100px 0;
+		padding:200px 0px;
 	}
     .slider .owl-stage .owl-item{
 		position:relative;
@@ -851,3 +863,200 @@ a:focus-visible {
 		border-bottom: 2px solid white;
 	
 	  }
+
+	  /* Logo Slider */
+
+.logo-slider {
+	background: white;
+	-webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
+	box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
+	padding-top: 50px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.logo-slider::before, .logo-slider::after {
+	background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+	background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+	content: "";
+	height: 175px;
+	position: absolute;
+	width: 200px;
+	z-index: 2;
+}
+
+.logo-slider::after {
+	right: 0;
+	top: 0;
+	-webkit-transform: rotateZ(180deg);
+	transform: rotateZ(180deg);
+}
+
+.logo-slider::before {
+	left: 0;
+	top: 0;
+}
+
+.logo-slider .logo-slide-track {
+	-webkit-animation: logo-scroll 60s linear infinite;
+	animation: logo-scroll 60s linear infinite;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: calc(250px * 14);
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.logo-slider .slide {
+	height: 150px;
+	width: 250px;
+	padding: 20px;
+}
+
+@-webkit-keyframes logo-scroll {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(calc(-250px * 7));
+		transform: translateX(calc(-250px * 7));
+	}
+}
+
+@keyframes logo-scroll {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(calc(-250px * 7));
+		transform: translateX(calc(-250px * 7));
+	}
+}
+
+.sponsors{
+	padding: 3rem 5vw;
+}
+
+.partners_heading{
+	text-align: center;
+	  font-family: Euclid Circular B Medium;
+	  color: rgb(0, 0, 0);
+	  font-size:2vw;
+	  margin-top:10px;
+	  font-weight: bold;
+  }
+
+
+.partners_dash{
+	border-bottom: 4px solid rgb(0, 0, 0);
+
+  }
+
+  .contact{
+	padding: 3rem 9vw;
+	background-color: #000000;
+
+  }
+
+  .contact-form-card{
+
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(40px);
+	padding: 50px 0px 20px 50px;
+  }
+
+  .card-head{font-family: Euclid Circular A;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 61px;
+	
+	
+	color: #FFFFFF;
+	}
+
+	.contact-input{
+		background: #000000;
+		border: none;
+		border-radius: 14px;
+		width: 40vw;
+		height: 60px;
+		margin: 30px 0px;
+		padding: 20px;
+		font-size: 24px;
+	}
+
+	.submit{
+		font-family: Euclid Circular A;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 61px;
+text-align: center;
+
+color: #FFFFFF;
+padding-top: 25%;
+margin-left: 25%;
+
+	}
+
+.events_imgs{
+	height: 120px;
+}
+
+.events {
+	padding: 3rem 15vw;
+}
+
+@media(max-width:410px) {
+	.domain_heading{
+		font-size:6vw;
+	}
+
+	.projects_heading{
+		font-size:6vw;
+	}
+
+	.partners_heading{
+		font-size:6vw;
+	}
+
+	.events_heading{
+		font-size:6vw;
+	}
+
+	.webinars_heading{
+		font-size:6vw;
+	}
+
+	.horizon_heading{
+		font-size:6vw;
+	}
+
+	.horizon_text{
+		font-size:6vw;
+	}
+
+	.card_domains{
+		width: 5rem;
+		height: 10px;
+        font-size: smaller;
+	}
+
+	.projects{
+		background-image: linear-gradient(to  right, #D5147B , #FE6503);
+		overflow-x: hidden;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		padding-right: 1vw;
+		padding-left: 0.5vw;
+	 } 
+
+	
+}
