@@ -23,4 +23,12 @@ webinarRouter.get('/', async(req, res) => {
     } 
 })
 
+
+webinarRouter.get('/gallery', (req, res) => {
+   res.render('gallery');
+})
+
+webinarRouter.get('/team', (req, res) => {
+    res.render('ourteam');
+ })
 module.exports = webinarRouter 
