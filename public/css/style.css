@@ -959,7 +959,7 @@ a:focus-visible {
   }
 
   .contact{
-	padding: 3rem 9vw;
+	padding: 3rem 20vw;
 	background-color: #000000;
 
   }
@@ -974,7 +974,7 @@ a:focus-visible {
   .card-head{font-family: Euclid Circular A;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 48px;
+	font-size: 34px;
 	line-height: 61px;
 	
 	
@@ -985,18 +985,19 @@ a:focus-visible {
 		background: #000000;
 		border: none;
 		border-radius: 14px;
-		width: 40vw;
+		width: 30vw;
 		height: 60px;
 		margin: 30px 0px;
 		padding: 20px;
 		font-size: 24px;
+		color: white;
 	}
 
 	.submit{
 		font-family: Euclid Circular A;
 font-style: normal;
 font-weight: bold;
-font-size: 48px;
+font-size: 34px;
 line-height: 61px;
 text-align: center;
 
@@ -1108,3 +1109,41 @@ margin-left: 25%;
 		}
 
 }
+
+.footer{
+	background-color:rgb(0,0,0);
+	height : auto;
+	font-family:'bold Montserrat',sans-serif;
+	color:#FFF;
+	
+}
+
+
+
+.logo_iste{
+	width:15%;
+	text-align:"center";
+	height: 22%;
+
+}
+
+.links{
+	color:white;
+
+}
+
+.line{
+	padding-top:1%;
+	padding-left:1%;
+	padding-bottom:1%; 
+	border-top: 2px solid white;
+}
+
+.social {
+	font-size: 34px;
+	margin-right: 10px;
+	border-radius: 100%;
+	
+}
+
+
