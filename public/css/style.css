@@ -17,10 +17,10 @@ body {
 	--color-bg: #191613;
 	--color-link: #d6af7c;
 	--color-link-hover: #fff;
-	--color-text-circle-1: #48423c;
-	--color-text-circle-2: #48423c;
-	--color-text-circle-3: #48423c;
-	--color-text-circle-4: #48423c;
+	--color-text-circle-1: #ffffff;
+	--color-text-circle-2: #EF6437;
+	--color-text-circle-3: #ffffff;
+	--color-text-circle-4: #CE3D91;
 	--font-circle-1: ivymode, sans-serif;
 	--font-weight-circle-1: 300;
 	--font-circle-2: modesto-condensed, serif;
@@ -29,7 +29,7 @@ body {
 	--font-weight-circle-3: 400;
 	--font-circle-4: niagara, serif;
 	--font-weight-circle-4: 300;
-	--color-button: #d6ae7c;
+	--color-button: #ffffff;
 	--color-text-button: #1d1812;
 	--dim-button: 90px;
 	color: var(--color-text);
@@ -162,7 +162,7 @@ a:focus-visible {
 	will-change: transform;
 	display: none;
 	height: 100vh;
-
+	
 }
 
 .js .frame {
@@ -204,7 +204,7 @@ a:focus-visible {
 	height: var(--dim-button);
 	position: absolute;
 	left: calc(50% - var(--dim-button) / 2 );
-	top: calc(50% - var(--dim-button) / 2 );
+	top: calc(37% - var(--dim-button) / 2 );
 	font: inherit;
 	font-weight: 500;
 	cursor: pointer;
@@ -266,10 +266,10 @@ a:focus-visible {
 .circles {
 	pointer-events: none;
 	position: absolute;
-	 --dim: 186vmin;
+	 --dim: 106vmin;
 	width: var(--dim);
 	height: var(--dim); 
-	top: calc(50% - var(--dim) / 2 );
+	top: calc(37% - var(--dim) / 2 );
 	left: calc(50% - var(--dim) / 2 );
 	overflow-x: hidden !important;
 }
@@ -365,12 +365,16 @@ a:focus-visible {
 		text-align: left;
 		
 	}
+
 }
 
 @media screen and (max-width: 678px) {
-	.circles {
-	
+	.content{
+		height: 100vh;
 	}
+
+	
+	
 }
  /* .about {
     background-image: url('/public/imgs/about_bg.png');
@@ -1159,4 +1163,23 @@ margin-left: 25%;
 	
 }
 
+.hide-before {
+	display: none !important;
+	
+}
 
+.show-before {
+	display: block !important;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.wrapper {
+	overflow: hidden ;
+	position: fixed;
+    width: 100vw;
+	margin: 0;
+	padding: 0;
+}

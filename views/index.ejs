@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" name="viewport" content="width=device-width, height=device-height">
 	<title>ISTE-VIT</title>
 	<meta name="description" content="An experimental circular SVG text animation">
 	<meta name="keywords" content="animation, svg, text, typography, intro, javascript">
@@ -35,8 +35,10 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 </head>
 
 <body >
+    <div class="wrapper">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top hide-before" >
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img class="logo" src="imgs/iste_logo.png" alt/></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +62,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
           </div>
         </div>
       </nav>
-      <div class="demo-1 loading" id="show">
+      <div class="demo-1 loading" id="show" style="background-color: black;">
         <main>
           <svg class="circles" width="100%" height="100%"  viewBox="0 0 1400 1400" >
             <def>
@@ -70,7 +72,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
               <path id="circle-4" d="M567.5,700.5A133,133 0 1 1833.5,700.5A133,133 0 1 1567.5,700.5"></path>
             </def>
             <text class="circles__text circles__text--1" >
-              <textPath class="circles__text-path" xlink:href="#circle-1" aria-label="" textLength="2830">Frihed Kun Stadium  Copenhagen&nbsp;</textPath>
+              <textPath class="circles__text-path" xlink:href="#circle-1" aria-label="" textLength="2830" >Frihed Kun Stadium Copenhagen&nbsp;</textPath>
             </text>
             <text class="circles__text circles__text--2">
               <textPath class="circles__text-path" xlink:href="#circle-2" aria-label="" textLength="2001">Jægerspris Infinite X Playground&nbsp;</textPath>
@@ -94,14 +96,14 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
           <div class="content">
             <p></p>
           </div>
-          <button class="enter" ONCLICK=" setTimeout(function(){ document.getElementById('show').style.display='none'; }, 1000);">
+          <button class="enter" ONCLICK=" setTimeout(function(){ document.getElementById('show').style.display='none';}, 1000);">
             <div class="enter__bg"></div>
             <span class="enter__text">Enter</span>
           </button>
         </main>
       
       </div>
-    <section class="about_us" id="about">
+    <section class="about_us hide-before" id="about">
         <div class="container">
             <div class="row">
             <div class="card">
@@ -121,7 +123,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
         </div>
     </section>
 
-    <section class="domains" id="domains">
+    <section class="domains hide-before" id="domains">
         <div class="container">
             <div class="domain_heading">
                 Domains
@@ -167,8 +169,8 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
         </div>
     </section>
 
-    <section class="projects" id="projects">
-            <div class="projects_heading"><span class="projects_dash">P</span>rojects</div>
+    <section class="projects " id="projects">
+            <div class="projects_heading hide-before"><span class="projects_dash">P</span>rojects</div>
   <div class="containertwo">
     <div class="row align-items-center">
       <div class="col-12 col-carousel">
@@ -285,12 +287,12 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
       </div>
     </div>
   </div>
-  <div class="arrow bounce" >
+  <div class="arrow bounce hide-before" >
     <a href="#webinars" style="color: white;"><i class="fas fa-angle-double-down"></i></a>
 </div>
     </section> 
 
-    <section class="webinars" id="webinars">
+    <section class="webinars hide-before" id="webinars">
       <div class="webinars_heading"><span class="webinars_dash">W</span>ebinars</div>
       <div class="wrapper">
         <div class="webinar row">
@@ -310,8 +312,8 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
   </div>
     </section>
 
-    <section class="events" id="events">
-      <div class="events_heading"><span class="events_dash">E</span>vents & <span class="events_dash">W</span>orkshop</div>
+    <section class="events " id="events">
+      <div class="events_heading hide-before"><span class="events_dash">E</span>vents & <span class="events_dash">W</span>orkshop</div>
       <div class="containerthree">
   <div class="slider owl-carousel owl-theme">  
     <div class="item"><img class="events_imgs" src="imgs/webdev.png"/></div>
@@ -320,18 +322,18 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
     <div class="item"><img  class="events_imgs" src="imgs/codeasymptote.png"/></div>
   </div>
 </div>
-<div class="arrow bounce" >
+<div class="arrow bounce hide-before" >
   <a href="#horizon" style="color: white;"><i class="fas fa-angle-double-down"></i></a>
 </div>
     </section>
 
-    <section class="horizon" id="horizon">
+    <section class="horizon hide-before" id="horizon">
       <div class="horizon_heading">Checkout Our Flagship Event</div>
       <div class="horizon_logo"><img src="imgs/horizon_logo.png"></div>
       <a href="https://horizon.istevit.in/" target="_blank" style="text-decoration: none;"> <div class="horizon_text"><span class="horizon_dash">Explore</span></div></a>
     </section>
    
-    <section class="sponsors" id="sponsors">
+    <section class="sponsors hide-before" id="sponsors">
       <div class="partners_heading"><span class="partners_dash">P</span>artners</div>
       <div class="logo-slider">
         <div class="logo-slide-track">
@@ -390,7 +392,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
       </div>
     </section>
 
-   <section class="contact" id="contact">
+   <section class="contact hide-before" id="contact">
    <div class="contact-form-card">
      <div class="card-head">CONNECT WITH US</div>
      <div class="contact-form">
@@ -419,7 +421,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
      </div>
    </div>
    </section>
-   <section class="footer" >
+   <section class="footer hide-before" >
     <div class="container container-fluid py-3 "  >
       <div class="row ">
          
@@ -463,7 +465,7 @@ All Rights Reserved.</p>
     </div>
 
    </section>
-
+</div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
@@ -476,7 +478,12 @@ All Rights Reserved.</p>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/owl.carousel.min.js'></script><script  src="./script.js"></script>
-      <script>$('.carousel-main').owlCarousel({
+      
+    <script>
+     
+
+$(".enter").click(function(){
+  $('.carousel-main').owlCarousel({
         items: 3,
         loop: true,
         autoplay: false,
@@ -499,8 +506,7 @@ All Rights Reserved.</p>
     },
         navText: ['<span></span>','<span class="far fa-arrow-alt-circle-right"></span>'],
       })
-    </script>
-    <script>
+
       var owl = $('.slider'); 
 owl.on('changed.owl.carousel', function(event) { 
   owl.find('.owl-item').removeClass('prev').removeClass('next'); 
@@ -517,6 +523,13 @@ owl.owlCarousel({
   margin:10,  
   autoplay: true,
   autoplaySpeed: 1500, 
+});
+  $('section').addClass('show-before');
+  $('nav').removeClass('hide-before');
+  $('div').removeClass('hide-before');
+  $('.wrapper').css('overflow-y','scroll');
+  $('.wrapper').css('overflow-x','hidden');
+  $('.wrapper').css('position','relative');
 });
     </script>
     </body>
