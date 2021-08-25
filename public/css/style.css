@@ -98,6 +98,7 @@ body {
 	width: 100%;
 	height: 100%;
 	background: var(--color-bg);
+	
 }
 
 .js body::after {
@@ -159,24 +160,27 @@ a:focus-visible {
 	position: relative;
 	font-weight: 500;
 	will-change: transform;
-	background-image: url('/public/imgs/about_bg.png');
-	background-repeat: no-repeat;
-    background-size: cover;
+	display: none;
+	height: 100vh;
+
 }
 
 .js .frame {
 	opacity: 0;
+	display: none;
 }
 
 .frame__title {
 	font-size: 1rem;
 	margin: 0 0 1rem;
 	font-weight: 500;
+	display: none;
 }
 
 .frame__links {
 	display: inline;
 	background-color: #000000;
+	display: none;
 }
 
 .frame__links a:not(:last-child),
@@ -236,9 +240,9 @@ a:focus-visible {
 .content {
 	display: flex;
 	flex-direction: column;
-	width: 100vw;
+	width: 0vw;
 	padding: 2rem;
-	height: calc(100vh - 13rem);
+	
 	position: relative;
 	justify-content: flex-start;
 	align-items: center;
@@ -261,13 +265,13 @@ a:focus-visible {
 
 .circles {
 	pointer-events: none;
-	position: fixed;
+	position: absolute;
 	 --dim: 186vmin;
 	width: var(--dim);
 	height: var(--dim); 
 	top: calc(50% - var(--dim) / 2 );
 	left: calc(50% - var(--dim) / 2 );
-  
+	overflow-x: hidden !important;
 }
 
 .demo-3 .circles {
@@ -312,9 +316,10 @@ a:focus-visible {
 	fill: var(--color-text-circle-4);
 }
 
-@media screen and (min-width: 53em) {
+@media screen and (min-width: 3em) {
 	.frame {
 		position: fixed;
+		
 		text-align: left;
 		z-index: 100;
 		top: 0;
@@ -323,7 +328,7 @@ a:focus-visible {
 		align-content: space-between;
 		width: 100%;
 		max-width: none;
-		height: 100vh;
+		
 		padding: 2rem;
 		pointer-events: none;
 		grid-template-columns: 50% 50%;
@@ -355,8 +360,16 @@ a:focus-visible {
 	}
 	.content {
 		height: 100vh;
+	  
 		justify-content: center;
 		text-align: left;
+		
+	}
+}
+
+@media screen and (max-width: 678px) {
+	.circles {
+	
 	}
 }
  /* .about {

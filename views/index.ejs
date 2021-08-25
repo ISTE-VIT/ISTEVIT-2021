@@ -34,60 +34,8 @@ var supportsCssVars = function supportsCssVars() {
 supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 </head>
 
-<body>
-    <!-- <div class="demo-3 loading">
-        <main>
-            <div class="animation">
-                <svg class="circles" width="100%" height="100%" viewBox="0 0 1400 1400">
-                    <def>
-                        <path id="circle-1" d="M250,700.5A450.5,450.5 0 1 11151,700.5A450.5,450.5 0 1 1250,700.5"></path>
-                        <path id="circle-2" d="M382,700.5A318.5,318.5 0 1 11019,700.5A318.5,318.5 0 1 1382,700.5"></path>
-                        <path id="circle-3" d="M487,700.5A213.5,213.5 0 1 1914,700.5A213.5,213.5 0 1 1487,700.5"></path>
-                        <path id="circle-4" d="M567.5,700.5A133,133 0 1 1833.5,700.5A133,133 0 1 1567.5,700.5"></path>
-                    </def>
-                    <text class="circles_text circles_text--1">
-                        <textPath class="circles__text-path" xlink:href="#circle-1" aria-label="" textLength="2830">Let life begin I've cleansed all my sins&nbsp;</textPath>
-                    </text>
-                    <text class="circles_text circles_text--2">
-                        <textPath class="circles__text-path" xlink:href="#circle-2" aria-label="" textLength="2001">Burn all the money absolve all the lies&nbsp;</textPath>
-                    </text>
-                    <text class="circles_text circles_text--3">
-                        <textPath class="circles__text-path" xlink:href="#circle-3" aria-label="" textLength="1341">We are caged in simulations&nbsp;</textPath>
-                    </text>
-                    <text class="circles_text circles_text--4">
-                        <textPath class="circles__text-path" xlink:href="#circle-4" aria-label="" textLength="836">But something has changed in us&nbsp;</textPath>
-                    </text>
-                </svg>
-            </div>
-           
-            
-            <div class="about">
-                <class class="frame">
-                    <nav class="frame__links" >
-                        <a href="">HOME</a>
-				        <a href="">OUR TEAM</a>
-				        <a href="">ABOUT US</a>
-                        <a href="">GALLERY</a>
-                        <a href="">CONTACT US</a>
-                    </nav>
-                    </class>
-                    <nav class="frame__demos">
-                    </nav>
-                </div>
-                <div class="content">
-                    <p></p>
-                </div>
-            </div>
-            
-            <button class="enter">
-                <div class="enter__bg"></div>
-                <span class="enter__text">Enter</span>
-            </button>
+<body >
 
-            
-        </main>
-       
-    </div> -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img class="logo" src="imgs/iste_logo.png" alt/></a>
@@ -112,7 +60,47 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
           </div>
         </div>
       </nav>
-
+      <div class="demo-1 loading" id="show">
+        <main>
+          <svg class="circles" width="100%" height="100%"  viewBox="0 0 1400 1400" >
+            <def>
+              <path id="circle-1" d="M250,700.5A450.5,450.5 0 1 11151,700.5A450.5,450.5 0 1 1250,700.5"></path>
+              <path id="circle-2" d="M382,700.5A318.5,318.5 0 1 11019,700.5A318.5,318.5 0 1 1382,700.5"></path>
+              <path id="circle-3" d="M487,700.5A213.5,213.5 0 1 1914,700.5A213.5,213.5 0 1 1487,700.5"></path>
+              <path id="circle-4" d="M567.5,700.5A133,133 0 1 1833.5,700.5A133,133 0 1 1567.5,700.5"></path>
+            </def>
+            <text class="circles__text circles__text--1" >
+              <textPath class="circles__text-path" xlink:href="#circle-1" aria-label="" textLength="2830">Frihed Kun Stadium  Copenhagen&nbsp;</textPath>
+            </text>
+            <text class="circles__text circles__text--2">
+              <textPath class="circles__text-path" xlink:href="#circle-2" aria-label="" textLength="2001">Jægerspris Infinite X Playground&nbsp;</textPath>
+            </text>
+            <text class="circles__text circles__text--3">
+              <textPath class="circles__text-path" xlink:href="#circle-3" aria-label="" textLength="1341">Mit Valg Building Næstved&nbsp;</textPath>
+            </text>
+            <text class="circles__text circles__text--4">
+              <textPath class="circles__text-path" xlink:href="#circle-4" aria-label="" textLength="836">Køge For Kærlighed Building VI&nbsp;</textPath>
+            </text>
+          </svg>
+          <div class="frame">
+            <h1 class="frame__title"></h1>
+            <nav class="frame__links">
+        
+            </nav>
+            <nav class="frame__demos">
+              
+            </nav>
+          </div>
+          <div class="content">
+            <p></p>
+          </div>
+          <button class="enter" ONCLICK=" setTimeout(function(){ document.getElementById('show').style.display='none'; }, 1000);">
+            <div class="enter__bg"></div>
+            <span class="enter__text">Enter</span>
+          </button>
+        </main>
+      
+      </div>
     <section class="about_us" id="about">
         <div class="container">
             <div class="row">
