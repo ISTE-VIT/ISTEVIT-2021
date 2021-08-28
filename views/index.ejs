@@ -110,7 +110,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
                 <div class="about_us_heading">
                         About Us
             
-                    <img class="design" src="imgs/about_us_logo.png" alt="" align="right"/>
+                    <!-- <img class="design" src="imgs/about_us_logo.png" alt="" align="right"/> -->
                     </div>
                <div class="about_content">
                   Indian Society for Technical Education or ISTE is a national, professional, non-profit making Society registered under the Societies Registration Act of 1860. The major objective of ISTE is to assist and contribute to the production and development of top-quality professional engineers and technicians required by industries and other organizations.
@@ -126,7 +126,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
     <section class="domains hide-before" id="domains">
         <div class="container">
             <div class="domain_heading">
-                Domains
+              <span class="domain_dash">D</span>omains
             </div>
             <div class="row">
               <div class="col-lg-3 col-md-6">
@@ -456,7 +456,7 @@ All Rights Reserved.</p>
               <a href="https://www.instagram.com/iste_vit_vellore/" style="text-decoration: none;color: white;"><span class = "social insta"><i class="fab fa-instagram icon"></i></span></a>  
               <a href="https://github.com/ISTE-VIT/" style="text-decoration: none;color: white;"><span class = "social github"><i class="fab fa-github icon"></i></span></a>  
               <a href="https://www.youtube.com/channel/UCVRlM9S7LDPyo_mwNpBrnXg" style="text-decoration: none;color: white;"> <span class = "social link"><i class="fab fa-youtube icon"></i></span></a> 
-
+              <a href="https://www.linkedin.com/company/indian-society-for-technical-education/" style="text-decoration: none;color: white;"> <span class = "social link"><i class="fab fa-linkedin"></i></span></a>
          
                </div>
                      
@@ -498,7 +498,12 @@ $(".enter").click(function(){
             nav:false,
             autoplay: true,
         },
+     
         600:{
+            items:2,
+            nav:true
+        },
+        1000:{
             items:3,
             nav:true
         },
@@ -523,6 +528,7 @@ owl.owlCarousel({
   margin:10,  
   autoplay: true,
   autoplaySpeed: 1500, 
+
 });
   $('section').addClass('show-before');
   $('nav').removeClass('hide-before');
