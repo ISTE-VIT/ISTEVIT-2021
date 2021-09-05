@@ -1,5 +1,7 @@
 @import url(//db.onlinewebfonts.com/c/a575313c6dc4fd00c1a9506e1c3ea4fc?family=Euclid+Circular+A);
 @import url(//db.onlinewebfonts.com/c/721c73bcd2e49f3a621991089838b503?family=Euclid+Circular+B+Medium);
+@font-face {font-family: "Euclid Circular A"; src: url("//db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.eot"); src: url("//db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.woff") format("woff"), url("//db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.svg#Euclid Circular A") format("svg"); }
+@font-face {font-family: "Euclid Circular B Medium"; src: url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.eot"); src: url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.woff") format("woff"), url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.svg#Euclid Circular B Medium") format("svg"); }
 
 ::-webkit-scrollbar {
 	width: 10px;
@@ -265,7 +267,7 @@ a:focus-visible {
 	width: 100%;
 	height: 100%;
 	border-radius: 100%;
-	background-image: url('/public/imgs/iste_logos.png');
+	background-color: white;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -448,12 +450,12 @@ a:focus-visible {
 	font-family: 'Euclid Circular B Medium';
 	color: #fff;
 	font-size:3vw;
-	padding: 5px;
+	padding-top: 40px;
 	/* margin-left: 4%; */
 }
 
 .about_content{
-	font-family: 'Euclid Cicular B Medium' !important;
+	font-family: 'Euclid Circular B Medium' !important;
 	text-align: left;
 	font-size: 1.5vw;
 	color: #fff;
@@ -533,6 +535,20 @@ a:focus-visible {
 	-webkit-animation: bounce 2s infinite;
 	animation: bounce 2s infinite;
   }
+
+  .arrowP a {
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+  }
+  .arrowP {
+	text-align: center;
+	margin-top: -5% !important;
+  }
+  .bounce {
+	-webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+  }
   @-webkit-keyframes bounce {
 	0%,
 	20%,
@@ -595,8 +611,22 @@ a:focus-visible {
   }
 
   .domain_imgs {
-	  margin-left: 10rem;
+	  /* margin-left: 10rem; */
 	  /* height: 250px; */
+  }
+
+  .card-textE{
+	  text-align: center !important;
+	  margin-left:20px;
+  }
+
+  .card-textD{
+	  text-align: center !important;
+	  margin-left:43px
+  }
+
+  .card-textT{
+	  margin-left:17px;
   }
 
   .projects_heading{
@@ -606,6 +636,7 @@ a:focus-visible {
 	  font-size:3vw;
 	  margin-top:0px;
 	  font-weight: bold;
+	  margin-bottom: 2%;
   }
 
   @media(max-width:900px) {
@@ -617,7 +648,7 @@ a:focus-visible {
   .projects{
 	background-image: linear-gradient(to  right, #D5147B , #FE6503);
 	overflow-x: hidden;
-
+	overflow-y: hidden;
 	padding: 1rem 10vw;
 
  } 
@@ -657,6 +688,7 @@ a:focus-visible {
 	  position: relative;
 	  display: flex;
 	  justify-content:space-between;
+	  
 	  /* margin-left: 40px; */
   }
 
@@ -730,6 +762,7 @@ a:focus-visible {
 		transform: translateY(-78px);
 		width: 300px;
 		height:200px;
+		margin-bottom: 50px;
 	}
 	.project_titles .cardone:hover .face.face2{
 		transform: translateY(0);
@@ -1302,7 +1335,8 @@ a:focus-visible {
 }
 
 .card-img-top {
-	margin-left: -20px;
+	text-align: center;
+	/* margin-left: -20px; */
 }
 
 @media(max-width:750px){
