@@ -3,21 +3,29 @@
 
 ::-webkit-scrollbar {
 	width: 10px;
+	height: 20px;
+	background-color: transparent;
   }
 
   ::-webkit-scrollbar-track {
 	box-shadow: inset 0 0 5px grey; 
-	border-radius: 10px;
+	border-radius: 0px;
   }
    
   ::-webkit-scrollbar-thumb {
 	background: #808080; 
-	border-radius: 10px;
+	border-radius: 0px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
 	background: #808080
   ; 
+  }
+
+  @media (max-width:678px) {
+	::-webkit-scrollbar {
+		display: none !important;
+	  }
   }
 
   /* body::-webkit-scrollbar {
@@ -71,7 +79,7 @@ body {
 
 .demo-2 {
 	--color-text: #a5a5a5;
-	--color-bg: #000000;
+	--color-bg: black;
 	--color-link: #ea34a6;
 	--color-link-hover: #fff;
 	--color-font-circle: #7b7772;
@@ -93,7 +101,7 @@ body {
 
 .demo-3 {
 	--color-text: #292725;
-	--color-bg: #dad4d1;
+	--color-bg: black;
 	--color-link: #a99c90;
 	--color-link-hover: #292725;
 	--color-font-circle: #7b7772;
@@ -235,7 +243,7 @@ a:focus-visible {
 	height: var(--dim-button);
 	position: absolute;
 	left: calc(50% - var(--dim-button) / 2 );
-	top: calc(37% - var(--dim-button) / 2 );
+	top: calc(52% - var(--dim-button) / 2 );
 	font: inherit;
 	font-weight: 500;
 	cursor: pointer;
@@ -256,8 +264,10 @@ a:focus-visible {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	border-radius: 50%;
-	background: var(--color-button);
+	border-radius: 100%;
+	background-image: url('/public/imgs/iste_logos.png');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .enter__text {
@@ -300,7 +310,7 @@ a:focus-visible {
 	 --dim: 106vmin;
 	width: var(--dim);
 	height: var(--dim); 
-	top: calc(37% - var(--dim) / 2 );
+	top: calc(52% - var(--dim) / 2 );
 	left: calc(50% - var(--dim) / 2 );
 	overflow-x: hidden !important;
 }
@@ -410,6 +420,7 @@ a:focus-visible {
 	background-position: center;
 	background-repeat: no-repeat;
     background-size: cover;	
+	padding-top: 20px;
 }
 
 .logo {
@@ -427,17 +438,18 @@ a:focus-visible {
 
 .card{
 	background-color: #989866 !important;
-	padding: 70px;
-	width: 65% !important;
-	margin-left: 18%;
+	/* padding: 70px; */
+	width: 75% !important;
+	margin-left: 12%;
 	border-radius: 0% !important;
 }
 
 .about_us_heading{
 	font-family: Euclid Circular B Medium;
 	color: #fff;
-	font-size:4vw;
-	margin-left: 4%;
+	font-size:3vw;
+	padding: 5px;
+	/* margin-left: 4%; */
 }
 
 .about_content{
@@ -448,6 +460,9 @@ a:focus-visible {
 	margin-left: 40px;
 	margin-right: 40px;
 	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: justify;
+  text-justify: inter-word;
 }
 
 .row {
@@ -460,8 +475,15 @@ a:focus-visible {
 
 
 @media(max-width:410px) {
+	
+	
+	.card{
+		width: 100% !important;
+		margin-left: 0px;
+	}
+	
 	.about_content {
-    font-size: 4vw;
+    font-size: 4.5vw;
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-top: 20px;
@@ -478,7 +500,8 @@ a:focus-visible {
 	}
 
 	.card{
-		padding: 40px;
+		/* padding: 40px; */
+		width: 100%;
 	}
 }
 
@@ -504,7 +527,7 @@ a:focus-visible {
   }
   .arrow {
 	text-align: center;
-	margin: 3% 0;
+	margin-top: 3% ;
   }
   .bounce {
 	-webkit-animation: bounce 2s infinite;
@@ -572,7 +595,7 @@ a:focus-visible {
   }
 
   .domain_imgs {
-	  margin-left: 12rem;
+	  margin-left: 10rem;
 	  /* height: 250px; */
   }
 
@@ -594,7 +617,9 @@ a:focus-visible {
   .projects{
 	background-image: linear-gradient(to  right, #D5147B , #FE6503);
 	overflow-x: hidden;
-	padding: 3rem 10vw;
+
+	padding: 1rem 10vw;
+
  } 
 
 
@@ -620,6 +645,7 @@ a:focus-visible {
 		padding-bottom: 3rem;
 		padding-right: 1vw;
 		padding-left: 0.5vw;
+	
 	 } 
 }
 
@@ -818,7 +844,7 @@ a:focus-visible {
 		font-family: Euclid Circular B Medium;
 		color: white;
 		font-size:3vw;
-		margin-top:10px;
+		margin-top:5px;
 		font-weight: bold;
 	  }
 	
@@ -833,7 +859,7 @@ a:focus-visible {
 	  }
 
 	.slider .owl-stage{
-		padding:200px 0px;
+		padding:150px 0px;
 	}
     .slider .owl-stage .owl-item{
 		position:relative;
@@ -863,20 +889,30 @@ a:focus-visible {
 		width: 300px !important;
 	}
 	
-    @media screen and (max-width: 998px) {
-		.events_imgs{
-			height: 15vw !important;
-			width: 20vw !important;
-		}
+	.events {
+		padding: 3rem 22vw;
 	}
 
-	.events {
-		padding: 3rem 15vw;
+	@media screen and (max-width: 998px) {
+		.events_imgs{
+			height: 25vw !important;
+			width: 40vw !important;
+			margin-left: 10px;
+		}
+		.events {
+			padding: 3rem 4vw;
+		
+		}
+		
 	}
 
 	.horizon{
 		background-image:url('/public/imgs/horizon_bg.png');
-		height: 100vh;
+		background-attachment: fixed;
+	    background-position: center;
+		background-repeat: no-repeat;
+        background-size: cover;	
+
 	}
 
 	.horizon_heading{
@@ -884,12 +920,13 @@ a:focus-visible {
 		color:#fff;
 		text-align:center;
 		font-family: Euclid Circular B Medium;
-		font-size:2vw;
+		font-size:3vw;
 		font-weight: bold;
 	}
 
 	.horizon_logo{		
 		display: block;
+
         text-align: center;
 	}
 
@@ -1028,52 +1065,70 @@ a:focus-visible {
 		color: white;
 	}
 
-	.submit{
+	.btn{
 		font-family: Euclid Circular A;
         font-style: normal;
         font-weight: bold;
-        font-size: 34px;
+        font-size: 1.5vw !important;
         line-height: 61px;
         text-align: center;
         color: #FFFFFF;
-        padding-top: 25%;
-        margin-left: 25%;
-
+       margin-top: 32%;
+        margin-left: 35%;
+		height:50px;
+	}
+    
+	.contact-inputext{
+		background: #000000;
+		border: none;
+		border-radius: 14px;
+		width: 30vw;
+		/* height: 60px; */
+		margin: 30px 0px;
+		padding: 20px;
+		font-size: 24px;
+		color: white;
 	}
 
+
 @media(max-width:410px) {
+	.horizon_logosize{		
+		height: 20vh;
+		 }
+
 	.domain_heading{
-		font-size:6vw;
+		font-size:10vw !important;
 	}
 
 	.projects_heading{
-		font-size:6vw;
+		font-size:10vw !important;
 	}
 
 	.partners_heading{
-		font-size:6vw;
+		font-size:10vw !important;
 	}
 
 	.events_heading{
-		font-size:6vw;
+		font-size:10vw !important;
 	}
 
 	.webinars_heading{
-		font-size:6vw;
+		font-size:10vw !important;
 	}
 
 	.horizon_heading{
-		font-size:6vw;
+		font-size:10vw !important;
 	}
 
 	.horizon_text{
-		font-size:6vw;
+		font-size:10vw !important;
 	}
 
 	.card_domains{
 		width: 5rem;
 		height: 10px;
         font-size: smaller;
+		margin-left: 30px;
 	}
 
 	.projects{
@@ -1093,10 +1148,15 @@ a:focus-visible {
 
 @media(max-width:998px){
 
+	.contact{
+		padding: 3rem 0vw;
+		background-color: #000000;
+	  }
+
 	.contact-form-card{
 		background: rgba(255, 255, 255, 0.1);
-		backdrop-filter: blur(40px);
-		padding: 50px 0px 0px 0px;
+		backdrop-filter: blur(0px) !important;
+		padding: 20px 0px 0px 0px !important;
 		text-align: center;
 	  }
 
@@ -1106,6 +1166,16 @@ a:focus-visible {
 		border-radius: 14px;
 		width: 50vw;
 		height: 60px;
+		margin: 30px 0px;	
+		font-size: 20px;
+	}
+
+	.contact-inputext{
+		background: #000000;
+		border: none;
+		border-radius: 14px;
+		width: 50vw;
+		/* height: 60px; */
 		margin: 30px 0px;	
 		font-size: 20px;
 	}
@@ -1144,8 +1214,17 @@ a:focus-visible {
 		background: #000000;
 		border: none;
 		border-radius: 14px;
-		width: 50vw;
+		width: 80vw;
 		height: 40px;
+		margin: 30px 0px;	
+		font-size: 15px;
+	}
+
+	.contact-inputext{
+		background: #000000;
+		border: none;
+		border-radius: 14px;
+		width: 80vw;
 		margin: 30px 0px;	
 		font-size: 15px;
 	}
@@ -1153,7 +1232,7 @@ a:focus-visible {
 	.card-head{font-family: Euclid Circular A;
 		font-style: normal;
 		font-weight: bold;
-		font-size: 20px;
+		font-size: 30px;
 		line-height: 61px;		
 		color: #FFFFFF;
 		}
@@ -1168,6 +1247,19 @@ a:focus-visible {
 	        color: #FFFFFF;
 	        padding-top: 5%;
 	        margin-left: 0%;	
+		}
+
+		.btn{
+			margin-top: 10%;
+			margin-bottom: 10%;
+			font-size: 20px;
+			height: 40px;
+		}
+
+		
+		.btn span{
+		
+			font-size: 20px;
 		}
 }
 
@@ -1201,30 +1293,94 @@ a:focus-visible {
 	border-radius: 100%;	
 }
 
-.hide-before {
-	display: none !important;	
-}
 
-.show-before {
-	display: block !important;
-}
 
-body {
-	overflow-x: hidden;
-}
 
-.wrapper {
-	overflow: hidden ;
-	position: fixed;
-    width: 100vw;
-	margin: 0;
-	padding: 0;
-}
 
 .card_domains{
 	text-align: center;
 }
 
 .card-img-top {
-	margin-left: -10px;
+	margin-left: -20px;
 }
+
+@media(max-width:750px){
+	.links{
+        display: none !important;
+
+	}
+}
+
+
+.social-ul {
+    
+	
+	margin:0;
+	padding:0;
+	display:flex;
+  }
+  
+  .social-ul li {
+	list-style: none;
+  }
+  
+  .social-ul li a {
+	position: relative;
+	width:40px;
+	height:40px;
+	display:block;
+	text-align:center;
+	margin:0 10px;
+	border-radius: 50%;
+	padding: 6px;
+	box-sizing: border-box;
+	text-decoration:none;
+	box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+	background: linear-gradient(0deg, #ddd, #fff);
+	transition: .5s;
+  }
+  
+  .social-ul li a:hover {
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	text-decoration:none;
+  }
+  
+  .social-ul li a .fab {
+	width: 100%;
+	height:100%;
+	display:block;
+	
+	border-radius: 50%;
+	line-height: calc(60px - 12px);
+	font-size:24px;
+	color: #262626;
+	margin-top: -10px;
+	transition: .5s;
+  }
+  
+  .social-ul li:nth-child(1) a:hover .fab {
+	color: #3b5998;
+  }
+  
+  .social-ul li:nth-child(2) a:hover .fab {
+	color: #000000;
+  }
+  
+  .social-ul li:nth-child(3) a:hover .fab {
+	color: #dd4b39;
+  }
+  
+  .social-ul li:nth-child(4) a:hover .fab {
+	color: #007bb6;
+  }
+  
+  .social-ul li:nth-child(5) a:hover .fab {
+	color: #e4405f;
+  }
+
+  @media  (max-width:998px) {
+	  .social-ul {
+		 margin-left: 3%;
+	  }
+  }
