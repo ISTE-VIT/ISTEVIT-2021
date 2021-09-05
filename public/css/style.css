@@ -432,7 +432,7 @@ a:focus-visible {
 }
 
 .nav-item{
-	font-family: Euclid Circular A;
+	font-family: 'Euclid Circular A';
 	padding-right: 20px;
 }
 
@@ -445,7 +445,7 @@ a:focus-visible {
 }
 
 .about_us_heading{
-	font-family: Euclid Circular B Medium;
+	font-family: 'Euclid Circular B Medium';
 	color: #fff;
 	font-size:3vw;
 	padding: 5px;
@@ -453,7 +453,7 @@ a:focus-visible {
 }
 
 .about_content{
-	font-family: Euclid Cicular B Medium !important;
+	font-family: 'Euclid Cicular B Medium' !important;
 	text-align: left;
 	font-size: 1.5vw;
 	color: #fff;
@@ -490,7 +490,7 @@ a:focus-visible {
 	}
 
 	.about_us_heading{
-		font-family: Euclid Circular B Medium;
+		font-family: 'Euclid Circular B Medium';
 		color: #fff;
 		font-size:8vw;		
 	}
@@ -514,7 +514,7 @@ a:focus-visible {
 	}
 
 	.about_us_heading{
-		font-family: Euclid Circular B Medium;
+		font-family: 'Euclid Circular B Medium';
 		color: #fff;
 		font-size:6vw;		
 	}	
@@ -566,7 +566,7 @@ a:focus-visible {
 
   .domain_heading{
 	  text-align: center;
-	  font-family: Euclid Circular B Medium;
+	  font-family: 'Euclid Circular B Medium';
 	  color: black;
 	  font-size:3vw;
 	  margin-top:0px;
@@ -590,7 +590,7 @@ a:focus-visible {
 	  justify-content: space-evenly !important;
 	  text-align: center;
 	  font-weight: bold;
-	  font-family: Euclid Circular A;
+	  font-family: 'Euclid Circular A';
 	  margin:4rem;
   }
 
@@ -601,7 +601,7 @@ a:focus-visible {
 
   .projects_heading{
 	text-align: center;
-	  font-family: Euclid Circular B Medium;
+	  font-family: 'Euclid Circular B Medium';
 	  color: white;
 	  font-size:3vw;
 	  margin-top:0px;
@@ -802,7 +802,7 @@ a:focus-visible {
 
 	.webinars_heading{
 		text-align: center;
-		  font-family: Euclid Circular B Medium;
+		  font-family: 'Euclid Circular B Medium';
 		  color: black;
 		  font-size:3vw;
 		  margin-top:10px;
@@ -841,7 +841,7 @@ a:focus-visible {
 
 	.events_heading{
 		text-align: center;
-		font-family: Euclid Circular B Medium;
+		font-family: 'Euclid Circular B Medium';
 		color: white;
 		font-size:3vw;
 		margin-top:5px;
@@ -919,7 +919,7 @@ a:focus-visible {
 		padding: 60px;
 		color:#fff;
 		text-align:center;
-		font-family: Euclid Circular B Medium;
+		font-family: 'Euclid Circular B Medium';
 		font-size:3vw;
 		font-weight: bold;
 	}
@@ -934,7 +934,7 @@ a:focus-visible {
 		color:#fff;
 		text-align: center;
 		font-size: 2vw;
-		font-family: Euclid Circular B Medium;
+		font-family: 'Euclid Circular B Medium';
 		padding: 90px;
 	}
 
@@ -1022,7 +1022,7 @@ a:focus-visible {
 
 .partners_heading{
 	text-align: center;
-	  font-family: Euclid Circular B Medium;
+	  font-family: 'Euclid Circular B Medium';
 	  color: rgb(0, 0, 0);
 	  font-size:3vw;
 	  margin-top:10px;
@@ -1045,7 +1045,7 @@ a:focus-visible {
 	padding: 50px 0px 20px 50px;
   }
 
-  .card-head{font-family: Euclid Circular A;
+  .card-head{font-family: 'Euclid Circular A';
 	font-style: normal;
 	font-weight: bold;
 	font-size: 34px;
@@ -1066,7 +1066,7 @@ a:focus-visible {
 	}
 
 	.btn{
-		font-family: Euclid Circular A;
+		font-family: 'Euclid Circular A';
         font-style: normal;
         font-weight: bold;
         font-size: 1.5vw !important;
@@ -1180,7 +1180,7 @@ a:focus-visible {
 		font-size: 20px;
 	}
 	
-	.card-head{font-family: Euclid Circular A;
+	.card-head{font-family: 'Euclid Circular A';
 		font-style: normal;
 		font-weight: bold;
 		font-size: 24px;
@@ -1189,7 +1189,7 @@ a:focus-visible {
 		}
 	
 		.submit{
-			font-family: Euclid Circular A;
+			font-family: 'Euclid Circular A';
 	        font-style: normal;
 	        font-weight: bold;
 	        font-size: 20px;
@@ -1229,7 +1229,7 @@ a:focus-visible {
 		font-size: 15px;
 	}
 	
-	.card-head{font-family: Euclid Circular A;
+	.card-head{font-family: 'Euclid Circular A';
 		font-style: normal;
 		font-weight: bold;
 		font-size: 30px;
@@ -1238,7 +1238,7 @@ a:focus-visible {
 		}
 	
 		.submit{
-			font-family: Euclid Circular A;
+			font-family: 'Euclid Circular A';
 	        font-style: normal;
 	        font-weight: bold;
 	        font-size: 15px;
