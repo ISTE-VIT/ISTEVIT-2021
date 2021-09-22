@@ -3,7 +3,7 @@
 @font-face {font-family: "Euclid Circular A"; src: url("//db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.eot"); src: url("//db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.woff") format("woff"), url("//db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.svg#Euclid Circular A") format("svg"); }
 @font-face {font-family: "Euclid Circular B Medium"; src: url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.eot"); src: url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.woff") format("woff"), url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.svg#Euclid Circular B Medium") format("svg"); }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	width: 10px;
 	height: 20px;
 	background-color: transparent;
@@ -28,7 +28,7 @@
 	::-webkit-scrollbar {
 		display: none !important;
 	  }
-  }
+  } */
 
   /* body::-webkit-scrollbar {
 	width: 20px;
@@ -1418,3 +1418,71 @@ a:focus-visible {
 		 margin-left: 3%;
 	  }
   }
+
+  .grid{
+    padding-top: 10px;
+}
+
+  #gallery{
+    -webkit-column-count:3;
+    -moz-column-count:3;
+    column-count:3;
+    
+    -webkit-column-gap:40px;
+    -moz-column-gap:40px;
+    column-gap:40px;
+  }
+  @media (max-width:1200px){
+    #gallery{
+    -webkit-column-count:3;
+    -moz-column-count:3;
+    column-count:3;
+      
+    -webkit-column-gap:40px;
+    -moz-column-gap:40px;
+    column-gap:40px;
+  }
+  }
+  @media (max-width:800px){
+    #gallery{
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    column-count:2;
+      
+    -webkit-column-gap:40px;
+    -moz-column-gap:40px;
+    column-gap:40px;
+  }
+  }
+  @media (max-width:600px){
+    #gallery{
+    -webkit-column-count:1;
+    -moz-column-count:1;
+    column-count:1;
+  }  
+  }
+  #gallery img {
+    width:100%;
+    margin: 4% auto;
+    margin-top: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    
+  }
+  .modal-img,.model-vid{
+    width:100%;
+    height:auto;
+  }
+  .modal-body{
+    padding:0px;
+  }
+
+  .gallery-grid{
+	  padding: 2vw 20vw;
+  }
+
+  .gallery {
+	  background-color: #000000;
+  }
+

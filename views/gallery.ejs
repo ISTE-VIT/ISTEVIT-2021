@@ -1,12 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ISTE-VIT</title>
+	<meta name="description" content="An experimental circular SVG text animation">
+	<meta name="keywords" content="animation, svg, text, typography, intro, javascript">
+	<meta name="author" content="Codrops">
+	<link rel="shortcut icon" href="favicon.26242483.ico">
+	<link rel="stylesheet" href="https://use.typekit.net/kxo3pgz.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/assets/owl.carousel.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css'>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+  <link href="//db.onlinewebfonts.com/c/a575313c6dc4fd00c1a9506e1c3ea4fc?family=Euclid+Circular+A" rel="stylesheet" type="text/css"/>
+  <link href="//db.onlinewebfonts.com/c/721c73bcd2e49f3a621991089838b503?family=Euclid+Circular+B+Medium" rel="stylesheet" type="text/css"/>
+  
 </head>
-<body>
-    Gallery
-</body>
+
+<body >
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo" src="imgs/istelogo.png" alt/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/team">OUR TEAM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/gallery">GALLERY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#contact" >CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+   <section class="gallery">
+    <div id="gallery" class="container-fluid gallery-grid">  
+        <img src="/public/imgs/gallery1.png" class="img-responsive" >
+        <img src="/public/imgs/gallery3.png" class="img-responsive">
+         <img src="/public/imgs/gallery5.png" class="img-responsive">
+          <img src="/public/imgs/gallery7.png" class="img-responsive">
+          <img src="/public/imgs/gallery8.png" class="img-responsive">
+           <img src="/public/imgs/gallery9.png" class="img-responsive">
+
+           <img src="/public/imgs/gallery4.png" class="img-responsive">
+         <img src="/public/imgs/gallery5.png" class="img-responsive">
+          <img src="/public/imgs/gallery6.png" class="img-responsive">
+
+          <img src="/public/imgs/gallery7.png" class="img-responsive">
+          <img src="/public/imgs/gallery6.png" class="img-responsive">
+
+          <img src="/public/imgs/gallery8.png" class="img-responsive">
+
+          
+      
+      
+      </div>
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-body">
+            </div>
+          </div>
+        </div>
+      </div>
+   </section>
+      
+ <script>
+     $("body").click(function () {
+    $(".navbar-collapse").collapse("hide");
+  });
+    </script>
+    </body>
+
 </html>
