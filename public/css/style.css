@@ -893,15 +893,18 @@ a:focus-visible {
 
 	.slider .owl-stage{
 		padding:150px 0px;
+
 	}
     .slider .owl-stage .owl-item{
 		position:relative;
 		text-align:center;
+
 	} 
     .slider .owl-stage .owl-item{
 		height:100px;
 		width:50px ;
 		transition :ease all 0.5s;
+		filter: blur(1px);
 	}
     .slider .owl-stage .owl-item.active{
 		z-index:1;
@@ -915,7 +918,12 @@ a:focus-visible {
     .slider .owl-stage .owl-item.active.center{
 		transform:scale(2);
 		z-index:4;
+		filter:blur(0);
+
 	}
+
+	
+     
 
 	.events_imgs{
 		height: 150px !important;
