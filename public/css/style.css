@@ -610,10 +610,10 @@ a:focus-visible {
 	  margin:4rem;
   }
 
-  .domain_imgs {
-	  /* margin-left: 10rem; */
-	  /* height: 250px; */
-  }
+  /* .domain_imgs {
+	   margin-left: 10rem; 
+	   height: 250px; 
+  } */
 
   .card-textE{
 	  text-align: center !important;
@@ -1494,3 +1494,249 @@ a:focus-visible {
 	  background-color: #000000;
   }
 
+
+  .headings_team{
+    text-align: inline;
+    color: white !important;
+}
+
+/* .card_deck{
+	display: inline-block;
+}
+
+.cardp{
+	padding: 3rem
+
+} */
+
+/*our team*/
+
+/* #team {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 3;
+} */
+
+.team_body{
+	background-image: url('/public/imgs/gallerybg1.png');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+    background-size: cover;	
+
+	font-family: 'Euclid Circular B Medium';
+}
+
+
+.tabs {
+	opacity: 100% !important;
+	clear: both;
+	position: relative;   
+   /* you can either manually set a min-height here or do it via JS ---> */
+}
+
+.tab {
+	float: left;
+	color: white !important;
+}
+
+.tab label {
+	font-size: 2vw;
+	margin-left: 40px;
+	position: relative;
+	top: 0;
+	cursor: pointer;
+	height: 40px;
+	/* color: #333; */
+   text-transform: uppercase;
+}
+
+.tab [type=radio] {
+	display: none;   
+}
+
+.tab__content {
+   position: relative;
+	top: 40px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: opacity .2s cubic-bezier(.42,0,.34,1.01);
+	opacity: 0;
+	padding: 2vw 10vw;
+ 
+}
+
+[type=radio]:checked ~ label {
+	border-bottom: 3px solid #989866;
+	/* color: #1d1d1d; */
+	z-index: 2;
+}
+
+[type=radio]:checked ~ label ~ .tab__content {
+	z-index: 1;
+	opacity: 1;
+}
+
+.cardT {
+    overflow: hidden;
+    position: relative;
+    margin: 0 0.5% 1% 0;
+    display: inline-block
+}
+.cardT:nth-of-type(3n) {
+    margin-right: 0;
+}
+.cardT img {
+    width: 100%;
+    min-height: 100%;
+    transition: all 0.9s
+}
+.cardT:hover img {
+    transform: scale(1.2, 1.2)
+}
+.data {
+    position: absolute;
+    bottom: 5%;
+    background: #fff;
+	color: #000000;
+    text-align: center;
+    width: 90%;
+    height: 80px;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 10px 5%;
+    box-sizing: border-box;
+    opacity: 0.8;
+    transition: all 0.4s;
+	font-size: 1rem !important;
+}
+.cardT:hover .data {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    opacity: 0.9;
+    padding: 90px 10%
+}
+.data h2 {
+    margin: 0 0 5px 0;
+    transition: color 0.4s
+}
+.data p {
+    opacity: 0;
+    text-align: justify;
+    transition: all 0.2s
+}
+.cardT:hover .data p,
+.cardT:hover .data a {
+    opacity: 1
+}
+.data a {
+    color: #333;
+    text-decoration: none;
+    padding: 20px;
+    opacity: 0
+}
+.data a:hover,
+.cardT:hover h2 {
+    color: #38c
+}
+
+.fac-cor {
+	padding: 2vw 10vw;
+}
+
+@media (max-width:799px) {
+    .card {
+        width: 100%;
+        margin-right: 0
+    }
+	
+	.fac-cor {
+		padding: 2vw 0vw;
+	}
+
+	.tab label {
+		font-size: 4.5vw;
+		margin-right: 0px;
+		margin-left: 10px;
+	}
+	
+}
+
+.data h5, .data i {
+	font-size: 1rem !important;
+	line-height: 10px;
+}
+
+@media(min-width: 768px){
+	.col-1-5{
+	  width: 20%;
+	  float: left;
+	  position: relative;
+	  min-height: 1px;
+	  padding-right: 15px;
+	  padding-left: 15px;
+	}
+  }
+  
+  .col-1-5 {
+	border: 3px dashed red
+  }
+
+
+  .col-2dot4,
+  .col-sm-2dot4,
+  .col-md-2dot4,
+  .col-lg-2dot4,
+  .col-xl-2dot4 {
+	  position: relative;
+	  width: 100%;
+	  min-height: 1px;
+	  padding-right: 15px;
+	  padding-left: 15px;
+  }
+  .col-2dot4 {
+	  -webkit-box-flex: 0;
+	  -ms-flex: 0 0 20%;
+	  flex: 0 0 20%;
+	  max-width: 20%;
+  }
+  @media (min-width: 540px) {
+	  .col-sm-2dot4 {
+		  -webkit-box-flex: 0;
+		  -ms-flex: 0 0 20%;
+		  flex: 0 0 20%;
+		  max-width: 20%;
+	  }
+  }
+  @media (min-width: 720px) {
+	  .col-md-2dot4 {
+		  -webkit-box-flex: 0;
+		  -ms-flex: 0 0 20%;
+		  flex: 0 0 20%;
+		  max-width: 20%;
+	  }
+  }
+  @media (min-width: 960px) {
+	  .col-lg-2dot4 {
+		  -webkit-box-flex: 0;
+		  -ms-flex: 0 0 20%;
+		  flex: 0 0 20%;
+		  max-width: 20%;
+	  }
+  }
+  @media (min-width: 1140px) {
+	  .col-xl-2dot4 {
+		  -webkit-box-flex: 0;
+		  -ms-flex: 0 0 20%;
+		  flex: 0 0 20%;
+		  max-width: 20%;
+	  }
+  }
+
+  .board {
+	  padding-top: 80px !important;
+  }
