@@ -1204,7 +1204,7 @@ a:focus-visible {
 	  .contact-input{
 		background: #000000;
 		border: none;
-		border-radius: 14px;
+		border-radius: 0px;
 		width: 50vw;
 		height: 60px;
 		margin: 30px 0px;	
@@ -1217,7 +1217,7 @@ a:focus-visible {
 		border-radius: 14px;
 		width: 50vw;
 		/* height: 60px; */
-		margin: 30px 0px;	
+/* 		margin: 30px 0px;	 */
 		font-size: 20px;
 	}
 	
@@ -1254,7 +1254,7 @@ a:focus-visible {
 	  .contact-input{
 		background: #000000;
 		border: none;
-		border-radius: 14px;
+		border-radius: 0px;
 		width: 80vw;
 		height: 40px;
 		margin: 30px 0px;	
@@ -1264,7 +1264,7 @@ a:focus-visible {
 	.contact-inputext{
 		background: #000000;
 		border: none;
-		border-radius: 14px;
+		border-radius: 0px;
 		width: 80vw;
 		margin: 30px 0px;	
 		font-size: 15px;
@@ -1291,10 +1291,11 @@ a:focus-visible {
 		}
 
 		.btn{
-			margin-top: 10%;
+			margin-top: 0%;
 			margin-bottom: 10%;
 			font-size: 20px;
 			height: 40px;
+			margin-left: -10px !important;
 		}
 
 		
