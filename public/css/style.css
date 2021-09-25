@@ -1374,12 +1374,12 @@ a:focus-visible {
 	display:block;
 	text-align:center;
 	margin:0 10px;
-	border-radius: 50%;
+	border-radius: 5%;
 	padding: 6px;
 	box-sizing: border-box;
 	text-decoration:none;
 	box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-	background: linear-gradient(0deg, #ddd, #fff);
+	
 	transition: .5s;
   }
   
@@ -1396,30 +1396,52 @@ a:focus-visible {
 	border-radius: 50%;
 	line-height: calc(60px - 12px);
 	font-size:24px;
-	color: #262626;
+	color: #ffffff;
 	margin-top: -10px;
 	transition: .5s;
   }
   
-  .social-ul li:nth-child(1) a:hover .fab {
-	color: #3b5998;
+  .social-ul li:nth-child(1) a {
+	background-color: #2d609b;
   }
   
-  .social-ul li:nth-child(2) a:hover .fab {
-	color: #000000;
+  .social-ul li:nth-child(2) a {
+	background-color: rgb(21, 22, 24);
+  }
+  
+  .social-ul li:nth-child(3) a {
+	background-color: rgb(224, 45, 21);
+  }
+  
+  .social-ul li:nth-child(4) a {
+	background-color: #007ab8;
+  }
+  
+  .social-ul li:nth-child(5) a {
+	background-color: #e4405f;
+  }
+ 
+  
+  .social-ul li:nth-child(1) a {
+	color: #ffffff;
+  }
+
+  .social-ul li:nth-child(2) a {
+	color: #ffffff;
   }
   
   .social-ul li:nth-child(3) a:hover .fab {
-	color: #dd4b39;
+	color: #ffffff;
   }
   
   .social-ul li:nth-child(4) a:hover .fab {
-	color: #007bb6;
+	color: #ffffff;
   }
   
   .social-ul li:nth-child(5) a:hover .fab {
-	color: #e4405f;
+	color: #ffffff;
   }
+
 
   @media  (max-width:998px) {
 	  .social-ul {
