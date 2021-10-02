@@ -1104,7 +1104,7 @@ a:focus-visible {
   }
 
   .contact{
-	padding: 2rem 10vw;
+	padding: 2rem 15vw;
 	background-color: #000000;
   }
 
@@ -1152,9 +1152,9 @@ a:focus-visible {
 		border: none;
 		border-radius: 0px;
 		width: 35vw;
-		height: 180px;
-		margin: 30px 50px;
-		padding: 20px;
+		height: 150px;
+		margin: 30px 80px;
+		padding:  20px;
 		font-size: 24px;
 		color: white;
 	}
@@ -1579,7 +1579,7 @@ a:focus-visible {
 	opacity: 100% !important;
 	clear: both;
 	position: relative;   
-   /* you can either manually set a min-height here or do it via JS ---> */
+
 }
 
 .tab {
@@ -1596,11 +1596,14 @@ a:focus-visible {
 	height: 40px;
 	/* color: #333; */
    text-transform: uppercase;
+   margin-top: 10px;
 }
 
 .tab [type=radio] {
 	display: none;   
 }
+
+
 
 .tab__content {
    position: relative;
