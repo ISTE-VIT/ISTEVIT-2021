@@ -126,45 +126,46 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
     </section>
 
     <section class="domains" id="domains" style="overflow-x: hidden;">
-        <div class="container">
+        <div class="containe">
             <div class="domain_heading" data-aos="zoom-in-up" >
                 Domains
             </div>
             <div class="row">
-              <div class="col-lg-3 col-md-6" data-aos="zoom-in-right" >
-                <div class="card_domains">
-                  <img class="card-img-top" src="/public/imgs/elec.gif" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-textE">Electrical</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6" data-aos="zoom-in-right" >
-                <div class="card_domains">
-                  <img class="card-img-top" src="/public/imgs/38436-browser.gif" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-textM">Management</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6" data-aos="zoom-in-left" >
-                <div class="card_domains">
-                  <img class="card-img-top" src="/public/imgs/design.gif" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-textD">Design</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 " data-aos="zoom-in-left" >
-              <div class="card_domains">
-                <img class="card-img-top" src="/public/imgs/tech.gif" alt="Card image cap">
+              <div class="col-lg-3 col-md-6 domain-card" data-aos="zoom-in-right" >
+                
+                <img class="card-img-top" src="/public/imgs/elec.gif" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-textT">Technical</p>
+                  <p class="card-textE">Electrical</p>
                 </div>
+                <p>Learn hands-on, the best ways to detect, analyze and develop innovative solutions to real-life problems. Master a wide-range of exciting technology to transform the society!</p>
               </div>
+              <div class="col-lg-3 col-md-6 domain-card" data-aos="zoom-in-right" >
+                
+                <img class="card-img-top" src="/public/imgs/38436-browser.gif" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-textM">Management</p>
+                </div>
+                <p>Develop astute managerial skills to publicize, promote and manage a world full of wonderful events! Enrapture the audience with your pitching skills and learn what it takes to make an event successful.  </p>
+              </div>
+              <div class="col-lg-3 col-md-6 domain-card" data-aos="zoom-in-left" >
+               
+                <img class="card-img-top" src="/public/imgs/design.gif" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-textD">Design</p>
+                </div>
+                <p>The place to master the core design principles and breathe life into your ideas by getting in sync with your creative side. Create captivating designs to dazzle the crowd!</p>
+              </div>
+              <div class="col-lg-3 domain-card" data-aos="zoom-in-left" >
+              
+              <img class="card-img-top" src="/public/imgs/tech.gif" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-textT">Technical. <br>  
+              </p>
+              </div>
+              <p>Immerse yourself in technology by constantly exploring various fields including Web Development, App Development, Machine Learning and a lot more! </p>
               </div>
             </div>
-             <br> 
+             <br>  <br>
               <div class="arrowP bounce">
                 <a style="color: black;"  href="#projects"><i class="fas fa-angle-double-down"></i></i></a>
             </div>
@@ -298,6 +299,52 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
       <div class="webinars_heading" data-aos="zoom-in-up" ><span class="webinars_dash">W</span>ebinars</div>
       <div class="wrapper">
         <div class="webinar row">
+          <% if(webinars != null) { %>
+          <% webinars.slice(0,6).forEach(function(webinar, index) { %>
+              <div class="col-lg-4 col-md-12  col-sm-12  ">
+                <div>
+                  <!-- <button type="button" class="btn btn-primary video-btn" data-toggle="modal"
+                  data-src="https://www.youtube.com/embed/<%- webinar.snippet.resourceId.videoId %>" data-target="#myModal">
+                  Play Video 
+                </button> -->
+                <div id="play-button" class="unchecked video-btn" data-toggle="modal"
+                data-src="https://www.youtube.com/embed/<%- webinar.snippet.resourceId.videoId %>" data-target="#myModal">
+                  <i class="fas fa-play"  ></i>                </div>
+                  <img src="<%- webinar.snippet.thumbnails.maxres.url %>" class="web-thumbnail yt-web " alt="" srcset="">
+                </div>
+            
+               
+              </div>                         
+              <% }) %>
+          <% } else { %>
+              No posts found.
+          <% } %>
+      </div>
+     
+
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+
+    <div class="modal-body">
+
+      <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button> -->
+      <!-- 16:9 aspect ratio -->
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe   class="embed-responsive-item" src="" id="video" 
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</div>
+        <!-- <div class="webinar row">
             <% if(webinars != null) { %>
             <% webinars.slice(0,6).forEach(function(webinar, index) { %>
                 <div class="col-lg-4 col-md-6 ytframe">
@@ -307,7 +354,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
             <% } else { %>
                 No posts found.
             <% } %>
-        </div>
+        </div> -->
     </div> 
     <div class="arrow bounce" >
       <a href="#events" style="color: rgb(0, 0, 0);"><i class="fas fa-angle-double-down"></i></a>
@@ -342,56 +389,68 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
       <div class="logo-slider">
         <div class="logo-slide-track">
           <div class="slide">
-            <img src="/public/imgs/Adobe_Corporate_logo 1.png" alt="" />
+            <img class="partner-pic" style="margin-top: 20px;" src="/public/imgs/Adobe_Corporate_logo 1.png" alt="" />
           </div>
           <div class="slide">
-            <img src="/public/imgs/balalogo.png" alt="" />
+            <img class="partner-pic" style="margin-top: 20px;" src="/public/imgs/balalogo.png" alt="" />
           </div>
           <div class="slide">
-            <img src="/public/imgs/JetBrains_Logo_2016 1.png" alt="" />
+            <img class="partner-pic" src="/public/imgs/JetBrains_Logo_2016 1.png" alt="" />
           </div>
           <div class="slide">
-            <img src="/public/imgs/pythonlogo.png" alt="" />
+            <img class="partner-pic" src="/public/imgs/pythonlogo.png" alt="" />
           </div>
           <div class="slide">
-            <img src="/public/imgs/CNSI_logo 1.png" alt="" />
+            <img class="partner-pic" style="margin-top: 16px;" src="/public/imgs/CNSI_logo 1.png" alt="" />
+          </div>
+         
+         
+          <div class="slide">
+            <img class="partner-pic" style="height: 80px;width: 120px;" src="/public/imgs/C9.png" alt="" />
+          </div> 
+           
+          <div class="slide">
+            <img class="partner-pic" style="margin-top: 20px;" src="/public/imgs/Adobe_Corporate_logo 1.png" alt="" />
           </div>
           <div class="slide">
-            <img src="/public/imgs/Adobe_Corporate_logo 1.png" alt="" />
+            <img class="partner-pic" style="margin-top: 20px;" src="/public/imgs/balalogo.png" alt="" />
           </div>
           <div class="slide">
-            <img src="/public/imgs/balalogo.png" alt="" />
+            <img class="partner-pic" src="/public/imgs/JetBrains_Logo_2016 1.png" alt="" />
           </div>
           <div class="slide">
-            <img src="/public/imgs/JetBrains_Logo_2016 1.png" alt="" />
+            <img class="partner-pic" src="/public/imgs/pythonlogo.png" alt="" />
           </div>
           <div class="slide">
-            <img src="/public/imgs/pythonlogo.png" alt="" />
+            <img class="partner-pic" style="margin-top: 16px;" src="/public/imgs/CNSI_logo 1.png" alt="" />
+          </div>
+         
+         
+          <div class="slide">
+            <img class="partner-pic" style="height: 80px;width: 120px;" src="/public/imgs/C9.png" alt="" />
+          </div> 
+              
+          <div class="slide">
+            <img class="partner-pic" style="margin-top: 20px;" src="/public/imgs/Adobe_Corporate_logo 1.png" alt="" />
           </div>
           <div class="slide">
-            <img src="/public/imgs/Adobe_Corporate_logo 1.png" alt="" />
+            <img class="partner-pic" style="margin-top: 20px;" src="/public/imgs/balalogo.png" alt="" />
           </div>
           <div class="slide">
-            <img src="/public/imgs/balalogo.png" alt="" />
+            <img class="partner-pic" src="/public/imgs/JetBrains_Logo_2016 1.png" alt="" />
           </div>
           <div class="slide">
-            <img src="/public/imgs/JetBrains_Logo_2016 1.png" alt="" />
+            <img class="partner-pic" src="/public/imgs/pythonlogo.png" alt="" />
           </div>
           <div class="slide">
-            <img src="/public/imgs/pythonlogo.png" alt="" />
+            <img class="partner-pic" style="margin-top: 16px;" src="/public/imgs/CNSI_logo 1.png" alt="" />
           </div>
+         
+         
           <div class="slide">
-            <img src="/public/imgs/Adobe_Corporate_logo 1.png" alt="" />
-          </div>
-          <div class="slide">
-            <img src="/public/imgs/balalogo.png" alt="" />
-          </div>
-          <div class="slide">
-            <img src="/public/imgs/JetBrains_Logo_2016 1.png" alt="" />
-          </div>
-          <div class="slide">
-            <img src="/public/imgs/pythonlogo.png" alt="" />
-          </div>      
+            <img class="partner-pic" style="height: 80px;width: 120px;" src="/public/imgs/C9.png" alt="" />
+          </div> 
+             
         </div>
       </div>
     </section>
@@ -409,7 +468,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
                  <input type="text" placeholder="Enter Phone Number" class="contact-input">
                </div>
                <div class="col-lg-4">
-                 <textarea name="message" placeholder="Message" class="contact-inputext" > </textarea>
+                 <input type="text" name="message" placeholder="Message" class="contact-inputext">
                  <button type="submit" name = "submit" class="btn" style = "background-color:#989866; color:white;" > <span>&nbsp&nbspSUBMIT&nbsp&nbsp</span> </button>
                </div>
              </div>          
@@ -504,7 +563,34 @@ All Rights Reserved.</p>
       })
     </script>
     <script>
-      //EVENTS
+
+    $(document).ready(function() {
+  // Gets the video src from the data-src on each button
+  var $videoSrc;
+  $(".video-btn").click(function() {
+    $videoSrc = $(this).attr("data-src");
+    console.log("button clicked" + $videoSrc);
+  });
+
+  // when the modal is opened autoplay it
+  $("#myModal").on("shown.bs.modal", function(e) {
+    console.log("modal opened" + $videoSrc);
+    // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+    $("#video").attr(
+      "src",
+      $videoSrc + "?autoplay=1&showinfo=0&modestbranding=1&rel=0&mute=0"
+    );
+  });
+
+  // stop playing the youtube video when I close the modal
+  $("#myModal").on("hide.bs.modal", function(e) {
+    // a poor man's stop video
+    $("#video").attr("src", $videoSrc);
+  });
+
+  // document ready
+});
+    //EVENTS
       var owl = $('.slider'); 
 owl.on('changed.owl.carousel', function(event) { 
   owl.find('.owl-item').removeClass('prev').removeClass('next'); 
