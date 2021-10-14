@@ -711,8 +711,6 @@ a:focus-visible {
 	  position: relative;
 	  display: flex;
 	  justify-content:space-between;
-	  
-	  /* margin-left: 40px; */
   }
 
   .project_titles .cardone{
@@ -756,8 +754,8 @@ a:focus-visible {
 		align-items: center;
 		z-index: 1;
 		transform: translateY(122px);
-		width: 400px;
-		height: auto;
+		width: 350px;
+		height: 320;
 	}
 
 	.project_titles .cardone:hover .face.face1{
@@ -783,7 +781,7 @@ a:focus-visible {
 		box-sizing: border-box;
 		box-shadow: 0 20px 30px rgba(0,0,0,0.8);
 		transform: translateY(-78px);
-		width: 400px;
+		width: 350px;
 		margin-bottom: 50px;
 	}
 	.project_titles .cardone:hover .face.face2{
@@ -818,7 +816,7 @@ a:focus-visible {
 	}
    
 	.col-carousel {
-		margin: 70px 0;
+		margin: 90px 0;
 	}
 
 	.owl-prev span, .owl-next span {
@@ -1566,12 +1564,11 @@ a:focus-visible {
 } */
 
 .team_body{
-	background-image: url('/public/imgs/team_bg.png');
+	background-image: url('/public/imgs/teambg.png');
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
     background-size: cover;	
-  
 	font-family: 'Euclid Circular B Medium';
 }
 
@@ -1580,7 +1577,6 @@ a:focus-visible {
 	opacity: 100% !important;
 	clear: both;
 	position: relative;   
-
 }
 
 .tab {
@@ -1666,11 +1662,16 @@ a:focus-visible {
     left: 0;
     right: 0;
     margin: 0 auto;
-    padding: 10px 5%;
+    padding: 20px 5%;
     box-sizing: border-box;
     opacity: 0.8;
     transition: all 0.4s;
 	font-size: 1rem !important;
+	vertical-align: middle !important;
+}
+.data1{
+	padding: 10px 5%;
+
 }
 
 .data2 {
@@ -1888,7 +1889,7 @@ a:focus-visible {
   }
   
   .w3c__message--icon {
-	background-color: #1f8ceb;
+	background-color: #4a4d4e;
 	/*  border-radius: 34px 8px 34px 34px;*/
 	border-radius: 50%;
 	width: 60px;
@@ -1973,7 +1974,7 @@ a:focus-visible {
   }
   
   .w3c__message-box--header {
-	background-color: #1f8ceb;
+	background-color: #021a25;
 	color: #FFF;
 	padding: 20px;
   }
@@ -1999,7 +2000,7 @@ a:focus-visible {
 
   .message-submit {
 	  margin-bottom: 10px;
-	  background-color: #007ab8;
+	  background-color: #021a25;
 	  color: white;
 	  border: none;
 	  padding: 10px;
@@ -2007,4 +2008,40 @@ a:focus-visible {
 
   .message-box {
 	  height: 70px;
+  }
+
+  
+  .toggle .tabs {
+	width: 100%;
+	overflow: hidden;
+	/* height: 36px; */
+	line-height: 30px;
+	font-family: 'Euclid Circular B Medium';
+	font-size: 2vw;
+	padding: 1vw 2vw;
+	padding-top:3vw;
+	
+  }
+
+  .toggle .tabs .tab {
+	float: left;
+	color: white;
+	/* height: 31px; */
+	margin: 2px 8px 0;
+	padding: 0 8px;
+	cursor: pointer;
+	
+  }
+  .toggle .tabs .tab.active {
+	color: #989866;
+	border-bottom: 3px solid #989866;
+	position: relative;
+  }
+  .toggle .panels .panel {
+	padding:0 5vw;
+	display: none;
+	overflow-x: hidden;
+  }
+  .toggle .panels .panel:first-child {
+	display: block;
   }
