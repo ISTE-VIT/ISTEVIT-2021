@@ -660,6 +660,7 @@ a:focus-visible {
 	  margin-top:0px;
 	  font-weight: bold;
 	  margin-bottom: 2%;
+	  margin-top: 30px;
   }
 
   @media(max-width:900px) {
@@ -1844,10 +1845,10 @@ a:focus-visible {
 #play-button {
 	box-sizing: border-box;
 	position: absolute;
-	width: 80px;
-	height: 80px;
+	width: 60px;
+	height: 60px;
 	border-radius: 50%;
-	background-color: #5c6bc0;
+	background: linear-gradient(88.34deg, #D61679 -6.72%, #F3511E 106.98%);
 	box-shadow: 0 8px 25px 6px rgba(0, 0, 0, 0.5);
 	right: 10%;
 	bottom: 0px;
