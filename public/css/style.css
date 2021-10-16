@@ -2,7 +2,8 @@
 @import url(//db.onlinewebfonts.com/c/721c73bcd2e49f3a621991089838b503?family=Euclid+Circular+B+Medium);
 @font-face {font-family: "Euclid Circular A"; src: url("//db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.eot"); src: url("//db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.woff") format("woff"), url("//db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.svg#Euclid Circular A") format("svg"); }
 @font-face {font-family: "Euclid Circular B Medium"; src: url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.eot"); src: url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.woff") format("woff"), url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.svg#Euclid Circular B Medium") format("svg"); }
-
+@import url(//db.onlinewebfonts.com/c/a1bc18b26205f46862beafc4d4cbcee0?family=OptimaLTStd);
+@font-face {font-family: "OptimaLTStd"; src: url("//db.onlinewebfonts.com/t/a1bc18b26205f46862beafc4d4cbcee0.eot"); src: url("//db.onlinewebfonts.com/t/a1bc18b26205f46862beafc4d4cbcee0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a1bc18b26205f46862beafc4d4cbcee0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a1bc18b26205f46862beafc4d4cbcee0.woff") format("woff"), url("//db.onlinewebfonts.com/t/a1bc18b26205f46862beafc4d4cbcee0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a1bc18b26205f46862beafc4d4cbcee0.svg#OptimaLTStd") format("svg"); }
 /* ::-webkit-scrollbar {
 	width: 10px;
 	height: 20px;
@@ -1638,7 +1639,8 @@ a:focus-visible {
     overflow: hidden;
     position: relative;
     margin: 0 0.5% 1% 0;
-    display: inline-block
+    display: inline-block;
+	margin-bottom: 30px;
 }
 .cardT:nth-of-type(3n) {
     margin-right: 0;
@@ -1668,8 +1670,18 @@ a:focus-visible {
     opacity: 0.8;
     transition: all 0.4s;
 	font-size: 1rem !important;
+	font-family: OptimaLTStd;
+	font-style: normal;
+font-size: 18px;
+line-height: 22px;
+
 	vertical-align: middle !important;
 }
+
+.data h5 {
+	font-weight: 600;
+}
+
 .data1{
 	padding: 10px 5%;
 
@@ -1710,7 +1722,8 @@ a:focus-visible {
 }
 
 .data i {
-	font-style: italic;
+	/* font-style: italic; */
+	
 }
 
 .fac-cor {
@@ -1807,7 +1820,9 @@ a:focus-visible {
   }
 
   .board {
-	  padding-top: 80px !important;
+	  padding-top: 20px !important;
+	  padding-left: 0vw;
+	  padding-right: 0vw;
   }
 
   .web-thumbnail {
@@ -1879,6 +1894,10 @@ a:focus-visible {
   #play-button:hover .fa-play {
 	font-size: 1.2em;
 	transition: all 70ms;
+  }
+
+  .fa-linkedin {
+	  font-size: 30px;
   }
  
   
