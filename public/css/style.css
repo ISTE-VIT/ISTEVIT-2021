@@ -1898,6 +1898,7 @@ line-height: 22px;
 
   .fa-linkedin {
 	  font-size: 30px;
+	  text-decoration: none !important;
   }
  
   
