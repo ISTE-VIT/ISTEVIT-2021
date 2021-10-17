@@ -31,4 +31,10 @@ webinarRouter.get('/gallery', (req, res) => {
 webinarRouter.get('/team', (req, res) => {
     res.render('team');
  })
+
+ webinarRouter.get('/events', (req, res) => {
+    res.render('events');
+ })
+
+
 module.exports = webinarRouter 

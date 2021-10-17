@@ -68,6 +68,9 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
               <li class="nav-item">
                 <a class="nav-link active" href="/gallery">GALLERY</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/events">EVENTS</a>
+              </li>
               <!-- <li class="nav-item">
                 <a class="nav-link active" href="#contact" >CONTACT US</a>
               </li> -->
@@ -109,7 +112,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
           <div class="content">
             <p></p>
           </div>
-          <div class="enter" id="enterbtn" style="pointer-events:none" ONCLICK=" setTimeout(function(){ document.getElementById('show').style.display='none'; }, 1000);">
+          <div class="enter" id="enterbtn" style="pointer-events:none" ONCLICK=" window.location.reload();">
             
             <div class="enter__bg"></div>
             <span class="enter__text"></span>
@@ -616,6 +619,8 @@ All Rights Reserved.</p>
 
     $(document).ready(function() {
   // Gets the video src from the data-src on each button
+  $('#enterbtn').click(false);
+
   $("#loader-fade").fadeOut(500);
   var $videoSrc;
   $(".video-btn").click(function() {
@@ -681,7 +686,7 @@ owl.owlCarousel({
 
     </script>
     <script>
-      AOS.init();
+      AOS.init({ once: true,});
       $(".navbar-collapse a").click(function () {
     $(".navbar-collapse").collapse("hide");
   });
