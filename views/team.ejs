@@ -27,6 +27,18 @@
 
 </head>
 <body class="team_body" >
+  <div class="loader" id="loader-fade">
+    <div class="loader-container">
+        <ul class="loader-box">
+          <div class="pre-load">
+            <div id="pre-load-content">
+              <div class="spinner"></div>
+             
+            </div>
+          </div>
+        </ul>
+    </div>
+</div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="/"><img class="logo" src="imgs/iste-logo.png" alt/></a>
@@ -91,7 +103,7 @@ height: 264px;">
                     <img src="https://ik.imagekit.io/m47q5r0txpn/iste-core/saksham_GvHbhjswF.jpg?updatedAt=1633776911628" alt="" />
                     <div class="data">
                       <h5>Saksham Jain</h5>
-                      <i>Student Head</i><br>
+                      <i>Chairperson</i><br>
                       <a href="https://www.linkedin.com/in/saksham10jain/" target="_blank" class="fab fa-linkedin"></a>
                     </div>
                   </div>
@@ -102,7 +114,7 @@ height: 264px;">
                     <img src="https://ik.imagekit.io/m47q5r0txpn/iste-core/jayesh_OIzIcACsR.jpg?updatedAt=1633776909237" alt="" />
                     <div class="data">
                       <h5>Jayesh Singh</h5>
-                      <i>Student Coordinator</i><br>
+                      <i>Vice Chairperson</i><br>
                       <a href="https://www.linkedin.com/in/jayesh-singh-98872b1a1/" target="_blank" class="fab fa-linkedin"></a>
                     </div>
                   </div>
@@ -113,7 +125,7 @@ height: 264px;">
                   <img src="https://ik.imagekit.io/m47q5r0txpn/iste-core/zaina_vajacp9RTTH.jpg?updatedAt=1633776914101" alt="" />
                   <div class="data">
                     <h5>Zaina Nizar</h5>
-                    <i>Student Coordinator</i><br>
+                    <i>Vice Chairperson</i><br>
                     <a href="https://www.linkedin.com/in/zaina-jaffaree-nizar/" target="_blank" class="fab fa-linkedin"></a>
                   </div>
                 </div>
@@ -146,7 +158,7 @@ height: 264px;">
               <img src="https://ik.imagekit.io/m47q5r0txpn/iste-core/vaibhav_RIglFIkeZ.jpg?updatedAt=1633776913368" alt="" />
               <div class="data">
                 <h5>Vaibhav Chopra</h5>
-                <i>Projects Lead</i><br>
+                <i>Projects Head</i><br>
                 <a href="https://www.linkedin.com/in/vc2001/" target="_blank" class="fab fa-linkedin"></a>
               </div>
             </div>
@@ -788,7 +800,9 @@ height: 264px;">
   })();
 
 }).call(this);
-
+$( document ).ready(function() {
+  $("#loader-fade").fadeOut(500);
+});
       </script>
       
     </body>
