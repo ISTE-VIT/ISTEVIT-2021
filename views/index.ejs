@@ -169,7 +169,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
                 </div>
                 <p style="	  text-align:justify !important;                ">The place to master the core design principles and breathe life into your ideas by getting in sync with your creative side. Create captivating designs to dazzle the crowd!</p>
               </div>
-              <div class="col-lg-3 domain-card" data-aos="zoom-in-left" >
+              <div class="col-lg-3 col-md-6 domain-card" data-aos="zoom-in-left" >
               
               <img class="card-img-top" src="/public/imgs/tech.gif" alt="Card image cap">
               <div class="card-body">
@@ -317,7 +317,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
         <div class="webinar row">
           <% if(webinars != null) { %>
           <% webinars.slice(0,6).forEach(function(webinar, index) { %>
-              <div class="col-lg-4 col-md-12  col-sm-12  ">
+              <div class="  col-xl-4 col-lg-6  col-md-6  col-sm-12  ">
                 <div>
                   <!-- <button type="button" class="btn btn-primary video-btn" data-toggle="modal"
                   data-src="https://www.youtube.com/embed/<%- webinar.snippet.resourceId.videoId %>" data-target="#myModal">
@@ -600,6 +600,18 @@ All Rights Reserved.</p>
             autoplay: true,
         },
         600:{
+            items:1,
+            nav:true,
+            loop: true
+
+        },
+        950:{
+            items:2,
+            nav:true,
+            loop: true
+
+        },
+        1400:{
             items:3,
             nav:true,
             loop: true

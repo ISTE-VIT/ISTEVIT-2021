@@ -1827,7 +1827,7 @@ line-height: 22px;
   }
 
   .web-thumbnail {
-	  width: 400px;
+	  width: 450px;
   }
 
   .video-btn {
@@ -2323,4 +2323,130 @@ line-height: 22px;
 	  text-align: center;
   }
 
+
+  @media (min-width:600px) and (max-width:950px) {
+	  .cardone {
+		  padding-left: 100px;
+	  }
+  }
+
+  @media (max-width:1350px) {
+	  .web-thumbnail {
+		  width: 400px;
+	  }
+  }
   
+@media (max-width:777px) {
+	#play-button {
+		right: 20%;
+	}
+}
+
+@media (max-width:600px) {
+	#play-button {
+		right: 10%;
+	}
+}
+
+@media (max-width:450px) {
+	#play-button {
+		right: 5%;
+	}
+}
+
+@media (min-width:1200px) and (max-width:1350px) {
+	.events {
+		padding: 3rem 15vw;
+	}
+}
+
+@media  (max-width:1200px) {
+	.events {
+		padding: 3rem 12vw;
+	}
+}
+
+@media  (max-width:1000px) {
+	.events {
+		padding: 3rem 5vw;
+	}
+
+	.events_imgs {
+		width: 300px !important;
+		height: auto;
+	}
+}
+
+@media  (max-width:900px) {
+	.events {
+		padding: 3rem 5vw;
+	}
+
+	.events_imgs {
+		width: 200px !important;
+		height: auto;
+	}
+}
+
+.image {
+    position: relative;
+   
+}
+
+.image__img {
+    display: block;
+    width: 98%;
+    margin-left: 4px;
+}
+
+.image__overlay {
+
+    position: absolute;
+    top: 0;
+    left: 4px;
+    width: 98%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #000000;
+    font-family: Euclid Circular A;
+font-style: normal;
+font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background: #ffffffc0;
+	
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
