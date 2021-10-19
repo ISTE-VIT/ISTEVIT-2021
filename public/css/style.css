@@ -246,7 +246,7 @@ a:focus-visible {
 	height: var(--dim-button);
 	position: absolute;
 	left: calc(50% - var(--dim-button) / 2 );
-	top: calc(52% - var(--dim-button) / 2 );
+	top: calc(46% - var(--dim-button) / 2 );
 	font: inherit;
 	font-weight: 500;
 	cursor: pointer;
@@ -314,7 +314,7 @@ a:focus-visible {
 	 --dim: 106vmin;
 	width: var(--dim);
 	height: var(--dim); 
-	top: calc(52% - var(--dim) / 2 );
+	top: calc(46% - var(--dim) / 2 );
 	left: calc(50% - var(--dim) / 2 );
 	overflow-x: hidden !important;
 }
@@ -1787,26 +1787,40 @@ line-height: 22px;
 	  flex: 0 0 20%;
 	  max-width: 20%;
   }
+
+ 
+
+  @media (min-width: 480px) {
+	.col-lg-2dot4 {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+
+
   @media (min-width: 540px) {
-	  .col-sm-2dot4 {
+	  .col-lg-2dot4 {
 		  -webkit-box-flex: 0;
-		  -ms-flex: 0 0 20%;
-		  flex: 0 0 20%;
-		  max-width: 20%;
+		  -ms-flex: 0 0 33%;
+		  flex: 0 0 33%;
+		  max-width: 33%;
 	  }
   }
   @media (min-width: 720px) {
-	  .col-md-2dot4 {
+	  .col-lg-2dot4 {
 		  -webkit-box-flex: 0;
-		  -ms-flex: 0 0 20%;
-		  flex: 0 0 20%;
-		  max-width: 20%;
+		  -ms-flex: 0 0 25%;
+		  flex: 0 0 25%;
+		  max-width: 25%;
 	  }
   }
 
+
   
 
-  @media (min-width: 600px) {
+  @media (min-width: 998px) {
 	  .col-lg-2dot4 {
 		  -webkit-box-flex: 0;
 		  -ms-flex: 0 0 20%;
@@ -2048,7 +2062,7 @@ line-height: 22px;
 	
   }
 
-  /* @media (max-width:800px) {
+  @media (max-width:800px) {
 	.toggle .tabs {
 		width: 100%;
 		overflow: hidden;
@@ -2062,6 +2076,18 @@ line-height: 22px;
 	  }
   }
 
+  
+  .toggle .tabs .tab {
+	float: left;
+	color: white;
+	/* height: 31px; */
+	margin: 2px 8px 0;
+	padding: 0 8px;
+
+	cursor: pointer;
+	
+  }
+
   @media (max-width:470px) {
 	.toggle .tabs {
 		width: 100%;
@@ -2069,22 +2095,24 @@ line-height: 22px;
 		
 		line-height: 30px;
 		font-family: 'Euclid Circular B Medium';
-		font-size: 2.2vw;
+		font-size: 2.7vw;
 		padding: 1vw 2vw;
 		padding-top:3vw;
 		
 	  }
-  } */
 
-  .toggle .tabs .tab {
-	float: left;
-	color: white;
-	/* height: 31px; */
-	margin: 2px 8px 0;
-	padding: 0 8px;
-	cursor: pointer;
+	  .toggle .tabs .tab {
+		float: left;
+		color: white;
+		/* height: 31px; */
+		margin: 2px 8px 0;
+		padding: 0 0px;
 	
+		cursor: pointer;
+		
+	  }
   }
+
   .toggle .tabs .tab.active {
 	color: #989866;
 	border-bottom: 3px solid #989866;

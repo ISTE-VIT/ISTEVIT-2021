@@ -78,9 +78,9 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
           </div>
         </div>
       </nav>
-      <div class="demo-1 loading" id="show"  style="background-color: black;overflow-x: hidden;">
-        <main>
-          <svg class="circles" width="100%" height="100%"  viewBox="0 0 1400 1400" >
+      <div class="demo-1 loading" id="show"   style="background-color: black;overflow-x: hidden;overflow-y: hidden;">
+        <main >
+          <svg class="circles" width="100%" height="100%"   viewBox="0 0 1400 1400" >
             <def>
               <path id="circle-1" d="M250,700.5A450.5,450.5 0 1 11151,700.5A450.5,450.5 0 1 1250,700.5"></path>
               <path id="circle-2" d="M382,700.5A318.5,318.5 0 1 11019,700.5A318.5,318.5 0 1 1382,700.5"></path>
@@ -613,10 +613,29 @@ All Rights Reserved.</p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script >
       </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/owl.carousel.min.js'></script><script  src="./script.js"></script>
       <script>
+        VANTA.WAVES({
+          el: "#show",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color:  0x20202
+        })
+        </script>
+        
+      <script>
+
+    
+
       // PROJECTS 
       $('.carousel-main').owlCarousel({
         items: 3,
