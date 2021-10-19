@@ -2397,7 +2397,7 @@ line-height: 22px;
   }
 
   .events-page-sec {
-	  padding: 3rem 2vw;
+	  padding: 0rem 2vw;
   }
 
   .horizon-events {
@@ -2405,10 +2405,15 @@ line-height: 22px;
 	  margin-bottom: 100px;
   }
 
+  .horizon-logo {
+	  margin-bottom: 20px;
+  }
+
   .event-banner {
 	  width: 95%;
 	  margin-bottom: 40px;
   }
+
 
   .event-banner-group {
 	  padding-top: 20px;
@@ -2416,6 +2421,22 @@ line-height: 22px;
   }
 
 
+  .horr {
+	padding: 0px 4vw;
+  }
+
+  @media (max-width:600px) {
+	.horr {
+		padding: 0px;
+	  }
+
+	  .horii-logo{
+		width: 60%;
+	}
+  
+  }
+
+  
   @media (min-width:600px) and (max-width:950px) {
 	  .cardone {
 		  padding-left: 100px;
