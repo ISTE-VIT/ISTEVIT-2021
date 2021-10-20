@@ -2595,10 +2595,12 @@ padding: 3rem 10vw;
 /* margin-top: 80px;
 margin-left: 200px; */
 z-index: 999999999;
+overflow-y: hidden;
 }
 
 .hero-sec {
 	overflow-x: hidden !important;
+	overflow-y: hidden !important;
 	
 }
 
