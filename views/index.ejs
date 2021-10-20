@@ -37,7 +37,7 @@ var supportsCssVars = function supportsCssVars() {
 supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 </head>
 
-<body >
+<body style="overflow-x: hidden">
 
   <div class="loader" id="loader-fade">
     <div class="loader-container">
@@ -78,7 +78,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
           </div>
         </div>
       </nav>
-      <div class="demo-1 loading" id="show"   style="background-color: black;overflow-x: hidden;overflow-y: hidden;">
+      <!-- <div class="demo-1 loading" id="show"   style="background-color: black;overflow-x: hidden;overflow-y: hidden;">
         <main >
           <svg class="circles" width="100%" height="100%"   viewBox="0 0 1400 1400" >
             <def>
@@ -119,7 +119,16 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
           </div>
         </main>
       
-      </div> 
+      </div>  -->
+<section class="hero-sec" style="height: 95vh;overflow-y: hidden>
+  <div class="" id="show"></div>
+  <div class="hero">
+  <div class="hero-title">INDIAN SOCIETY FOR <br> <span class="hero_dash">TECHNICAL EDUCATION</span> </div>  
+  
+  </div>
+</section>
+  
+
     <section class="about_us" id="about" style="overflow: hidden;" >
         <div class="container" data-aos="fade-up"  data-aos-duration="500">
             <div class="row">
@@ -163,7 +172,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
               </div>
               <div class="col-lg-3 col-md-6 domain-card" data-aos="zoom-in-left" >
                
-                <img class="card-img-top" src="/public/imgs/design.gif" alt="Card image cap">
+                <img class="card-img-top" src="/public/imgs/design2.gif" alt="Card image cap">
                 <div class="card-body">
                   <p class="card-textD">Design</p>
                 </div>
@@ -326,7 +335,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
                 <div id="play-button" class="unchecked video-btn" data-toggle="modal"
                 data-src="https://www.youtube.com/embed/<%- webinar.snippet.resourceId.videoId %>" data-target="#myModal">
                   <i class="fas fa-play"  ></i>                </div>
-                  <img src="<%- webinar.snippet.thumbnails.maxres.url %>" class="web-thumbnail yt-web " alt="" srcset="">
+                  <img src="<%- webinar.snippet.thumbnails.high.url %>" class="web-thumbnail yt-web " alt="" srcset="">
                 </div>
             
                
@@ -614,22 +623,25 @@ All Rights Reserved.</p>
     <script >
       </script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.halo.min.js"></script>
+      
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/owl.carousel.min.js'></script><script  src="./script.js"></script>
       <script>
-        VANTA.WAVES({
-          el: "#show",
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          scale: 1.00,
-          scaleMobile: 1.00,
-          color:  0x20202
-        })
+       VANTA.HALO({
+  el: "#show",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  xOffset: -0.29,
+  yOffset: -0.17,
+  backgroundColor: 0x40404,
+  amplitudeFactor: 0.00
+
+})
         </script>
         
       <script>

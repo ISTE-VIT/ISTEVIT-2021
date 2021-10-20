@@ -970,8 +970,10 @@ a:focus-visible {
 		
 	}
 
+
+
 	.horizon{
-		background-image:url('/public/imgs/horizon_bg.png');
+		background-image:url('/public/imgs/aboutusbg.png');
 		background-attachment: fixed;
 	    background-position: center;
 		background-repeat: no-repeat;
@@ -1567,7 +1569,7 @@ a:focus-visible {
 } */
 
 .team_body{
-	background-image: url('/public/imgs/teambg.png');
+	background-image: url('/public/imgs/galery-bg2.png');
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -2562,4 +2564,64 @@ font-weight: 600;
 .image__description {
     font-size: 1.25em;
     margin-top: 0.25em;
+}
+
+#show {
+	background-color: #000000 !important;
+	z-index: -999;
+	height: 100%;
+	
+}
+
+.hero {
+	z-index: 99;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 20px;
+	left: 0;
+	width: 80vw;
+	background-image: url("/public/imgs/Texture.png");
+	
+}
+
+.hero-title {
+	color: white;
+	font-family: Euclid Circular B;
+font-style: normal;
+font-weight: normal;
+font-size: 4vw;
+padding: 3rem 10vw;
+/* margin-top: 80px;
+margin-left: 200px; */
+z-index: 999999999;
+}
+
+.hero-sec {
+	overflow-x: hidden !important;
+	
+}
+
+
+
+
+.hero_dash {
+	border-bottom: 4px solid rgb(255, 255, 255);
+	font-weight: 550;
+	padding-bottom: 10px;
+}
+
+@media (max-width:600px) {
+	.hero-title{
+	font-size: 6vw;
+	padding: 5rem 6vw;
+    padding-right: 0px;
+	margin-right: 0px;
+}
+
+.hero_dash{
+	padding-right: 0px;
+	margin-right: 0px;
+}
+
 }
