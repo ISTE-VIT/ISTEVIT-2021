@@ -127,7 +127,6 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
   
   </div>
 </section>
-  
 
     <section class="about_us" id="about" style="overflow: hidden;" >
         <div class="container" data-aos="fade-up"  data-aos-duration="500">
@@ -222,7 +221,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
           <div data-aos="flip-down" data-aos-delay="300" data-aos-duration="1000">
             <div class="col-lg-4">
               <div class="cardone">
-                <img class="face face1" src="imgs/codezap.png">
+                <img class="face face1" src="imgs/staus.png">
                   <div class="contentone">
                     <div class="icon">                     
                     </div>
@@ -278,7 +277,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
           <div data-aos="flip-down" data-aos-delay="300" data-aos-duration="1000">
             <div class="col-lg-4">
               <div class="cardone">
-                <img class="face face1" src="imgs/docdiff.png">
+                <img class="face face1" src="imgs/casierpro.png">
                   <div class="contentone">
                     <div class="icon">                      
                     </div>
@@ -335,7 +334,11 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
                 <div id="play-button" class="unchecked video-btn" data-toggle="modal"
                 data-src="https://www.youtube.com/embed/<%- webinar.snippet.resourceId.videoId %>" data-target="#myModal">
                   <i class="fas fa-play"  ></i>                </div>
-                  <img src="<%- webinar.snippet.thumbnails.high.url %>" class="web-thumbnail yt-web " alt="" srcset="">
+                  <% if(webinar.snippet.thumbnails.maxres != null) { %>
+                  <img src="<%- webinar.snippet.thumbnails.maxres.url %>" class="web-thumbnail yt-web " alt="" srcset="">
+                  <% } else { %>
+                  <img src="<%- webinar.snippet.thumbnails.medium.url %>" class="web-thumbnail yt-web " alt="" srcset="">
+                  <% } %>
                 </div>
             
                
@@ -390,12 +393,11 @@ aria-hidden="true">
       <div class="events_heading" data-aos="zoom-in-up" ><span class="events_dash">E</span>vents & <span class="events_dash">W</span>orkshop</div>
       <div class="containerthree" style="overflow-x: hidden;">
   <div class="slider owl-carousel owl-theme" data-aos="zoom-in" >  
-    <div class="item">
-      <img class="events_imgs" src="imgs/webdev.png"/>
-    </div>
-    <div class="item"><img  class="events_imgs" src="imgs/automate.png"/></div>
-    <div class="item"><img  class="events_imgs" src="imgs/photonix.png"/></div>
-    <div class="item"><img  class="events_imgs" src="imgs/codeasymptote.png"/></div>
+    
+    <div class="item"><img  class="events_imgs" src="imgs/event-imgs/Technica_thumb.png"/></div>
+    <div class="item"><img  class="events_imgs" src="imgs/event-imgs/Webdev_thumb.png"/></div>
+    <div class="item"><img  class="events_imgs" src="imgs/event-imgs/sixth_sense_thumb.png"/></div>
+    <div class="item"><img  class="events_imgs" src="imgs/event-imgs/foosball.png"/></div>
   </div>
 </div>
 <a href="" target="_blank" style="text-decoration: none;"> <div class="horizon_text" style="text-decoration: none;"><span class="horizon_dash" >Know More</span></div></a>
@@ -743,7 +745,7 @@ owl.owlCarousel({
   autoplaySpeed: 1500, 
   responsive:{
         0:{
-            items:2,
+            items:1,
             nav:false,
             autoplay: true,
         },

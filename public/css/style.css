@@ -761,6 +761,14 @@ a:focus-visible {
 		height: 320;
 	}
 
+	@media (max-width: 900px) {
+		.project_titles .cardone .face.face1{
+			width: 300px;
+		}
+	
+		
+	}
+
 	.project_titles .cardone:hover .face.face1{
 		/* background: #ff0057; */
 		transform: translateY(0);
@@ -787,6 +795,14 @@ a:focus-visible {
 		width: 350px;
 		margin-bottom: 50px;
 	}
+
+    @media (max-width: 900px) {
+		.project_titles .cardone .face.face2{
+
+			width: 300px;
+		}
+	}
+
 	.project_titles .cardone:hover .face.face2{
 		transform: translateY(0);
 	}
@@ -1026,7 +1042,7 @@ a:focus-visible {
 	height: 175px;
 	position: absolute;
 	width: 200px;
-	z-index: 2;
+	/* z-index: 2; */
 
 }
 
@@ -1887,7 +1903,7 @@ line-height: 22px;
 	box-shadow: 0 8px 25px 6px rgba(0, 0, 0, 0.5);
 	right: 10%;
 	bottom: 0px;
-	z-index: 5;
+	/* z-index: 5; */
 	cursor: pointer;
 	transition: all 70ms;
 	border: none;
@@ -2059,7 +2075,7 @@ line-height: 22px;
 	line-height: 30px;
 	font-family: 'Euclid Circular B Medium';
 	font-size: 2vw;
-	padding: 1vw 2vw;
+	padding: 1vw 4vw;
 	padding-top:3vw;
 	
   }
@@ -2085,9 +2101,21 @@ line-height: 22px;
 	/* height: 31px; */
 	margin: 2px 8px 0;
 	padding: 0 8px;
+	padding: 10px;
 
 	cursor: pointer;
 	
+  }
+
+ 
+
+  .toggle .tabs .tab.active {
+	color: #989866;
+	/* border-bottom: 3px solid #989866; */
+	background-color: #989866 ;
+	padding: 10px;
+	border-radius: 5px;
+	position: relative;
   }
 
   @media (max-width:470px) {
@@ -2109,16 +2137,18 @@ line-height: 22px;
 		/* height: 31px; */
 		margin: 2px 8px 0;
 		padding: 0 0px;
-	
 		cursor: pointer;
 		
 	  }
-  }
 
-  .toggle .tabs .tab.active {
-	color: #989866;
-	border-bottom: 3px solid #989866;
-	position: relative;
+	  .toggle .tabs .tab.active {
+		color: #989866;
+		/* border-bottom: 3px solid #989866; */
+		background-color: #989866 ;
+		padding: 4px;
+		border-radius: 5px;
+		position: relative;
+	  }
   }
   .toggle .panels .panel {
 	padding:0 5vw;
@@ -2427,6 +2457,7 @@ line-height: 22px;
 	padding: 0px 4vw;
   }
 
+
   @media (max-width:600px) {
 	.horr {
 		padding: 0px;
@@ -2447,7 +2478,7 @@ line-height: 22px;
 
   @media (max-width:1350px) {
 	  .web-thumbnail {
-		  width: 400px;
+		  width: 310px;
 	  }
   }
   
@@ -2498,8 +2529,8 @@ line-height: 22px;
 	}
 
 	.events_imgs {
-		width: 200px !important;
-		height: auto;
+		width: 300px !important;
+		height: auto ;
 	}
 }
 
