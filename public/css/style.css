@@ -1602,7 +1602,6 @@ a:focus-visible {
 
 .tab {
 	float: left;
-	color: white !important;
 }
 
 .team-sec {
@@ -2097,9 +2096,10 @@ line-height: 22px;
   
   .toggle .tabs .tab {
 	float: left;
-	color: white;
+	color: rgba(255, 255, 255, 0.644);
 	/* height: 31px; */
-	margin: 2px 8px 0;
+	margin: 2px 8px ;
+	margin-right: 15px;
 	padding: 0 8px;
 	padding: 10px;
 
@@ -2110,7 +2110,7 @@ line-height: 22px;
  
 
   .toggle .tabs .tab.active {
-	color: #989866;
+	color: white;
 	/* border-bottom: 3px solid #989866; */
 	background-color: #989866 ;
 	padding: 10px;
