@@ -2518,7 +2518,7 @@ line-height: 22px;
 
 	.events_imgs {
 		width: 300px !important;
-		height: auto;
+		height: auto ;
 	}
 }
 
@@ -2724,7 +2724,19 @@ overflow-y: hidden;
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 90%;
+		height: 100%;
 		padding-right: 10px;
 	}
+}
+
+@media (max-width:600px) {
+	.events_imgs {
+		width: 100px !important;
+		height: 80px !important;
+	}
+
+	.owl-stage {
+		padding-bottom: 60px !important;
+	}
+
 }
