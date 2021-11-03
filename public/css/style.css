@@ -4,6 +4,9 @@
 @font-face {font-family: "Euclid Circular B Medium"; src: url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.eot"); src: url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.woff") format("woff"), url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.svg#Euclid Circular B Medium") format("svg"); }
 @import url(//db.onlinewebfonts.com/c/a1bc18b26205f46862beafc4d4cbcee0?family=OptimaLTStd);
 @font-face {font-family: "OptimaLTStd"; src: url("//db.onlinewebfonts.com/t/a1bc18b26205f46862beafc4d4cbcee0.eot"); src: url("//db.onlinewebfonts.com/t/a1bc18b26205f46862beafc4d4cbcee0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a1bc18b26205f46862beafc4d4cbcee0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a1bc18b26205f46862beafc4d4cbcee0.woff") format("woff"), url("//db.onlinewebfonts.com/t/a1bc18b26205f46862beafc4d4cbcee0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a1bc18b26205f46862beafc4d4cbcee0.svg#OptimaLTStd") format("svg"); }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
 /* ::-webkit-scrollbar {
 	width: 10px;
 	height: 20px;
@@ -1545,13 +1548,9 @@ a:focus-visible {
     transition: all 0.2s;
     
   }
-  .modal-img,.model-vid{
-    width:100%;
-    height:auto;
-  }
-  .modal-body{
-    padding:0px;
-  }
+
+
+
 
   .gallery-grid{
 	  padding: 2vw 20vw;
@@ -1912,7 +1911,7 @@ line-height: 22px;
 	width: 70px;
 	height: 70px;
 	box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.5);
-	right: 50px;
+	right: 30px;
 	bottom: 5px;
 	transition: all 70ms;
   }
@@ -2604,25 +2603,20 @@ font-weight: 600;
 	
 }
 
-.hero {
-	z-index: 99;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	right: 20px;
-	left: 0;
-	width: 80vw;
-	background-image: url("/public/imgs/Texture.png");
-	
+.hero-sec {
+	background-image: url("/public/imgs/iste-bg2.png");
+	background-size: 150%;
+	background-position:  25% 75%;
+	height: 100vh;
 }
 
 .hero-title {
 	color: white;
-	font-family: 'Euclid Circular B Medium';
-font-style: normal;
-font-weight: normal;
-font-size: 4vw;
-padding: 3rem 10vw;
+	font-family: 'Montserrat';
+	font-style: normal;
+font-weight: light;
+font-size: 5vw;
+padding: 5rem 10vw;
 /* margin-top: 80px;
 margin-left: 200px; */
 z-index: 999999999;
@@ -2639,8 +2633,7 @@ overflow-y: hidden;
 
 
 .hero_dash {
-	border-bottom: 4px solid rgb(255, 255, 255);
-	font-weight: 550;
+	font-weight: bold;
 	padding-bottom: 10px;
 }
 
@@ -2657,4 +2650,81 @@ overflow-y: hidden;
 	margin-right: 0px;
 }
 
+}
+
+@media (max-width:1500px) {
+	.web-thumbnail {
+		width: 300px;
+	}
+	
+}
+
+@media (min-width:940px) and (max-width:1200px) {
+	.web-thumbnail {
+		width: 400px;
+	}
+}
+
+
+
+@media (min-width:1500px)  {
+	#play-button {
+		right: 2%;
+	}
+}
+
+
+	
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+	padding-right: 20px;
+}
+
+.modal-content {
+	width: 93vw !important;
+	position: fixed !important;
+	top: 10px !important;
+	left: 60px !important;
+  margin-right: 80px !important;
+}
+
+.close {
+	color: black !important;
+	padding-left: 40px !important;
+	padding-bottom: 40px !important;
+}
+
+@media (max-width:600px) {
+	.modal-content {
+		width: 93vw !important;
+		position: fixed !important;
+		top: 10px !important;
+		left: 10px !important;
+	  margin-right: 80px !important;
+	}
+
+	.video-container iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 90%;
+		padding-right: 10px;
+	}
 }

@@ -120,8 +120,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
         </main>
       
       </div>  -->
-<section class="hero-sec" style="height: 95vh;overflow-y: hidden>
-  <div class="" id="show"></div>
+<section class="hero-sec" >
   <div class="hero">
   <div class="hero-title">INDIAN SOCIETY FOR <br> <span class="hero_dash">TECHNICAL EDUCATION</span> </div>  
   
@@ -358,13 +357,16 @@ aria-hidden="true">
 
     <div class="modal-body">
 
-      <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
-      </button> -->
+      </button>
       <!-- 16:9 aspect ratio -->
-      <div class="embed-responsive embed-responsive-16by9">
+      <!-- <div class="embed-responsive embed-responsive-16by9">
         <iframe   class="embed-responsive-item" src="" id="video" 
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div> -->
+      <div class="video-container">
+        <iframe id="video"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
     </div>
@@ -631,19 +633,7 @@ All Rights Reserved.</p>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/owl.carousel.min.js'></script><script  src="./script.js"></script>
       <script>
-       VANTA.HALO({
-  el: "#show",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  xOffset: -0.29,
-  yOffset: -0.17,
-  backgroundColor: 0x40404,
-  amplitudeFactor: 0.00
-
-})
+     
         </script>
         
       <script>
