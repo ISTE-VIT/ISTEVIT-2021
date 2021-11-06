@@ -700,11 +700,21 @@ All Rights Reserved.</p>
   });
 });
 
+var loader = document.getElementById("loader-fade");
+
+
+window.addEventListener ("load", function() {
+    loader.style.display = 'none';
+});
+
     $(document).ready(function() {
   // Gets the video src from the data-src on each button
   $('#enterbtn').click(false);
 
-  $("#loader-fade").fadeOut(15000);
+
+  // $("#loader-fade").fadeOut(1000);
+
+
   var $videoSrc;
   $(".video-btn").click(function() {
     $videoSrc = $(this).attr("data-src");
