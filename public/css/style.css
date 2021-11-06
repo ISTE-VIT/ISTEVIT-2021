@@ -2754,7 +2754,7 @@ overflow-y: hidden;
 
 @media(max-width:600px) {
 	.domain_heading, .projects_heading, .events_heading, .contact_heading, .webinars_heading, .partners_heading, .horizon_heading, .horizon_text {
-		font-size:10vw !important;
+		font-size:8vw !important;
 	}
 
 	
