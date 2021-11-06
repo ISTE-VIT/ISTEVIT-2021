@@ -25,6 +25,8 @@
   <link href="//db.onlinewebfonts.com/c/721c73bcd2e49f3a621991089838b503?family=Euclid+Circular+B+Medium" rel="stylesheet" type="text/css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/slavia" rel="stylesheet">
+  <link href="//db.onlinewebfonts.com/c/afcd15b67ced541b94da6c63bb31afd7?family=SlaviaPressPremium-Light" rel="stylesheet" type="text/css"/>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 	<script>document.documentElement.className = "js"
@@ -37,7 +39,7 @@ var supportsCssVars = function supportsCssVars() {
 supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 </head>
 
-<body >
+<body style="overflow-x: hidden">
 
   <div class="loader" id="loader-fade">
     <div class="loader-container">
@@ -57,7 +59,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div class="collapse navbar-collapse justify-content-end hidenav" id="navbarNav">
             <ul class="navbar-nav ">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#about">ABOUT US</a>
@@ -78,9 +80,9 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
           </div>
         </div>
       </nav>
-      <div class="demo-1 loading" id="show"  style="background-color: black;overflow-x: hidden;">
-        <main>
-          <svg class="circles" width="100%" height="100%"  viewBox="0 0 1400 1400" >
+      <!-- <div class="demo-1 loading" id="show"   style="background-color: black;overflow-x: hidden;overflow-y: hidden;">
+        <main >
+          <svg class="circles" width="100%" height="100%"   viewBox="0 0 1400 1400" >
             <def>
               <path id="circle-1" d="M250,700.5A450.5,450.5 0 1 11151,700.5A450.5,450.5 0 1 1250,700.5"></path>
               <path id="circle-2" d="M382,700.5A318.5,318.5 0 1 11019,700.5A318.5,318.5 0 1 1382,700.5"></path>
@@ -119,7 +121,14 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
           </div>
         </main>
       
-      </div> 
+      </div>  -->
+<section class="hero-sec" >
+  <div class="hero">
+  <div class="hero-title">INDIAN SOCIETY FOR <br> <span class="hero_dash">TECHNICAL EDUCATION</span> </div>  
+  
+  </div>
+</section>
+
     <section class="about_us" id="about" style="overflow: hidden;" >
         <div class="container" data-aos="fade-up"  data-aos-duration="500">
             <div class="row">
@@ -130,7 +139,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
                    
                     </div>
                <div class="about_content" >
-                Indian Society for Technical Education (ISTE) is a national, non-profit making society registered under the Societies Registration Act of 1860. Our aim is to equip engineers of today with the technical and management skills to solve the challenges of tomorrow by learning and being a part of departments such as technical , electrical, management and design. We also organize a plethora of events and hands on workshops aimed at making better professionals. We bringing about holistic development of our community.               </div>
+                Indian Society for Technical Education (ISTE) is a national, non-profit making society registered under the Societies Registration Act of 1860. Our aim is to equip engineers of today with the technical and management skills to solve the challenges of tomorrow by learning and being a part of departments such as technical , electrical, management and design. We also organize a plethora of events and hands on workshops aimed at making better professionals, bringing about holistic development of our community.               </div>
             </div>
             </div><br>
             <div class="arrow bounce" >
@@ -142,7 +151,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
     <section class="domains" id="domains" style="overflow-x: hidden;">
         <div class="containe">
             <div class="domain_heading" data-aos="zoom-in-up" >
-                Domains
+              <span class="webinars_dash">D</span>omains
             </div>
             <div class="row">
               <div class="col-lg-3 col-md-6 domain-card" data-aos="zoom-in-right" >
@@ -163,7 +172,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
               </div>
               <div class="col-lg-3 col-md-6 domain-card" data-aos="zoom-in-left" >
                
-                <img class="card-img-top" src="/public/imgs/design.gif" alt="Card image cap">
+                <img class="card-img-top" src="/public/imgs/design2.gif" alt="Card image cap">
                 <div class="card-body">
                   <p class="card-textD">Design</p>
                 </div>
@@ -204,7 +213,9 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
                 <div class="face face2">
                   <div class="contentone">
                     <h3>                     
-                    <p style="font-size: 14px;">Doc Diff is a website that people can use to compare their code. Users can use it to upload files and identify differences, and potential errors, between the two. They can edit their code within the website to make it as similar, or different, as needed. This is a tool for debugging.</p>
+                      <p style="font-size: 14px;">Doc Diff is a website that people can use to compare their code. Users can use it to upload files and identify differences, and potential errors, between the two. They can edit their code within the website to make it as similar, or different, as needed. This is a tool for debugging.</p>
+                    </h3>
+                    <a href="" class="justify-content-center" style="font-size: 20px;color: black;"><i class="fab fa-github"></i></a>
                   </div>
                 </div>
               </div>
@@ -213,7 +224,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
           <div data-aos="flip-down" data-aos-delay="300" data-aos-duration="1000">
             <div class="col-lg-4">
               <div class="cardone">
-                <img class="face face1" src="imgs/codezap.png">
+                <img class="face face1" src="imgs/staus.png">
                   <div class="contentone">
                     <div class="icon">                     
                     </div>
@@ -224,6 +235,8 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
                     <h3>                     
                     <p style="font-size: 14px;">Sanitization & temperature based automated unlocking system* is a 3 level smart examination technology which includes mask detection ,temperature check and sanitization to avoid covid-19 breach in your homes and organisations.
                     </p>
+                  </h3>
+                  <a href="" class="justify-content-center" style="font-size: 20px;color: black;"><i class="fab fa-github"></i></a>
                   </div>
                 </div>
               </div>
@@ -241,8 +254,10 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
                 <div class="face face2">
                   <div class="contentone">
                     <h3>                     
-                    <p style="font-size: 14px;">Shopverse is a webapp which gives access to buyers to buy products from a particular local shop by scanning their QR. Based on their search request they can place the order. In case the user is not sure about the product he wishes to search for he can search by image, where an ML model will generate the closest possible images.
-                      It also allows shops to register and generate their own qr code.</p>
+                    <p style="font-size: 14px;">Shopverse is a webapp which gives access to buyers to buy products from a particular local shop by scanning their QR and place the order. In case the user is not sure about the product he wishes to search for he can search by image, where an ML model will generate the closest possible images.
+                      Shops can also register and generate their own qr code.</p>
+                    </h3>
+                    <a href="" class="justify-content-center" style="font-size: 20px;color: black;"><i class="fab fa-github"></i></a>
                   </div>
                 </div>
               </div>
@@ -260,7 +275,9 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
                 <div class="face face2">
                   <div class="contentone">
                     <h3>                     
-                    <p>ubewbchbrhjbueunjknkce</p>
+                    <p style="font-size: 14px;">This project is a platform used by the club for its recruitment cycle at the university. This portal makes it possible to reach maximum number of candidates and using it effectively will translate into qualified candidates at relatively low converts.</p>
+                  </h3>
+                  <a href="" class="justify-content-center" style="font-size: 20px;color: black;"><i class="fab fa-github"></i></a>
                   </div>
                 </div>
               </div>
@@ -269,7 +286,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
           <div data-aos="flip-down" data-aos-delay="300" data-aos-duration="1000">
             <div class="col-lg-4">
               <div class="cardone">
-                <img class="face face1" src="imgs/docdiff.png">
+                <img class="face face1" src="imgs/casierpro.png">
                   <div class="contentone">
                     <div class="icon">                      
                     </div>
@@ -279,6 +296,8 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
                   <div class="contentone">
                     <h3>                     
                     <p style="font-size: 14px;">CASIER PRO  is modern techological locking system, a locker to a hinge and a key at your finger tips. Its a 2 level paralel prototype integrated with RFID and Fingerprint of your Android phone</p>
+                  </h3>
+                  <a href="" class="justify-content-center" style="font-size: 20px;color: black;"><i class="fab fa-github"></i></a>
                   </div>
                 </div>
               </div>
@@ -296,7 +315,9 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
                 <div class="face face2">
                   <div class="contentone">
                     <h3>                     
-                    <p>ubewbchbrhjbueunjknkce</p>
+                    <p style="font-size: 14px;">A responsive website build for one of the biggest events organised by iste called horizon.</p>
+                  </h3>
+                  <a href="" class="justify-content-center" style="font-size: 20px;color: black;"><i class="fab fa-github"></i></a>
                   </div>
                 </div>
               </div>
@@ -326,7 +347,11 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
                 <div id="play-button" class="unchecked video-btn" data-toggle="modal"
                 data-src="https://www.youtube.com/embed/<%- webinar.snippet.resourceId.videoId %>" data-target="#myModal">
                   <i class="fas fa-play"  ></i>                </div>
+                  <% if(webinar.snippet.thumbnails.maxres != null) { %>
                   <img src="<%- webinar.snippet.thumbnails.maxres.url %>" class="web-thumbnail yt-web " alt="" srcset="">
+                  <% } else { %>
+                  <img src="<%- webinar.snippet.thumbnails.medium.url %>" class="web-thumbnail yt-web " alt="" srcset="">
+                  <% } %>
                 </div>
             
                
@@ -346,13 +371,16 @@ aria-hidden="true">
 
     <div class="modal-body">
 
-      <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
-      </button> -->
+      </button>
       <!-- 16:9 aspect ratio -->
-      <div class="embed-responsive embed-responsive-16by9">
+      <!-- <div class="embed-responsive embed-responsive-16by9">
         <iframe   class="embed-responsive-item" src="" id="video" 
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div> -->
+      <div class="video-container">
+        <iframe id="video"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
     </div>
@@ -381,12 +409,11 @@ aria-hidden="true">
       <div class="events_heading" data-aos="zoom-in-up" ><span class="events_dash">E</span>vents & <span class="events_dash">W</span>orkshop</div>
       <div class="containerthree" style="overflow-x: hidden;">
   <div class="slider owl-carousel owl-theme" data-aos="zoom-in" >  
-    <div class="item">
-      <img class="events_imgs" src="imgs/webdev.png"/>
-    </div>
-    <div class="item"><img  class="events_imgs" src="imgs/automate.png"/></div>
-    <div class="item"><img  class="events_imgs" src="imgs/photonix.png"/></div>
-    <div class="item"><img  class="events_imgs" src="imgs/codeasymptote.png"/></div>
+    
+    <div class="item"><img  class="events_imgs" src="imgs/event-imgs/Technica_thumb.png"/></div>
+    <div class="item"><img  class="events_imgs" src="imgs/event-imgs/Webdev_thumb.png"/></div>
+    <div class="item"><img  class="events_imgs" src="imgs/event-imgs/sixth_sense_thumb.png"/></div>
+    <div class="item"><img  class="events_imgs" src="imgs/event-imgs/foosball.png"/></div>
   </div>
 </div>
 <a href="" target="_blank" style="text-decoration: none;"> <div class="horizon_text" style="text-decoration: none;"><span class="horizon_dash" >Know More</span></div></a>
@@ -409,20 +436,30 @@ aria-hidden="true">
       <div class="logo-slider">
         <div class="logo-slide-track">
           <div class="slide">
-            <img class="partner-pic" style="margin-top: 20px;" src="/public/imgs/Adobe_Corporate_logo 1.png" alt="" />
+            <a href="https://www.adobe.com/in/">
+              <img class="partner-pic" style="margin-top: 20px;" src="/public/imgs/Adobe_Corporate_logo 1.png" alt="" />
+
+            </a>
           </div>
           <div class="slide">
-            <img class="partner-pic" style="margin-top: 20px;" src="/public/imgs/balalogo.png" alt="" />
+            <a href="https://balsamiq.com/">
+              <img class="partner-pic" style="margin-top: 20px;" src="/public/imgs/balalogo.png" alt="" />
+
+            </a>          </div>
+          <div class="slide">
+            <a href="https://www.jetbrains.com/">
+              <img class="partner-pic" src="/public/imgs/JetBrains_Logo_2016 1.png" alt="" />
+            </a>
           </div>
           <div class="slide">
-            <img class="partner-pic" src="/public/imgs/JetBrains_Logo_2016 1.png" alt="" />
-          </div>
+            <a href="https://www.python.org/">
+              <img class="partner-pic" src="/public/imgs/pythonlogo.png" alt="" />
+          </a>          </div>
           <div class="slide">
-            <img class="partner-pic" src="/public/imgs/pythonlogo.png" alt="" />
-          </div>
-          <div class="slide">
-            <img class="partner-pic" style="margin-top: 16px;" src="/public/imgs/CNSI_logo 1.png" alt="" />
-          </div>
+            <a href="https://www.cns-inc.com/">
+              <img class="partner-pic" style="margin-top: 16px;" src="/public/imgs/CNSI_logo 1.png" alt="" />
+
+            </a>          </div>
          
          
           <div class="slide">
@@ -430,20 +467,32 @@ aria-hidden="true">
           </div> 
            
           <div class="slide">
-            <img class="partner-pic" style="margin-top: 20px;" src="/public/imgs/Adobe_Corporate_logo 1.png" alt="" />
-          </div>
+            <a href="https://www.adobe.com/in/">
+              <img class="partner-pic" style="margin-top: 20px;" src="/public/imgs/Adobe_Corporate_logo 1.png" alt="" />
+
+            </a>          </div>
           <div class="slide">
-            <img class="partner-pic" style="margin-top: 20px;" src="/public/imgs/balalogo.png" alt="" />
-          </div>
+            <a href="https://balsamiq.com/">
+              <img class="partner-pic" style="margin-top: 20px;" src="/public/imgs/balalogo.png" alt="" />
+
+            </a>          </div>
           <div class="slide">
-            <img class="partner-pic" src="/public/imgs/JetBrains_Logo_2016 1.png" alt="" />
+            <a href="https://www.jetbrains.com/">
+              <img class="partner-pic" src="/public/imgs/JetBrains_Logo_2016 1.png" alt="" />
+  
+            </a>
           </div>
+      
           <div class="slide">
-            <img class="partner-pic" src="/public/imgs/pythonlogo.png" alt="" />
-          </div>
+            <a href="https://www.python.org/">
+              <img class="partner-pic" src="/public/imgs/pythonlogo.png" alt="" />
+
+            </a>          </div>
           <div class="slide">
-            <img class="partner-pic" style="margin-top: 16px;" src="/public/imgs/CNSI_logo 1.png" alt="" />
-          </div>
+            <a href="https://www.cns-inc.com/">
+              <img class="partner-pic" style="margin-top: 16px;" src="/public/imgs/CNSI_logo 1.png" alt="" />
+
+            </a>          </div>
          
          
           <div class="slide">
@@ -451,19 +500,31 @@ aria-hidden="true">
           </div> 
               
           <div class="slide">
-            <img class="partner-pic" style="margin-top: 20px;" src="/public/imgs/Adobe_Corporate_logo 1.png" alt="" />
-          </div>
+            <a href="https://www.adobe.com/in/">
+              <img class="partner-pic" style="margin-top: 20px;" src="/public/imgs/Adobe_Corporate_logo 1.png" alt="" />
+
+            </a>          </div>
           <div class="slide">
-            <img class="partner-pic" style="margin-top: 20px;" src="/public/imgs/balalogo.png" alt="" />
+            <a href="https://balsamiq.com/">
+              <img class="partner-pic" style="margin-top: 20px;" src="/public/imgs/balalogo.png" alt="" />
+
+            </a>
           </div>
-          <div class="slide">
+          <a href="https://www.jetbrains.com/">
             <img class="partner-pic" src="/public/imgs/JetBrains_Logo_2016 1.png" alt="" />
+
+          </a>
+          <div class="slide">
+            <a href="https://www.python.org/">
+              <img class="partner-pic" src="/public/imgs/pythonlogo.png" alt="" />
+
+            </a>
           </div>
           <div class="slide">
-            <img class="partner-pic" src="/public/imgs/pythonlogo.png" alt="" />
-          </div>
-          <div class="slide">
-            <img class="partner-pic" style="margin-top: 16px;" src="/public/imgs/CNSI_logo 1.png" alt="" />
+            <a href="https://www.cns-inc.com/">
+              <img class="partner-pic" style="margin-top: 16px;" src="/public/imgs/CNSI_logo 1.png" alt="" />
+
+            </a>
           </div>
          
          
@@ -513,16 +574,16 @@ All Rights Reserved.</p>
             <div class="col-md-4 foo"  align = "left">
             <div class="links">
               <h4 style = "font-weight: 600; ">SITE LINKS</h4>
-              <a>Home</a><br>
-              <a>Team</a><br>
-              <a>Developers</a><br>
-              <a>Gallery</a><br><br>
+              <a href="/#about" style="text-decoration: none;color: white;">About Us</a><br>
+              <a href="/team" style="text-decoration: none;color: white;">Our Team</a><br>
+              <a href="/gallery" style="text-decoration: none;color: white;">Gallery</a><br>
+              <a href="/events" style="text-decoration: none;color: white;">Events</a><br><br>
             </div>
             </div>
             <div class="col-md-4 foo"  align = "left">
               <h4 style = "font-weight: 600; ">CONTACT US</h4>
               <p><i class="fas fa-envelope "></i>&nbsp&nbsp&nbsp&nbsp iste@vit.ac.in<p>
-              <p><i class=" fas fa-phone-alt"></i>&nbsp&nbsp&nbsp&nbsp 9700449833<p>
+              <p><i class=" fas fa-phone-alt"></i>&nbsp&nbsp&nbsp&nbsp 7011422085<p>
 
             </div>
 
@@ -579,10 +640,20 @@ All Rights Reserved.</p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script >
       </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.halo.min.js"></script>
+      
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/owl.carousel.min.js'></script><script  src="./script.js"></script>
       <script>
+     
+        </script>
+        
+      <script>
+
+    
+
       // PROJECTS 
       $('.carousel-main').owlCarousel({
         items: 3,
@@ -629,11 +700,21 @@ All Rights Reserved.</p>
   });
 });
 
+var loader = document.getElementById("loader-fade");
+
+
+window.addEventListener ("load", function() {
+    loader.style.display = 'none';
+});
+
     $(document).ready(function() {
   // Gets the video src from the data-src on each button
   $('#enterbtn').click(false);
 
-  $("#loader-fade").fadeOut(500);
+
+  // $("#loader-fade").fadeOut(1000);
+
+
   var $videoSrc;
   $(".video-btn").click(function() {
     $videoSrc = $(this).attr("data-src");
@@ -678,7 +759,7 @@ owl.owlCarousel({
   autoplaySpeed: 1500, 
   responsive:{
         0:{
-            items:2,
+            items:3,
             nav:false,
             autoplay: true,
         },
@@ -700,14 +781,16 @@ owl.owlCarousel({
     <script>
       AOS.init({ once: true,});
       $(".navbar-collapse a").click(function () {
-    $(".navbar-collapse").collapse("hide");
+    $(".navbar-collapse").toggleClass("hidenav");
+  });
+
+  $(".navbar-toggler").click(function () {
+    $(".navbar-collapse").toggleClass("hidenav");
   });
   </script>
 
  <script>
-     $("body").click(function () {
-    $(".navbar-collapse").collapse("hide");
-  });
+    
     </script>
     </body>
 
