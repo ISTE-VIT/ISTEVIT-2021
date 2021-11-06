@@ -196,8 +196,11 @@ All Rights Reserved.</p>
          <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/owl.carousel.min.js'></script><script  src="./script.js"></script>
  <script>
    
-   $( document ).ready(function() {
-  $("#loader-fade").fadeOut(15000);
+   var loader = document.getElementById("loader-fade");
+
+
+window.addEventListener ("load", function() {
+    loader.style.display = 'none';
 });
 
 $(".navbar-collapse a").click(function () {
