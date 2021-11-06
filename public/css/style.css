@@ -604,6 +604,8 @@ a:focus-visible {
 	.domain_heading{
 		font-size:5vw !important;
 	}
+
+
   }
 
   .card_domains{
@@ -2748,4 +2750,39 @@ overflow-y: hidden;
 
 .hidenav{
 	display: none !important;
+}
+
+@media(max-width:600px) {
+	.domain_heading, .projects_heading, .events_heading, .contact_heading, .webinars_heading, .partners_heading, .horizon_heading, .horizon_text {
+		font-size:10vw !important;
+	}
+
+	
+  }
+
+  .domain_dash {
+	  color: #000000;
+  }
+
+  .horii-logo {
+	  width: 20%;
+  }
+
+  .logo-code {
+	  width:30%
+  }
+
+  .image__description {
+	  padding: 20px;
+  }
+
+
+  @media (max-width:600px) {
+	.horii-logo {
+		width: 50%;
+	}
+
+	.image__description{
+		font-size: 14px;
+	}
 }
