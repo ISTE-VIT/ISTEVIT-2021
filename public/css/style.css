@@ -2143,7 +2143,6 @@ line-height: 22px;
 	  }
 
 	  .toggle .tabs .tab.active {
-		color: #989866;
 		/* border-bottom: 3px solid #989866; */
 		background-color: #989866 ;
 		padding: 4px;
@@ -2743,4 +2742,10 @@ overflow-y: hidden;
 		padding-bottom: 60px !important;
 	}
 
+}
+
+
+
+.hidenav{
+	display: none !important;
 }
