@@ -6,6 +6,8 @@
 @font-face {font-family: "OptimaLTStd"; src: url("//db.onlinewebfonts.com/t/a1bc18b26205f46862beafc4d4cbcee0.eot"); src: url("//db.onlinewebfonts.com/t/a1bc18b26205f46862beafc4d4cbcee0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a1bc18b26205f46862beafc4d4cbcee0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a1bc18b26205f46862beafc4d4cbcee0.woff") format("woff"), url("//db.onlinewebfonts.com/t/a1bc18b26205f46862beafc4d4cbcee0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a1bc18b26205f46862beafc4d4cbcee0.svg#OptimaLTStd") format("svg"); }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/slavia');
+
 
 /* ::-webkit-scrollbar {
 	width: 10px;
@@ -2610,11 +2612,13 @@ font-weight: 600;
 	height: 100vh;
 }
 
+
+
 .hero-title {
 	color: white;
 	font-family: 'Montserrat';
 	font-style: normal;
-font-weight: light;
+font-weight:400;
 font-size: 5vw;
 padding: 5rem 10vw;
 /* margin-top: 80px;
@@ -2727,7 +2731,7 @@ overflow-y: hidden;
 		height: 100%;
 		padding-right: 10px;
 	}
-}
+} 
 
 @media (max-width:600px) {
 	.events_imgs {
