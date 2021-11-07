@@ -424,7 +424,7 @@ a:focus-visible {
 	text-align: center;
 	position: relative;
 	font-weight: 500;
-	background-image: url('/public/imgs/about_bg.png');
+	background-image: url('https://ik.imagekit.io/pjbsfzv5ci/compresspng/about_bg-min_nLi3U2Tqh.png?updatedAt=1636279617957');
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -996,7 +996,7 @@ a:focus-visible {
 
 
 	.horizon{
-		background-image:url('/public/imgs/aboutusbg.png');
+		background-image:url('https://ik.imagekit.io/pjbsfzv5ci/compresspng/aboutusbg-min_wjTAK0MLqxt.png?updatedAt=1636279617490');
 		background-attachment: fixed;
 	    background-position: center;
 		background-repeat: no-repeat;
