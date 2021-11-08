@@ -1344,6 +1344,17 @@ line-height: 22px;
 	font-weight: 600;
 }
 
+.data-fac-cor:hover h5{
+	margin-top: 30%;
+}
+
+@media (max-width: 768px) {
+	.data-fac-cor:hover h5{
+		margin-top: 20%;
+	}
+	
+}
+
 .data1{
 	padding: 10px 5%;
 
