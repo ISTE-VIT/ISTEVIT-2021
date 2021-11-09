@@ -2807,7 +2807,7 @@ canvas {
 
 .content__title {
 	font-weight: 700;
-	font-size: 4vw;
+	font-size: 10vw;
 	margin: 0;
 }
 
@@ -2991,4 +2991,23 @@ canvas {
 		padding: 0 4rem;
 		grid-gap: 4rem;
 	}
+}
+
+
+.hide-secs{
+
+		position: fixed;
+		width: 100%;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 111111;
+		height: 100vh !important;
+		overflow: hidden !important;
+		overflow-y: hidden !important;
+}
+
+.body-scroll {
+	overflow: hidden !important;
 }

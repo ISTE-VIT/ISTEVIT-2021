@@ -26,13 +26,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="http://fonts.cdnfonts.com/css/slavia" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/ldt4auk.css">
+
   <link href="//db.onlinewebfonts.com/c/afcd15b67ced541b94da6c63bb31afd7?family=SlaviaPressPremium-Light" rel="stylesheet" type="text/css"/>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 
 </head>
 
-<body style="overflow-x: hidden">
+<body style="overflow-x: hidden" class="body-scroll" id="body-sc">
 
   <div class="loader" id="loader-fade">
     <div class="loader-container">
@@ -115,7 +117,7 @@
         </main>
       
       </div>  -->
-      <section >
+      <section class="hide-secs" id="hero-se">
         <!-- <canvas id="canvas"></canvas>
         <div id="text" class="justify-content-center">
           <h1>INDIAN SOCIETY FOR TECHNICAL EDUCATION</h1>
@@ -128,11 +130,11 @@
             </div><!-- /frame -->
             <div class="content">
               <div class="content__item">
-                <button class="content__button">Take me in</button>
+                <button class="content__button" id="reveal">Take me in</button>
               </div>
               <div class="content__item content__item--details">
                 <h3 class="content__location"></h3>
-                <h1 class="content__title">Indian &nbsp; Society &nbsp; For &nbsp; Technical &nbsp; Education</h1>
+                <h1 class="content__title">ISTE</h1>
                 <p class="content__date"></p>
               </div>
               <div class="content__item content__item--details content__item--columns">
@@ -736,6 +738,12 @@ window.addEventListener ("load", function() {
 });
 
     $(document).ready(function() {
+
+      $( "#reveal" ).click(function() {
+        $( "#hero-se" ).toggleClass( "hide-secs" );
+        $( "#body-sc" ).toggleClass( "body-scroll" );
+     
+});
   // Gets the video src from the data-src on each button
   $('#enterbtn').click(false);
 
