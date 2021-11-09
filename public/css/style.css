@@ -3011,3 +3011,16 @@ canvas {
 .body-scroll {
 	overflow: hidden !important;
 }
+
+.content__location img {
+	width:120px;
+
+}
+
+@media (max-width: 600px) {
+	.content__location img {
+		width:80px;
+		margin-bottom: 40px;
+	
+	}
+}
