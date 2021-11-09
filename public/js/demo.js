@@ -8,7 +8,7 @@
  * Copyright 2019, Codrops
  * http://www.codrops.com
  */
-{
+ {
     const frame = document.querySelector('.frame');
     const frameDeco = frame.querySelector('.frame__deco');
     const contentTitle = document.querySelector('.content__title');
@@ -95,33 +95,11 @@
             scale: 1,
             ease: Expo.easeOut
         }, 0.04 , 0.4)
-        .to(animation.settings, 1, {
-            progress: 0,
-            ease: Quart.easeInOut
-        }, 4)
-        .to(animation.camera.position, 1, {
-            z: 7,
-            ease: Quart.easeInOut
-        }, 4)
-        .staggerTo([contentDate, contentLocation], 1, {
-            opacity: 0,
-            scale: 0,
-            ease: Expo.easeInOut
-        }, 0.06, 4)
-        .staggerTo(titleLetters, 1, {
-            opacity: 0,
-            scale: 0,
-            ease: Expo.easeInOut
-        }, 0.04 , 4)
-        .staggerTo(contentDetailsCols, 0.8, {
-            opacity: 1,
-            startAt: {scale: 1.3},
-            scale: 1,
-            ease: Expo.easeOut
-        }, 0.08 , 4.4)
-        .call(function() {
-            frameDeco.classList.add('frame__deco--hide');
-        }, null, null, 4.4);
+       
+        
+        
+       
+      
     });
     
     enterCtrl.addEventListener('mouseenter', () => {
@@ -141,4 +119,3 @@
         }, 0);
     });
 }
-
