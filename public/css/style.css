@@ -2829,8 +2829,8 @@ canvas {
 }
 
 .content__date {
-	font-size: 3rem;
-	font-weight: 700;
+	font-size: 1rem;
+	font-weight: 300;
 	margin: 1rem 0 0 0;
 	color: var(--color-date);
 }
@@ -3002,7 +3002,7 @@ canvas {
 		right: 0;
 		bottom: 0;
 		left: 0;
-		z-index: 111111;
+		z-index: 1111;
 		height: 100vh !important;
 		overflow: hidden !important;
 		overflow-y: hidden !important;
