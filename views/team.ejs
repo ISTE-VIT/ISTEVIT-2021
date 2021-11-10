@@ -1,13 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en" >
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>ISTE-VIT</title>
-	<meta name="description" content="An experimental circular SVG text animation">
-	<meta name="keywords" content="animation, svg, text, typography, intro, javascript">
-	<meta name="author" content="Codrops">
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135071074-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "UA-135071074-1");
+</script>
+
+<!-- Meta Tags For SEO -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+<meta name="subject" content="ISTE-VIT" />
+<meta name="description"
+  content="ISTE-VIT is a reputed visionary non-profit organisation determined to impart technical knowledge to inspire solutions with innovation, passion and excellence." />
+<meta name="keywords"
+  content="ISTE, iste, ISTE VIT, ISTE-VIT, vit, VIT, VIT-Vellore, Vit, Iste, Vellore, Student, Chapter, Club, club, CLUB, CHAPTER, chapter, Education, India, Indian, Society, Indian Society For Technical Education" />
+<meta name="copyright" content="ISTE-VIT" />
+<meta name="language" content="en" />
+<meta name="url" content="https://istevit.in/" />
+<meta name="coverage" content="Worldwide" />
+<meta name="distribution" content="Global" />
+<meta name="target" content="all" />
+<meta name="rating" content="General" />
+<meta name="og:country-name" content="India" />
+<meta name="og:region" content="India" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://istevit.in/" />
+<meta name="og:site_name" content="ISTE-VIT" />
+<meta property="og:title" content="ISTE-VIT" />
+<meta property="og:description"
+  content="ISTE-VIT is a reputed visionary non-profit organisation determined to impart technical knowledge to inspire solutions with innovation, passion and excellence." />
+<meta property="og:site_name" content="ISTE-VIT" />
+<meta itemprop="name" content="ISTE-VIT" />
+<meta itemprop="description"
+  content="ISTE-VIT is a reputed visionary non-profit organisation determined to impart technical knowledge to inspire solutions with innovation, passion and excellence." />
+<link rel="canonical" href="https://istevit.in/" />
+
 	<link rel="shortcut icon" href="favicon.26242483.ico">
 	<link rel="stylesheet" href="https://use.typekit.net/kxo3pgz.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/style.css">
@@ -26,8 +66,8 @@
   <link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'><link rel="stylesheet" href="./style.css">
 
 </head>
-<body class="team_body" >
-  <div class="loader" id="loader-fade">
+<body class="team_body loading" >
+  <!-- <div class="loader" id="loader-fade">
     <div class="loader-container">
         <ul class="loader-box">
           <div class="pre-load">
@@ -38,7 +78,7 @@
           </div>
         </ul>
     </div>
-</div>
+</div> -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="/"><img class="logo" src="imgs/iste-logo.png" alt/></a>
@@ -78,20 +118,20 @@
         <div class='panels'>
           <div class='panel'>
             <div class="row fac-cor">
-                <div class="col-md-6 mt-3 mb-3" align="center">
-                  <div class="cardT" style="width:80%; height:100% ;">
+                <div class="col-md-6 data-fac-cor" align="center" style="overflow-y: hidden;">
+                  <div class="cardT fac-card" >
                     <img src="https://ik.imagekit.io/m47q5r0txpn/iste-core/amitsir_3ARFhA2_kn.jpg?updatedAt=1633776906411" alt="" />
-                    <div class="data">
+                    <div class="data data-fac">
                       <h5>Dr. B Amit Mahendrakar</h5>
                       <i>Ex- Director Of Student Welfare</i><br>
                       <a href="https://www.linkedin.com/in/amit-mahindrakar-a1110614" target="_blank" style="font-size: 24px;" class="fab fa-linkedin"></a>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 mt-3 mb-3" align="center">
-                  <div class="cardT" style="width:80%; height:100% ;">
+                <div class="col-md-6 data-fac-cor" align="center">
+                  <div class="cardT fac-card" >
                     <img src="https://ik.imagekit.io/m47q5r0txpn/iste-core/sasisir_nCFUak84yee.jpg?updatedAt=1633776912542" alt="" />
-                    <div class="data">
+                    <div class="data data-fac">
                       <h5>Dr. S Sasikumar</h5>
                       <i>Director Of Academic Counselling</i><br>
                       <a href="https://in.linkedin.com/in/dr-s-sasikumar-a684a022?trk=public_profile_browsemap_profile-result-card_result-card_full-click" style="font-size: 24px;" target="_blank" class="fab fa-linkedin"></a>
@@ -335,9 +375,9 @@ height: 264px;">
        </div>
                 </div>
           </div>
-          <div class='panel'>
+          <div class='panel panel-board' style="padding-top: 20px;">
             <div class="row justify-content-center">
-                <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                <div class="col-lg-2dot4 " align="center">
                   <div class="cardT" style="width: 250px;
 height: 264px;">
                     <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Abhinandita_h_I0uyfefUS.jpg?updatedAt=1633957111763" alt="" />
@@ -347,7 +387,7 @@ height: 264px;">
                     </div>
                   </div>
                 </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Adeel_AqrusZrba.jpg?updatedAt=1633957112077" alt="" />
@@ -357,7 +397,7 @@ height: 264px;">
                      </div>
                    </div>
                  </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Akriti_i-gYHDSee.jpg?updatedAt=1633957112886" alt="" />
@@ -368,7 +408,7 @@ height: 264px;">
                      </div>
                    </div>
                  </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Akshatt_oKc0QAMpT3S.jpg?updatedAt=1633957113732" alt="" />
@@ -378,7 +418,7 @@ height: 264px;">
                      </div>
                    </div>
                  </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Aman_GRF8Fu_f8.jpg?updatedAt=1633957114511" alt="" />
@@ -389,7 +429,7 @@ height: 264px;">
                    </div>
                  </div>
                
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Avinash_nT3FuAQiU.jpeg?updatedAt=1633957115306" alt="" />
@@ -399,7 +439,7 @@ height: 264px;">
                      </div>
                    </div>
                  </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Bhoomi_9WNFkTeRmKya.jpg?updatedAt=1633957116125" alt="" />
@@ -409,7 +449,7 @@ height: 264px;">
                      </div>
                    </div>
                  </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Chebrolu_Sai_Prasanna_Abhinav_7cnU-yY67.jpeg?updatedAt=1633957116972" alt="" />
@@ -419,7 +459,7 @@ height: 264px;">
                      </div>
                    </div>
                  </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Chetan_haQ7lEoK12T.jpg?updatedAt=1633957117760" alt="" />
@@ -430,7 +470,7 @@ height: 264px;">
                    </div>
                  </div>
                
-                <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                <div class="col-lg-2dot4 " align="center">
                   <div class="cardT" style="width: 250px;
 height: 264px;">
                     <img src="https://ik.imagekit.io/pjbsfzv5ci/Devavrat_2va0d6jX72?updatedAt=1634042088883" alt="" />
@@ -440,7 +480,7 @@ height: 264px;">
                     </div>
                   </div>
                 </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Dwija_c6Qgl75pO.jpg?updatedAt=1633957119373" alt="" />
@@ -450,7 +490,7 @@ height: 264px;">
                      </div>
                    </div>
                  </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Gauri_X6fjJZBSt.jpeg?updatedAt=1633957120176" alt="" />
@@ -460,7 +500,7 @@ height: 264px;">
                      </div>
                    </div>
                  </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Gokul_YKWpM1Euj9I.jpg?updatedAt=1633957122214" alt="" />
@@ -470,7 +510,7 @@ height: 264px;">
                      </div>
                    </div>
                  </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Hrithik_zR9eQvZ-O.jpeg?updatedAt=1633957122722" alt="" />
@@ -480,7 +520,7 @@ height: 264px;">
                      </div>
                    </div>
                  </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Immanuel_ewJGbZo4EHN.jpg?updatedAt=1633957123452" alt="" />
@@ -489,7 +529,7 @@ height: 264px;">
                        <a href="https://www.linkedin.com/in/immanuel-koshy-baa263187/" target="_blank" class="fab fa-linkedin"></a>                     </div>
                    </div>
                  </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Jayashree_P5eTPxSt5.jpg?updatedAt=1633957124254" alt="" />
@@ -499,7 +539,7 @@ height: 264px;">
                      </div>
                    </div>
                  </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Kavita_6ZsUOyQFSA9.jpg?updatedAt=1633957125908" alt="" />
@@ -509,7 +549,7 @@ height: 264px;">
                      </div>
                    </div>
                  </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Khushang_NLW4rGVeL.jpg?updatedAt=1633957126698" alt="" />
@@ -519,7 +559,7 @@ height: 264px;">
                      </div>
                    </div>
                  </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Khushboo_0XyHTCCzw.jpg?updatedAt=1633957127496" alt="" />
@@ -531,7 +571,7 @@ height: 264px;">
                  </div>
                 
                  
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Niranjan_r5cYWUTSs.jpg?updatedAt=1633957130751" alt="" />
@@ -541,7 +581,7 @@ height: 264px;">
                      </div>
                    </div>
                  </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Nitish_wDHGwFlqf.jpg?updatedAt=1633957131565" alt="" />
@@ -551,7 +591,7 @@ height: 264px;">
                      </div>
                    </div>
                  </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                   <div class="cardT" style="width: 250px;
 height: 264px;">
                     <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Riddhi_g2Ke2vtlPI.jpg?updatedAt=1633957133156" alt="" />
@@ -561,7 +601,7 @@ height: 264px;">
                     </div>
                   </div>
                 </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Rishit_OH79l7r4LY9.jpg?updatedAt=1633957134074" alt="" />
@@ -571,7 +611,7 @@ height: 264px;">
                      </div>
                    </div>
                  </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                   <div class="cardT" style="width: 250px;
 height: 264px;">
                     <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Rohit_nd1Lm99e5.jpg?updatedAt=1633957134801" alt="" />
@@ -581,7 +621,7 @@ height: 264px;">
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                <div class="col-lg-2dot4 " align="center">
                   <div class="cardT" style="width: 250px;
 height: 264px;">
                     <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Roshan_Hl6mnoUTZ.jpeg?updatedAt=1633957135666" alt="" />
@@ -591,7 +631,7 @@ height: 264px;">
                     </div>
                   </div>
                 </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                    <div class="cardT" style="width: 250px;
 height: 264px;">
                      <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Ruthvik_WcOT9rS2WTO.jpg?updatedAt=1633957136472" alt="" />
@@ -601,7 +641,7 @@ height: 264px;">
                      </div>
                    </div>
                  </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                   <div class="cardT" style="width: 250px;
 height: 264px;">
                     <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Raaj_BFq8O4P0T0R.jpg?updatedAt=1633957132386" alt="" />
@@ -611,7 +651,7 @@ height: 264px;">
                     </div>
                   </div>
                 </div>
-                 <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                 <div class="col-lg-2dot4 " align="center">
                   <div class="cardT" style="width: 250px;
 height: 264px;">
                     <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Sachi_esNoAH17R1.jpg?updatedAt=1633957137220" alt="" />
@@ -621,7 +661,7 @@ height: 264px;">
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                <div class="col-lg-2dot4 " align="center">
                   <div class="cardT" style="width: 250px;
 height: 264px;">
                     <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Sahil_s8F1HOP4P1x.jpg?updatedAt=1633957138065" alt="" />
@@ -631,7 +671,7 @@ height: 264px;">
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                <div class="col-lg-2dot4 " align="center">
                   <div class="cardT" style="width: 250px;
 height: 264px;">
                     <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Samikshya_Fk4sKokxa.jpg?updatedAt=1633957138824" alt="" />
@@ -641,7 +681,7 @@ height: 264px;">
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                <div class="col-lg-2dot4 " align="center">
                   <div class="cardT" style="width: 250px;
 height: 264px;">
                     <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Sayam_hkdhdAFGhr2.jpg?updatedAt=1633957139843" alt="" />
@@ -652,7 +692,7 @@ height: 264px;">
                   </div>
                 </div>
                 
-                <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                <div class="col-lg-2dot4 " align="center">
                   <div class="cardT" style="width: 250px;
 height: 264px;">
                     <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Shashank_bwc81yHAk.jpg?updatedAt=1633957141319" alt="" />
@@ -662,7 +702,7 @@ height: 264px;">
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                <div class="col-lg-2dot4 " align="center">
                   <div class="cardT" style="width: 250px;
 height: 264px;">
                     <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Shreyan_8zMvgtGY9-t.jpeg?updatedAt=1633957142131" alt="" />
@@ -672,7 +712,7 @@ height: 264px;">
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                <div class="col-lg-2dot4 " align="center">
                   <div class="cardT" style="width: 250px;
 height: 264px;">
                     <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Sneha_0ocPHl0LT.jpg?updatedAt=1633957143923" alt="" />
@@ -682,7 +722,7 @@ height: 264px;">
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                <div class="col-lg-2dot4 " align="center">
                   <div class="cardT" style="width: 250px;
 height: 264px;">
                     <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Sksks_2qUM-HDx8.jpeg?updatedAt=1633957142945" alt="" />
@@ -692,7 +732,7 @@ height: 264px;">
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                <div class="col-lg-2dot4 " align="center">
                   <div class="cardT" style="width: 250px;
 height: 264px;">
                     <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Srinivasan_Kafb03_S5No.jpeg?updatedAt=1633957144559" alt="" />
@@ -702,7 +742,7 @@ height: 264px;">
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                <div class="col-lg-2dot4 " align="center">
                   <div class="cardT" style="width: 250px;
 height: 264px;">
                     <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Suhani_sMknQPNoR.jpeg?updatedAt=1633957145423" alt="" />
@@ -712,7 +752,7 @@ height: 264px;">
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                <div class="col-lg-2dot4 " align="center">
                   <div class="cardT" style="width: 250px;
 height: 264px;">
                     <img src="/public/imgs/tirth.jpeg" alt="" />
@@ -722,7 +762,7 @@ height: 264px;">
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                <div class="col-lg-2dot4 " align="center">
                   <div class="cardT" style="width: 250px;
 height: 264px;">
                     <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Gautam_Karthik_71qcRuBpQ.jpg?updatedAt=1633957121197" alt="" />
@@ -733,7 +773,7 @@ height: 264px;">
                   </div>
                 </div>
                
-                <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                <div class="col-lg-2dot4 " align="center">
                   <div class="cardT" style="width: 250px;
 height: 264px;">
                     <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Ved_G3c1_CKdNh.jpg?updatedAt=1633957147837" alt="" />
@@ -743,7 +783,7 @@ height: 264px;">
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-2dot4  mt-3 mb-3" align="center">
+                <div class="col-lg-2dot4 " align="center">
                   <div class="cardT" style="width: 250px;
 height: 264px;">
                     <img src="https://ik.imagekit.io/pjbsfzv5ci/birme-500x500/Vidyarth_WY6jFdHL67c.jpg?updatedAt=1633957148605" alt="" />
@@ -757,6 +797,8 @@ height: 264px;">
           </div>
          
       </div>
+
+      
       
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
       <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script><script  src="./script.js"></script>
@@ -815,7 +857,7 @@ var loader = document.getElementById("loader-fade");
 
 
 window.addEventListener ("load", function() {
-    loader.style.display = 'none';
+  document.body.classList.remove('loading');
 });
 
 $(".navbar-collapse a").click(function () {
