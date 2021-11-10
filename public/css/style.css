@@ -1696,8 +1696,7 @@ line-height: 22px;
 	width: 70px;
 	height: 70px;
 	box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.5);
-	right: 5px;
-	bottom: 5px;
+
 	transition: all 70ms;
   }
 
