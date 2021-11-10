@@ -1470,16 +1470,7 @@ line-height: 22px;
 	font-weight: 600;
 }
 
-.data-fac-cor:hover h5{
-	margin-top: 30%;
-}
 
-@media (max-width: 768px) {
-	.data-fac-cor:hover h5{
-		margin-top: 20%;
-	}
-	
-}
 
 .data1{
 	padding: 10px 5%;
@@ -1496,6 +1487,18 @@ line-height: 22px;
     opacity: 0.9;
     padding: 90px 10%
 }
+
+ .cardT:hover .data-fac{
+	width: 100%;
+    height: 100%;
+	
+    bottom: 0;
+    opacity: 0.9;
+    padding: 50% 10%
+}
+
+
+
 .data h2 {
     margin: 0 0 5px 0;
     transition: color 0.4s
@@ -3275,5 +3278,5 @@ canvas {
 }
 
 .panel {
-	min-height: 100vh;
+	min-height: 80vh;
 }
