@@ -3282,7 +3282,9 @@ canvas {
 	}
 }
 
-
+.panel {
+	min-height: 60vh;
+}
 
 @media (max-width: 500px) {
 	
