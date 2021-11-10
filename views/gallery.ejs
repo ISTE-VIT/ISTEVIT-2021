@@ -26,8 +26,8 @@
   
 </head>
 
-<body >
-  <div class="loader" id="loader-fade">
+<body class="loading">
+  <!-- <div class="loader" id="loader-fade">
     <div class="loader-container">
         <ul class="loader-box">
           <div class="pre-load">
@@ -38,7 +38,7 @@
           </div>
         </ul>
     </div>
-</div>
+</div> -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="/"><img class="logo" src="imgs/iste-logo.png" alt/></a>
@@ -210,7 +210,8 @@ All Rights Reserved.</p>
 
 
 window.addEventListener ("load", function() {
-    loader.style.display = 'none';
+  document.body.classList.remove('loading');
+
 });
 
 $(".navbar-collapse a").click(function () {
