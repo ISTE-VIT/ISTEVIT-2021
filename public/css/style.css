@@ -3282,15 +3282,7 @@ canvas {
 	}
 }
 
-.panel {
-	min-height: 80vh;
-}
 
-@media (max-width: 850px) {
-	.panel {
-		min-height: 50vh;
-	}
-}
 	
 
 
