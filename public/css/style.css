@@ -2788,15 +2788,9 @@ canvas {
 
 .js .content__item {
 	grid-area: 1 / 1 / 2 / 2;
-	margin-top: -130px;
+	
 }
 
-@media (max-width: 850px) {
-	.js .content__item {
-		grid-area: 1 / 1 / 2 / 2;
-		margin-top: 50px;
-	}
-}
 
 .js .content__item > * {
 	opacity: 0;
@@ -2808,10 +2802,18 @@ canvas {
 }
 
 .content__location {
-	margin: 0;
+	margin-top: -120px;
 	font-weight: 300;
 	color: var(--color-text-secondary);
 }
+
+@media (max-width:850px) {
+	.content__location {
+		margin-top: 60px;
+	}
+}
+	
+
 
 .content__title {
 	font-weight: 700;
