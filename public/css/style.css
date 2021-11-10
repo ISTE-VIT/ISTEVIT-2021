@@ -1700,6 +1700,10 @@ line-height: 22px;
 	transition: all 70ms;
   }
 
+
+	  
+  
+
   #play-button .fa-play {
 	position: absolute;
 	font-size: 1.5em;
@@ -3296,3 +3300,40 @@ canvas {
 }
 }
 	
+@media (max-width: 700px) and (min-width: 480px) {
+	  
+	#play-button {
+		box-sizing: border-box;
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		background: linear-gradient(88.34deg, #D61679 -6.72%, #F3511E 106.98%);
+		box-shadow: 0 8px 25px 6px rgba(0, 0, 0, 0.5);
+		right: 20% !important;
+		bottom: 0px;
+		/* z-index: 5; */
+		cursor: pointer;
+		transition: all 70ms;
+		border: none;
+	  }
+	  }
+
+	  @media (min-width: 650px) and (max-width: 778px) {
+	  
+		#play-button {
+			box-sizing: border-box;
+			position: absolute;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			background: linear-gradient(88.34deg, #D61679 -6.72%, #F3511E 106.98%);
+			box-shadow: 0 8px 25px 6px rgba(0, 0, 0, 0.5);
+			right: 25% !important;
+			bottom: 0px;
+			/* z-index: 5; */
+			cursor: pointer;
+			transition: all 70ms;
+			border: none;
+		  }
+		  }
