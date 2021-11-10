@@ -3374,3 +3374,28 @@ canvas {
 				display: block;
 				overflow: hidden;
 			}
+
+			.fac-card {
+				width: 80%;
+				height: 100%;
+			}
+
+			@media (max-width:600px) {
+				.fac-card {
+					width: 70%;
+					height: 90%;
+				}
+	
+			}
+
+			@media (max-width:340px) {
+				.data h5, .data i {
+					font-size: 0.8rem !important;
+					line-height: 10px;
+				}
+	
+			}
+				
+			
+
+		
