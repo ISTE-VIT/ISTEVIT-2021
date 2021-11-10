@@ -3370,3 +3370,7 @@ canvas {
 				
 			}
 		
+			.toggle .panels .panel:first-child {
+				display: block;
+				overflow: hidden;
+			}
