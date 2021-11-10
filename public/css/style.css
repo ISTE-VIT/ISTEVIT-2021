@@ -2651,7 +2651,7 @@ main {
 }
 
 /* Page Loader */
-.js .loading::before {
+ .loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -2659,10 +2659,11 @@ main {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: var(--color-bg);
+	background:#151616;
+	z-index: 1111111111111111111111111;
 }
 
-.js .loading::after {
+.loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -2674,7 +2675,9 @@ main {
 	pointer-events: none;
 	border-radius: 50%;
 	opacity: 0.4;
-	background: var(--color-link);
+	background: #5e6262;
+	z-index: 1111111111111111111111111;
+
 	animation: loaderAnim 0.7s linear infinite alternate forwards;
 }
 
