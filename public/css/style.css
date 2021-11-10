@@ -1696,7 +1696,7 @@ line-height: 22px;
 	width: 70px;
 	height: 70px;
 	box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.5);
-	right: 30px;
+	right: 5px;
 	bottom: 5px;
 	transition: all 70ms;
   }
@@ -2584,9 +2584,18 @@ overflow-y: hidden;
 	width: 93vw !important;
 	position: fixed !important;
 	top: 10px !important;
-	left: 60px !important;
+	left: 50px !important;
   margin-right: 80px !important;
+
 }
+
+@media (max-width:1500px) and (min-width:1200px) {
+	.modal-content {
+	max-height: 90vh !important;
+	top: 40px !important;
+	}
+	}
+
 
 .close {
 	color: black !important;
@@ -3279,3 +3288,12 @@ canvas {
 .panel {
 	min-height: 80vh;
 }
+
+@media (max-width: 500px) {
+	
+.modal-content {
+	position: absolute !important;
+	top: 5vh !important;
+}
+}
+	
