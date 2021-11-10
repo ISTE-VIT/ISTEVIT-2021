@@ -2592,12 +2592,7 @@ overflow-y: hidden;
 
 }
 
-@media (max-width:1500px) and (min-width:1200px) {
-	.modal-content {
-	max-height: 90vh !important;
-	top: 40px !important;
-	}
-	}
+
 
 
 .close {
@@ -2945,6 +2940,7 @@ a:focus {
 	top: 0;
 	position: absolute;
 	z-index: -1;
+	background: #151616;
 }
 
 canvas {
@@ -3337,3 +3333,14 @@ canvas {
 			border: none;
 		  }
 		  }
+
+		  @media (max-width:1500px) and (min-width:1200px) {
+			.modal-content {
+			max-height: 90vh !important;
+			top: 40px !important;
+			padding-bottom: 20px !important;
+			
+		
+			}
+		
+			}
