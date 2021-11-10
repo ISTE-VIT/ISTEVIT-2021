@@ -738,7 +738,7 @@
 		.events_text{
 			color:#fff;
 			text-align: center;
-			font-size: 4vw;
+			font-size: 5vw;
 			font-family: 'Euclid Circular B Medium';
 			padding: 0px !important;
 			margin-top: -10px !important;
@@ -1658,7 +1658,6 @@ line-height: 22px;
   
   .modal-body {
 	position: relative;
-	padding: 20px !important;
   }
   .close {
 	position: absolute;
@@ -2580,7 +2579,7 @@ overflow-y: hidden;
     left: 0;
     width: 100%;
     height: 90%;
-	padding-right: 20px;
+	
 }
 
 .modal-content {
@@ -2598,14 +2597,13 @@ overflow-y: hidden;
 .close {
 	color: black !important;
 	padding-left: 40px !important;
-	padding-bottom: 40px !important;
 }
 
 @media (max-width:600px) {
 	.modal-content {
 		width: 93vw !important;
 		position: fixed !important;
-		top: 10px !important;
+		top: 0px !important;
 		left: 10px !important;
 	  margin-right: 80px !important;
 	}
@@ -2616,7 +2614,6 @@ overflow-y: hidden;
 		left: 0;
 		width: 100%;
 		height: 100%;
-		padding-right: 10px;
 	}
 } 
 
@@ -3344,3 +3341,31 @@ canvas {
 			}
 		
 			}
+
+			@media screen and (max-width: 400px) {
+				/* .events_imgs{
+					height: 100px !important;
+					width: 100px !important;
+					margin-left: 0px;
+				} */
+				.events {
+					padding: 3rem 2vw;
+				
+				}
+		
+				.events_text{
+					color:#fff;
+					text-align: center;
+					font-size: 5vw !important;
+					font-family: 'Euclid Circular B Medium';
+					padding: 0px !important;
+					margin-top: -10px !important;
+				}
+
+				.horizon_text {
+					font-size: 5vw !important;
+
+				}
+				
+			}
+		
