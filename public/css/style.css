@@ -458,7 +458,7 @@
 	p{
 		margin: 0;
 		padding: 0;
-        text-align: center;
+        text-align: justify;
 		color: #06090a;
 	}
 
@@ -470,6 +470,7 @@
 		font-size:24px;
 		text-align: center;
 		color: #414141;
+	
 	}
 
 	.project_titles a{
@@ -2842,10 +2843,16 @@ canvas {
 }
 
 .content__date {
-	font-size: 1rem;
+	font-size: 1.8rem;
 	font-weight: 300;
 	margin: 1rem 0 0 0;
 	color: var(--color-date);
+}
+
+@media (max-width:850px) {
+	.content__date {
+		font-size: 1rem;
+	}
 }
 
 .content__item--columns {
