@@ -1937,7 +1937,6 @@ line-height: 22px;
 	/* border-radius: 5px; */
 	position: relative;
 	transition: 1s;
-	transform: translate(5px, 0px);
 
 	
   }
@@ -3577,21 +3576,23 @@ canvas {
   
   .dev-page-sec {
 	padding: 0rem 2vw;
-	background-color: black;
-	text-align: center;
+	text-align: center;	
+	background-image: url("/public/imgs/dev_bg3.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 	overflow:hidden;
+
 }
 
 .dev-head {
-	font-size: 3.5rem;
-	color: white;
-	font-weight: bold;
-	font-family: 'Euclid Circular A';
+	padding-top: 30px;
 	margin-bottom: 20px;
 }
 
+
+
 .dev-row {
-	padding: 0rem 8vw;
+	padding: 0.5rem 8vw;
 	
 }
 
@@ -3605,6 +3606,12 @@ canvas {
 
 .mob-site1 {
 	float: left;
+}
+
+
+.dev-head img {
+	width: 100%;
+	height: auto;
 }
 
 }
