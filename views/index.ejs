@@ -85,7 +85,7 @@
           <div class="collapse navbar-collapse justify-content-end hidenav" id="navbarNav">
             <ul class="navbar-nav ">
               <li class="nav-item">
-                <a class="nav-link active  nav-act" aria-current="page" href="/#about">About Us</a>
+                <a class="nav-link active  nav-act " aria-current="page" href="/#about">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active nav-link-ltr" href="/team">Our Team</a>
@@ -156,8 +156,8 @@
             <div class="frame">
             
             </div><!-- /frame -->
-            <div class="content">
-              <div class="content__item">
+            <div class="content" >
+              <div class="content__item" >
                 <button class="content__button" id="reveal">Let's Explore</button>
               </div>
               <div class="content__item content__item--details">
@@ -173,7 +173,7 @@
       </section>
 
     <section class="about_us" id="about" style="overflow: hidden;" >
-        <div class="container" data-aos="fade-up" data-aos-delay="3000"  data-aos-duration="800">
+        <div class="container" data-aos="fade-up"  data-aos-duration="800">
             <div class="row">
             <div class="card">
                 <div class="about_us_heading" data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="1000">
@@ -828,8 +828,18 @@ window.addEventListener ("load", function() {
       $( "#reveal" ).click(function() {
         $( "#hero-se" ).toggleClass( "hide-secs" );
         $( "#body-sc" ).toggleClass( "body-scroll" );
+
      
 });
+
+var check = sessionStorage.getItem("entered");
+
+if (check){
+  console.log("Yes");
+  $( "#hero-se" ).toggleClass( "hide-secs" );
+  $( "#body-sc" ).toggleClass( "body-scroll" )
+} 
+
   // Gets the video src from the data-src on each button
   $('#enterbtn').click(false);
 
