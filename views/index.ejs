@@ -74,6 +74,7 @@
 
 <body style="overflow-x: hidden " class="body-scroll loading" id="body-sc">
  
+  <div id="circularcursor"></div>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
         <div class="container-fluid">
@@ -755,6 +756,15 @@ All Rights Reserved.</p>
   });
 });
 
+$(document).ready(function() {
+  $(document).on('mousemove', function(e) {
+    $('#circularcursor').css({
+      left: e.pageX,
+      top: e.pageY
+    });
+  })
+});
+
 var loader = document.getElementById("loader-fade");
 
 
@@ -843,7 +853,7 @@ owl.owlCarousel({
 
 
     </script>
-     >
+     
     <script>
       AOS.init({   once: false, 
   mirror: false,});
