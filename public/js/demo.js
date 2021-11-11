@@ -61,8 +61,9 @@
 
     let isOpen = false;
     enterCtrl.addEventListener('click', () => {
+        
         isOpen = true;
-
+        setCookie('enter','1','1');
         new TimelineMax()
         .to(enterCtrl, 0.3, {
             opacity: 0,
@@ -104,18 +105,18 @@
     
     enterCtrl.addEventListener('mouseenter', () => {
         if ( isOpen ) return;
-        new TimelineMax()
-        .to(animation.camera.position, 1, {
-            z: 5.5,
-            ease: Expo.easeOut
-        }, 0);
+       
     });
     enterCtrl.addEventListener('mouseleave', () => {
         if ( isOpen ) return;
-        new TimelineMax()
-        .to(animation.camera.position, 1, {
-            z: 7,
-            ease: Expo.easeOut
-        }, 0);
+    
     });
+
+
+    function setCookie(key, value, expiry) {
+        var expires = new Date();
+        expires.setTime(expires.getTime() + (expiry * 24 * 60 * 60 * 1000));
+        document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
+    }
+
 }
