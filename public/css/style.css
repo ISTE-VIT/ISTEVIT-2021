@@ -1937,6 +1937,7 @@ line-height: 22px;
 	/* border-radius: 5px; */
 	position: relative;
 	transition: 1s;
+	transform: translate(5px, 0px);
 
 	
   }
@@ -3668,23 +3669,4 @@ canvas {
 	}
 }
 
-@media (max-width: 600px) {
-	.sit-lin {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-self: auto
-		
-	}
-}
 
-@media (max-width:340px) {
-	.sit-lin {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-self: auto
-		
-	}
-}
-	
