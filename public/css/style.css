@@ -633,6 +633,7 @@
 		padding: 90px;
 	}
 
+
 	@media screen and (max-width: 1200px) {
 		/* .events_imgs{
 			height: 25vw !important;
@@ -659,6 +660,11 @@
 			font-family: 'Euclid Circular B Medium';
 			padding: 40px;
 		}
+
+		.horizon_text{
+			
+			font-size: 2vw;
+		}
 		
 	}
 
@@ -674,6 +680,11 @@
 			font-size: 3vw;
 			font-family: 'Euclid Circular B Medium';
 			padding: 40px;
+		}
+
+		.horizon_text{
+			
+			font-size: 3vw;
 		}
 		
 	}
@@ -691,6 +702,11 @@
 			font-family: 'Euclid Circular B Medium';
 			padding: 30px;
 		}
+
+		.horizon_text{
+			
+			font-size: 3vw;
+		}
 		
 	}
 
@@ -706,6 +722,11 @@
 			font-size: 3vw;
 			font-family: 'Euclid Circular B Medium';
 			padding: 20px;
+		}
+
+		.horizon_text{
+			
+			font-size: 3vw;
 		}
 		
 	}
@@ -728,6 +749,11 @@
 			padding: 10px;
 			margin-top: -10px;
 		}
+
+		.horizon_text{
+			
+			font-size: 4vw;
+		}
 		
 	}
 
@@ -749,6 +775,11 @@
 			font-family: 'Euclid Circular B Medium';
 			padding: 0px !important;
 			margin-top: -10px !important;
+		}
+
+		.horizon_text{
+			
+			font-size: 5vw;
 		}
 		
 	}
@@ -798,7 +829,7 @@
 		text-align: center;
 		font-size: 2vw;
 		font-family: 'Euclid Circular B Medium';
-		padding: 90px;
+		margin: 90px;
 	}
 
 	.horizon_dash{
@@ -991,9 +1022,7 @@
 		font-size:10vw !important;
 	}
 
-	.horizon_text{
-		font-size:10vw !important;
-	}
+
 
 	.card_domains{
 		width: 5rem;
@@ -2646,7 +2675,7 @@ overflow-y: hidden;
 }
 
 @media(max-width:600px) {
-	.domain_heading, .projects_heading, .events_heading, .contact_heading, .webinars_heading, .partners_heading, .horizon_heading, .horizon_text , .about_us_heading{
+	.domain_heading, .projects_heading, .events_heading, .contact_heading, .webinars_heading, .partners_heading, .horizon_heading,.about_us_heading{
 		font-size:8vw !important;
 	}
 
@@ -3353,33 +3382,6 @@ canvas {
 		
 			} */
 
-			@media screen and (max-width: 400px) {
-				/* .events_imgs{
-					height: 100px !important;
-					width: 100px !important;
-					margin-left: 0px;
-				} */
-				.events {
-					padding: 3rem 2vw;
-				
-				}
-		
-				.events_text{
-					color:#fff;
-					text-align: center;
-					font-size: 5vw !important;
-					font-family: 'Euclid Circular B Medium';
-					padding: 0px !important;
-					margin-top: -10px !important;
-				}
-
-				.horizon_text {
-					font-size: 5vw !important;
-
-				}
-				
-			}
-		
 			.toggle .panels .panel:first-child {
 				display: block;
 				overflow: hidden;
@@ -3605,3 +3607,84 @@ canvas {
 }
 
 }
+
+
+@media screen and (max-width: 400px) {
+	/* .events_imgs{
+		height: 100px !important;
+		width: 100px !important;
+		margin-left: 0px;
+	} */
+	.events {
+		padding: 3rem 2vw;
+	
+	}
+
+	.events_text{
+		color:#fff;
+		text-align: center;
+		font-size: 5vw !important;
+		font-family: 'Euclid Circular B Medium';
+		padding: 0px !important;
+		margin-top: -10px !important;
+	}
+
+	.horizon_text {
+		font-size: 5vw !important;
+	}
+	
+}
+
+@media screen and (max-width: 500px) {
+	/* .events_imgs{
+		height: 100px !important;
+		width: 100px !important;
+		margin-left: 0px;
+	} */
+	.events {
+		padding: 3rem 4vw;
+	
+	}
+	.events_text{
+		color:#fff;
+		text-align: center;
+		font-size: 4vw;
+		font-family: 'Euclid Circular B Medium';
+		padding: 10px;
+		margin-top: -10px;
+	}
+
+	.horizon_text{
+		
+		font-size: 4vw;
+	}
+	
+}
+
+@media  (max-width: 800px) {
+	.horizon_text{
+		
+		font-size: 3vw;
+	}
+}
+
+@media (max-width: 600px) {
+	.sit-lin {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-self: auto
+		
+	}
+}
+
+@media (max-width:340px) {
+	.sit-lin {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-self: auto
+		
+	}
+}
+	
