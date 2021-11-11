@@ -1899,9 +1899,9 @@ line-height: 22px;
   .toggle .tabs .tab.active {
 	color: white;
 	/* border-bottom: 3px solid #989866; */
-	background-color: #989866 ;
+	background-color: #117ab8 ;
 	padding: 10px;
-	border-radius: 5px;
+	/* border-radius: 5px; */
 	position: relative;
   }
 
