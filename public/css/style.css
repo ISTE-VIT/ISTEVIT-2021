@@ -1175,7 +1175,7 @@
 
 @media(max-width:750px){
 	.links{
-        display: none !important;
+        /* display: none !important; */
 
 	}
 }
@@ -3574,9 +3574,10 @@ canvas {
   }
   
   .dev-page-sec {
-	padding: 2rem 2vw;
+	padding: 0rem 2vw;
 	background-color: black;
 	text-align: center;
+	overflow:hidden;
 }
 
 .dev-head {
@@ -3588,5 +3589,6 @@ canvas {
 }
 
 .dev-row {
-	padding: 2rem 8vw;
+	padding: 0rem 8vw;
+	
 }
