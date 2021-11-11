@@ -281,3 +281,4 @@ rgb = opts.lineColor.match(/\d+/g);
 resizeReset();
 setup();
 
+
