@@ -1229,6 +1229,7 @@
   
   .social-ul li:nth-child(1) a {
 	background-color: #2d609b;
+	margin-left: 0px;
   }
   
   .social-ul li:nth-child(2) a {
@@ -1269,11 +1270,7 @@
   }
 
 
-  @media  (max-width:998px) {
-	  .social-ul {
-		 margin-left: 3%;
-	  }
-  }
+  
 
   .grid{
     padding-top: 10px;
@@ -3591,4 +3588,18 @@ canvas {
 .dev-row {
 	padding: 0rem 8vw;
 	
+}
+
+
+@media (max-width: 600px) {
+	
+
+.mob-site {
+   float: right;text-align: left;margin-right: 40%;
+}
+
+.mob-site1 {
+	float: left;
+}
+
 }
