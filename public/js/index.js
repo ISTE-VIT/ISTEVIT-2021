@@ -280,3 +280,4 @@ let delay = 200, tid,
 rgb = opts.lineColor.match(/\d+/g);
 resizeReset();
 setup();
+
