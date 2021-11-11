@@ -84,6 +84,7 @@
 .nav-item{
 	font-family: 'Euclid Circular A';
 	padding-right: 20px;
+	font-weight: light;
 }
 
 .card{
@@ -3410,3 +3411,46 @@ canvas {
 		
 			  
 		
+.nav-link::before {
+	transition: 300ms;
+	height: 2px;
+	content: "";
+	position: absolute;
+	top: 50px;
+	background-color: #17A0EF;
+  }
+  
+  .nav-link-ltr::before {
+	width: 0%;
+	bottom: 5px;
+  }
+  
+  .nav-link-ltr:hover::before {
+	width: 75px;
+  }
+
+  .ltr2:hover::before {
+	width: 58px !important;
+  }
+  
+  .nav-act {
+	border-bottom: 2px solid #17A0EF;
+
+  }
+
+  @media (max-width: 600px) {
+	.nav-link::before {
+		transition: 300ms;
+		height: 2px;
+		content: "";
+		position: absolute;
+		top: 50px;
+		background-color: #000000;
+	  }
+
+	  .nav-act {
+		border-bottom: 2px solid #000000;
+	
+	  }
+  }
+ 
