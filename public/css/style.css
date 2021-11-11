@@ -1897,7 +1897,7 @@ line-height: 22px;
 	padding: 0 8px;
 	padding: 10px;
 
-	cursor: pointer;
+	
 	
   }
 
@@ -1910,8 +1910,7 @@ line-height: 22px;
 	padding: 10px;
 	/* border-radius: 5px; */
 	position: relative;
-
-
+	
   }
 
   @media (max-width:470px) {
@@ -3574,3 +3573,20 @@ canvas {
 
   }
   
+  .dev-page-sec {
+	padding: 2rem 2vw;
+	background-color: black;
+	text-align: center;
+}
+
+.dev-head {
+	font-size: 3.5rem;
+	color: white;
+	font-weight: bold;
+	font-family: 'Euclid Circular A';
+	margin-bottom: 20px;
+}
+
+.dev-row {
+	padding: 2rem 8vw;
+}
