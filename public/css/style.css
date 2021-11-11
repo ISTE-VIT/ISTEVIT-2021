@@ -3597,6 +3597,11 @@ canvas {
 }
 
 
+.dev-head-img {
+	width: 400px;
+}
+
+
 @media (max-width: 600px) {
 	
 
