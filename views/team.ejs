@@ -823,6 +823,8 @@ height: 264px;">
           <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
           <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/owl.carousel.min.js'></script><script  src="./script.js"></script>
      <script>
+
+       
           (function() {
   $(function() {
     var toggle;
@@ -845,7 +847,7 @@ height: 264px;">
       $(activeTab).addClass('active');
       this.panels.hide();
       activePanel = this.panels.get(index);
-      return $(activePanel).show();
+      return $(activePanel).fadeIn(1200);
     };
     Toggle.prototype.bind = function() {
       var _this = this;
