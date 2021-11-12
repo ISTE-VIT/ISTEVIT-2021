@@ -709,12 +709,12 @@ aria-hidden="true">
       <span class="w3c__message-box--title">Have a question? </span>
          <span>Message us and we will get back to you soon.</span>
     </div>
-    <div class="contact-form">
+    <div class="contact-form" id="contact-form">
       <form action="/message" method="post">
         <input type="text" required placeholder="Name" name="name" class="contact-box">
         <input type="email" required placeholder="Email" name="email"  class="contact-box">
         <textarea name="message" required id="" placeholder="Message" class="contact-box message-box" ></textarea>
-        <button type="submit" class="message-submit"> <i class="fas fa-paper-plane"></i> Send Message</button>
+        <button type="submit" id="#submit-btn" class="message-submit"> <i class="fas fa-paper-plane"></i> Send Message</button>
       </form>
     </div>
      
@@ -790,6 +790,14 @@ document.querySelectorAll('.cursor').forEach(cursor => {
   })
 
 })
+
+    $("#contact-form").submit(function(){
+      $(".message-submit").css("background-color", "#0bca54");
+      $(".message-submit").css("color", "#fff");
+      $(".message-submit").html("<i class='fa fa-check' aria-hidden='true'>Message Sent</i>");
+
+
+    });
 
         </script>
 
