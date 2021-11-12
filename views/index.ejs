@@ -853,16 +853,15 @@ window.addEventListener ("load", function() {
 
 
 
-    $(window).load(function() {
+    $( document ).ready(function() {
 
-    
       var ent = sessionStorage.getItem("entered");
   console.log("yo");
   
         if(!ent){
           
       var tim = setTimeout(function(){
-    $('#reveal').click();},5000); // 5" for the demo
+    $('#reveal').click();},10000); // 5" for the demo
 
 }
       
