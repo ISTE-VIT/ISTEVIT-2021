@@ -777,6 +777,16 @@ document.querySelectorAll('.cursor').forEach(cursor => {
         
       <script>
 
+window.addEventListener('load', (event) => {
+  var ent = sessionStorage.getItem("entered");
+  console.log("yo");
+  
+        if(!ent){
+          
+
+}});
+        
+   
     
 
       // PROJECTS 
@@ -844,11 +854,28 @@ window.addEventListener ("load", function() {
 
 
     $(document).ready(function() {
+
+    
+      var ent = sessionStorage.getItem("entered");
+  console.log("yo");
+  
+        if(!ent){
+          
+      var tim = setTimeout(function(){
+    $('#reveal').click();},5000); // 5" for the demo
+
+}
       
+
 
       $( "#reveal" ).click(function() {
         $( "#hero-se" ).toggleClass( "hide-secs" );
         $( "#body-sc" ).toggleClass( "body-scroll" );
+        clearTimeout(tim);
+
+      
+    
+
 
      
 });
