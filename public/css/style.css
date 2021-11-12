@@ -2417,13 +2417,15 @@ font-weight: 600;
 }
 
 .image__description {
-    font-size: 1.25em;
+    font-size: 1em;
     margin-top: 0.25em;
 }
 
+
+
 @media (max-width:1300px){
 	.image__description {
-		font-size: 1em;
+		font-size: 0.7em;
 		margin-top: 0.25em;
 	}
 
@@ -2431,7 +2433,7 @@ font-weight: 600;
 
 @media (max-width:1150px){
 	.image__description {
-		font-size: .9em;
+		font-size: .7em;
 		margin-top: 0.25em;
 	}
 
@@ -2439,7 +2441,7 @@ font-weight: 600;
 
 @media (max-width:1050px){
 	.image__description {
-		font-size: .9em;
+		font-size: .7em;
 		margin-top: 1em;
 	}
 
@@ -2447,7 +2449,7 @@ font-weight: 600;
 
 @media (max-width:1000px){
 	.image__description {
-		font-size: 1.25em;
+		font-size: 1em;
 		margin-top: 0.25em;
 	}
 
@@ -2455,7 +2457,7 @@ font-weight: 600;
 
 @media (max-width:900px){
 	.image__description {
-		font-size: 1em;
+		font-size: 0.8em;
 		margin-top: 0.25em;
 	}
 
@@ -2479,7 +2481,7 @@ font-weight: 600;
 
 @media (max-width:630px){
 	.image__description {
-		font-size: .8em;
+		font-size: .7em;
 		margin-top: 0.5em;
 	}
 
@@ -2488,7 +2490,7 @@ font-weight: 600;
 
 @media (max-width:600px){
 	.image__description {
-		font-size: .8em;
+		font-size: .7em;
 		margin-top: 0.5em;
 	}
 
@@ -2496,7 +2498,7 @@ font-weight: 600;
 
 @media (max-width:576px){
 	.image__description {
-		font-size: 1.2em;
+		font-size: 1em;
 		margin-top: 0.5em;
 	}
 
@@ -2517,6 +2519,8 @@ font-weight: 600;
 	}
 
 }
+
+
 
 #show {
 	background-color: #000000 !important;
