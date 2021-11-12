@@ -366,7 +366,7 @@
                 <div class="face face2">
                   <div class="contentone">
                     <h3>                     
-                    <p style="font-size: 14px;">The official website to welcome virtuous developers and designers to learn, compete and relish one of ISTE's biggest technical fest, Horizon.</p>
+                    <p style="font-size: 14px;">The official website to welcome virtuous developers and designers to learn, compete and relish one of ISTE's Biggest Technical Fests, Horizon.</p>
                   </h3>
                   <a href="https://github.com/ISTE-VIT/horizon-2021" class="justify-content-center" style="font-size: 20px;color: black;"><i class="fab fa-github"></i></a>
                   </div>
@@ -710,10 +710,10 @@ aria-hidden="true">
          <span>Message us and we will get back to you soon.</span>
     </div>
     <div class="contact-form">
-      <form action="">
-        <input type="text" placeholder="Name" class="contact-box">
-        <input type="email" placeholder="Email"  class="contact-box">
-        <textarea name="message" id="" placeholder="Message" class="contact-box message-box" ></textarea>
+      <form action="/message" method="post">
+        <input type="text" required placeholder="Name" name="name" class="contact-box">
+        <input type="email" required placeholder="Email" name="email"  class="contact-box">
+        <textarea name="message" required id="" placeholder="Message" class="contact-box message-box" ></textarea>
         <button type="submit" class="message-submit"> <i class="fas fa-paper-plane"></i> Send Message</button>
       </form>
     </div>
