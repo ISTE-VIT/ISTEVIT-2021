@@ -853,7 +853,7 @@ window.addEventListener ("load", function() {
 
 
 
-    $( '#reveal' ).ready(function() {
+    $( document ).ready(function() {
 
       var ent = sessionStorage.getItem("entered");
   console.log("yo");
@@ -861,7 +861,7 @@ window.addEventListener ("load", function() {
         if(!ent){
           
       var tim = setTimeout(function(){
-    $('#reveal').click();},5000); // 5" for the demo
+    $('#reveal').click();},20000); // 5" for the demo
 
 }
       
