@@ -3534,3 +3534,46 @@ canvas {
 	
 }
 	
+
+.cursor2 {
+	display: inline-block;
+	margin: 10% 5%;
+	background-color: rgba(0,0,0,.2);
+	height: 25px;
+	width: 25px;
+	border-radius: 25px;
+	position: absolute;
+	left: 40%;
+	z-index: 9999999999999999999999999999999;
+	margin-top: -2px;
+  }
+  
+  .tap {
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	z-index: 999999999999999999999999999999999; 
+	background-color: #a2aaa6;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	opacity: 1;
+
+   
+  }
+  
+  .tap--1 {
+	   -webkit-animation: tapped--1 500ms;
+	animation: tapped--1 500ms infinite;
+	z-index: 999999999999999999999999999999999; 
+
+  }
+  
+  @-webkit-keyframes tapped--1 {
+	100% { -webkit-transform: scale(2);
+	opacity: 0
+	}
+  }
+  @keyframes tapped--1 {
+	100% { transform: scale(2); 
+	opacity: 0;}
+  }
