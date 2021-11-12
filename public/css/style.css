@@ -3580,3 +3580,7 @@ canvas {
 	100% { transform: scale(2); 
 	opacity: 0;}
   }
+
+  .domain-card{
+	  padding: 0px 10px;
+  }
