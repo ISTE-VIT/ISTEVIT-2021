@@ -3299,6 +3299,10 @@ canvas {
   .ltr2:hover::before {
 	width: 58px !important;
   }
+
+  .ltr3:hover::before {
+	width: 52px !important;
+  }
   
   .nav-act {
 	border-bottom: 2px solid #17A0EF;
