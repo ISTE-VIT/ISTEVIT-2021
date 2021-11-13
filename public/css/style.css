@@ -357,7 +357,6 @@
 }
 
 .project_titles .cardone .face {
-  width: 500px;
   height: 200px;
   transition: 0.5s;
 }
@@ -376,6 +375,7 @@
 @media (max-width: 900px) {
   .project_titles .cardone .face.face1 {
     width: 300px;
+    height: 190px;
   }
 }
 
@@ -404,11 +404,6 @@
   margin-bottom: 50px;
 }
 
-@media (max-width: 900px) {
-  .project_titles .cardone .face.face2 {
-    width: 300px;
-  }
-}
 
 .project_titles .cardone:hover .face.face2 {
   transform: translateY(0);
@@ -798,7 +793,7 @@ button:active {
     padding-bottom: 3rem;
     padding-right: 1vw;
     padding-left: 0.5vw;
-    height: 70vh;
+    height: 80vh;
   }
 }
 
@@ -3097,3 +3092,34 @@ html:not(html:hover) .cursor::after {
   padding: 0px 10px;
 }
 
+
+@media (max-width: 500px) {
+
+  .project_titles .cardone .face {
+    height: 180px ; 
+    transition: 0.5s;
+}
+
+  .project_titles .cardone .face.face2 {
+    width: 300px;
+    height: 180px;
+    transform: translateY(-58px);
+    
+   }
+
+   .project_titles .cardone .face.face1 {
+    height: 180px;
+    transition: 0.5s;
+}
+
+.project_titles .cardone .face.face2 .contentone p {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  color: #06090a;
+  font-size: 0.8rem !important;
+}
+
+
+
+}
