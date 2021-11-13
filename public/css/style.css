@@ -1098,6 +1098,8 @@ button:active {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow:auto;
+
   font-family: "Euclid Circular B Medium";
 }
 
