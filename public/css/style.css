@@ -794,10 +794,11 @@ button:active {
   .projects {
     background-image: linear-gradient(to right, #d5147b, #fe6503);
     overflow-x: hidden;
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-bottom: 3rem;
     padding-right: 1vw;
     padding-left: 0.5vw;
+    height: 70vh;
   }
 }
 
@@ -1097,9 +1098,6 @@ button:active {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  overflow:auto;
-
   font-family: "Euclid Circular B Medium";
 }
 
@@ -3098,11 +3096,3 @@ html:not(html:hover) .cursor::after {
   padding: 0px 10px;
 }
 
-html {
-  height: 100%;
-}
-
-body {
-  background-size: cover;
-  height: 100%;
-}
