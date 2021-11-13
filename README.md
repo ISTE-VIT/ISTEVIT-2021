@@ -5,6 +5,16 @@
 # ISTE WEBSITE 2021
 >Official Website of ISTE for 2021.
 
+## Tech Stack
+- HTML 
+- CSS
+- JS
+- EJS
+- NodeJs
+- Express
+- MongoDb
+
+
 ## Screenshots
 <img src="https://ik.imagekit.io/pjbsfzv5ci/one_m-1pJBl9WsF.PNG?updatedAt=1636800617573" alt="Project Screenshots">
 <img src="https://ik.imagekit.io/pjbsfzv5ci/two_2XjFbIshLtrf.PNG?updatedAt=1636800618017" alt="Project Screenshots">
