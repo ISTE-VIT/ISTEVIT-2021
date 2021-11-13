@@ -1,6 +1,8 @@
 const express = require('express')
 const webinarRouter = express.Router()
-const axios = require('axios')
+const axios = require('axios');
+const mongoose = require("mongoose");
+const message = require("../models/Message");
 
 webinarRouter.get('/', async(req, res) => {
     try {
@@ -34,6 +36,42 @@ webinarRouter.get('/team', (req, res) => {
 
  webinarRouter.get('/events', (req, res) => {
     res.render('events');
+ })
+
+ webinarRouter.get('/developers', (req, res) => {
+    res.render('developers');
+ })
+
+ webinarRouter.post("/message", async(req, res) => {
+    const message1 = new message({
+        name: req.body.name,
+        email: req.body.email,
+        message: req.body.message,
+      
+    });
+    try {
+        await message1.save();
+
+    } catch (err) {
+        res.status(400).json({
+            message: err.message,
+        });
+    }
+
+        
+    res.redirect('/');
+
+});
+
+webinarRouter.get('/seemessages', async(req, res) => {
+    try {
+        const allmessages = await message.find({});
+        res.json(allmessages);
+    } catch (error) {
+        res.status(400).json({
+            message: err.message,
+        });
+    }
  })
 
 
