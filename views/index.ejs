@@ -58,7 +58,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css'>
-  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
   <link href="//db.onlinewebfonts.com/c/a575313c6dc4fd00c1a9506e1c3ea4fc?family=Euclid+Circular+A" rel="stylesheet" type="text/css"/>
   <link href="//db.onlinewebfonts.com/c/721c73bcd2e49f3a621991089838b503?family=Euclid+Circular+B+Medium" rel="stylesheet" type="text/css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -224,7 +224,7 @@
               </div>
               <div class="col-lg-4 col-md-6 domain-card" data-aos="zoom-in-left" data-aos-delay="1000" data-aos-duration="600" >
               
-              <img class="card-img-top" src="/public/imgs/elec.gif" alt="Card image cap">
+              <img class="card-img-top" src="/public/imgs/tech.gif" alt="Card image cap">
               <div class="card-body">
                 <p class="card-textT">Technical <br>  
               </p>
@@ -1186,7 +1186,7 @@ aria-hidden="true">
       
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/owl.carousel.min.js'></script><script  src="./script.js"></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/owl.carousel.min.js'></script>
       <script>
      const updateProperties = (elem, state) => {
   elem.style.setProperty('--x', `${state.x}px`)
@@ -1308,19 +1308,13 @@ $(document).ready(function() {
   })
 });
 
-var loader = document.getElementById("loader-fade");
 
-
-window.addEventListener ("load", function() {
-    loader.style.display = 'none';
-});
 
 
 
     $( document ).ready(function() {
 
       var ent = sessionStorage.getItem("entered");
-  console.log("yo");
   
         if(!ent){
           
@@ -1346,7 +1340,6 @@ window.addEventListener ("load", function() {
 var check = sessionStorage.getItem("entered");
 
 if (check){
-  console.log("Yes");
   $( "#hero-se" ).toggleClass( "hide-secs" );
   $( "#body-sc" ).toggleClass( "body-scroll" )
 } 

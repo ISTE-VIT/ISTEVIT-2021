@@ -123,7 +123,6 @@
     window.addEventListener('load', (event) => {
 
     let entered = sessionStorage.getItem("entered");
-    console.log(entered);
     
      if(entered){
         setCookie('entered','true','1');
