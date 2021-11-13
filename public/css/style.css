@@ -1094,9 +1094,10 @@ button:active {
 }
 
 .team_body {
-  background-image: url("https://ik.imagekit.io/pjbsfzv5ci/bgpic-modified-min_f-a8L2syoTM.jpeg?updatedAt=1636790625783");
+  background-image: url("/public/imgs/galery-bg2.png");
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   font-family: "Euclid Circular B Medium";
 }
